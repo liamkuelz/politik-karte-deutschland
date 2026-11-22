@@ -18,7 +18,7 @@
     ],
     "BY": [
       { "name": "Markus Söder", "party": "union", "role": "Ministerpräsident und Spitzenkandidat Landtagswahl 2023", "source": "Ministerpräsident: Wikipedia, Liste der Ministerpräsidenten der deutschen Länder; Spitzenkandidatur: bpb, Landtagswahl in Bayern 2023 (04.10.2023)" },
-      { "name": "Hubert Aiwanger", "party": "fw", "role": "Spitzenkandidat Landtagswahl 2023", "source": "bpb, Landtagswahl in Bayern 2023 (04.10.2023)" },
+      { "name": "Hubert Aiwanger", "party": "fw", "role": "Spitzenkandidat Landtagswahl 2023", "note": "Laut Medienberichten am 04.11.2026 verstorben; Nachfolge zum Zeitpunkt der Datenerhebung nicht offiziell bestätigt.", "source": "bpb, Landtagswahl in Bayern 2023 (04.10.2023); Tod: dpa via infranken.de, Bayerns Wirtschaftsminister Hubert Aiwanger ist tot (04.11.2026)" },
       { "name": "Katrin Ebner-Steiner", "party": "afd", "role": "Spitzenkandidatin Landtagswahl 2023", "note": "Teil einer Doppelspitze", "source": "bpb, Landtagswahl in Bayern 2023 (04.10.2023)" },
       { "name": "Martin Böhm", "party": "afd", "role": "Spitzenkandidat Landtagswahl 2023", "note": "Teil einer Doppelspitze", "source": "bpb, Landtagswahl in Bayern 2023 (04.10.2023)" },
       { "name": "Katharina Schulze", "party": "gruene", "role": "Spitzenkandidatin Landtagswahl 2023", "note": "Teil einer Doppelspitze", "source": "bpb, Landtagswahl in Bayern 2023 (04.10.2023)" },
@@ -129,5 +129,8 @@
       { "name": "Bodo Ramelow", "party": "linke", "role": "Spitzenkandidat Landtagswahl 2024", "source": "bpb, Landtagswahl Thüringen 2024 (02.09.2024)" },
       { "name": "Georg Maier", "party": "spd", "role": "Spitzenkandidat Landtagswahl 2024", "source": "bpb, Landtagswahl Thüringen 2024 (02.09.2024)" }
     ]
+  },
+  "omissions": {
+    "SL": ["AfD: keine Spitzenkandidatur belegt. Die Partei zog ihre Landesliste zur Landtagswahl 2022 zurück und trat nur mit Kreiswahlvorschlägen an."]
   }
 }

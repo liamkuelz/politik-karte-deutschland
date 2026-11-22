@@ -95,6 +95,12 @@ ebenfalls, als Text mit Adresse (ohne Links).
   Spitzenteams“ da. Fraktionsvorsitzende sind nicht enthalten.
 - Amtsinhaber in Berlin und Sachsen-Anhalt sollten nochmals kontrolliert werden (`scripts/officials.json`); offene
   Punkte der Kandidatenliste nennt `scripts/sources/kandidaten-report.md`.
+- Saarland: Für die AfD, die im Landtag sitzt, ist keine Spitzenkandidatur belegt (Landesliste 2022 zurückgezogen).
+  Die Lücke steht als Hinweis unter den Hauptkandidaten (`omissions` in `kandidaten.json`).
+- Beim Parteivorsitz kann „derzeit nicht belegt“ stehen, wenn ein Wechsel noch nicht aus einer verlässlichen
+  Quelle bestätigt werden konnte (derzeit Freie Wähler).
+- Die Linke hat auf Bundesebene eine Doppelspitze; beide Personen erscheinen bei den Hauptkandidaten, abweichend
+  von der sonst geltenden Regel ein Eintrag je Partei.
 - Die Stände in `public/data/meta.json` bewegen sich nur bei echten Änderungen: „Wahl“ setzt `elections.mjs`
   am Tag seines Laufs, „Abgeordnete/Abstimmungen“ setzen `people.mjs`/`votes.mjs` nur, wenn sich ihre Dateien
   inhaltlich geändert haben, „Umfragen“ ist das Datum der neuesten Umfrage.

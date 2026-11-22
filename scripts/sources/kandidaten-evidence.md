@@ -23,6 +23,7 @@ Checked 2026-11-22. One block per source, then the entries it supports. All page
 ## BY (Landtagswahl 08.10.2023; in the Landtag: CSU, FW, AfD, Grüne, SPD)
 
 - https://www.bpb.de/kurz-knapp/hintergrund-aktuell/541170/landtagswahl-in-bayern-2023/ - bpb, "Landtagswahl in Bayern 2023", 04.10.2023. Söder is Spitzenkandidat of the CSU. Aiwanger is FW Spitzenkandidat. The AfD ran "mit ihren Spitzenkandidaten Katrin Ebner-Steiner und Martin Böhm". The Grüne Spitzenkandidaten were "wie bereits 2018" Katharina Schulze and Ludwig Hartmann. The SPD Spitzenkandidat was Florian von Brunn. Shares from laender.json: FDP 3.0 % and Linke 1.5 %, both out.
+- Aiwanger `note` (added 2026-11-22, final review): https://www.infranken.de/deutschland/bayerns-wirtschaftsminister-hubert-aiwanger-ist-tot-art-6408799,PRINT - infranken.de (dpa), "Bayerns Wirtschaftsminister Hubert Aiwanger ist tot", 04.11.2026: died on 4 November 2026. Searches on 2026-11-22 (results from stuttgarter-zeitung.de "Hubert Aiwanger: Wer übernimmt seine Aufgaben in Bayern?", echo24.de "Freie Wähler nach Aiwanger-Tod: Wer folgt nun nach?", infranken.de "Freie Wähler trauern um Hubert Aiwanger - aber was kommt danach für die Partei?", newstime.joyn.de on the Landtag Nachrücker) show only an interim arrangement: Staatssekretär Tobias Gotthardt runs the Wirtschaftsministerium for now. Who becomes stellvertretender Ministerpräsident, Wirtschaftsminister and FW Landes-/Bundesvorsitzender was reported as open; the Bundesparteitag planned for 14.11.2026 was cancelled. No successor is named in the data. The entry stays (he was the 2023 Spitzenkandidat) with the neutral note.
 
 ## BE (Abgeordnetenhauswahl 20.09.2026; in the parliament: Linke, CDU, AfD, Grüne, SPD; BSW 4.7 % and FDP 2.5 % out)
 
@@ -78,7 +79,7 @@ Checked 2026-11-22. One block per source, then the entries it supports. All page
 ## SL (Landtagswahl 27.03.2022; in the Landtag: SPD, CDU, AfD; Grüne 4.995 % out)
 
 - https://www.bpb.de/kurz-knapp/hintergrund-aktuell/506485/landtagswahl-im-saarland-2022/ - bpb, "Landtagswahl im Saarland 2022", 28.03.2022. Rehlinger (SPD) and Tobias Hans (CDU) are Spitzenkandidaten. Three parties are in the Landtag. The AfD withdrew its Landesliste and ran only with Kreiswahlvorschläge, so no Spitzenkandidat is named. The Grüne missed 5 % by 23 votes.
-- https://www.lpb-bw.de/landtagswahl-im-saarland-2022 (search result) names Kai Melling as the planned AfD Spitzenkandidat before the list was withdrawn. **AfD entry omitted** (see the report).
+- https://www.lpb-bw.de/landtagswahl-im-saarland-2022 (search result) names Kai Melling as the planned AfD Spitzenkandidat before the list was withdrawn. **AfD entry omitted** (see the report). Since the final review the gap is shown in the app via `omissions.SL` in kandidaten.json (wording based on the bpb article above).
 
 ## SN (Landtagswahl 01.09.2024; in the Landtag: CDU 41, AfD 40, BSW 15, SPD 10, Grüne 7, Linke 6, FW 1)
 
