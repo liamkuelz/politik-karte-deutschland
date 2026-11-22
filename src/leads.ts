@@ -2,6 +2,7 @@ import { candidateKey, findPerson, slugify } from './content.ts';
 import type { Candidate } from './content-types.ts';
 import type { AppData } from './data.ts';
 import type { PartyId, PartyResult, WahlkreisWinner } from './types.ts';
+import type { Person } from './types.ts';
 import { sortResults } from './ui/bars.ts';
 import type { CardContext } from './ui/clickables.ts';
 import { h } from './ui/dom.ts';
@@ -20,9 +21,19 @@ export const LEADS_CAPTION_DE = 'Spitzenkandidaten der Parteien im Bundestag (Bu
 export const LEADS_CAPTION_LAND = 'Ministerpräsident/in und Spitzenkandidaten der Landtagsparteien';
 export const LEADS_EMPTY = 'Für diese Ebene liegen keine belegten Angaben zu Hauptkandidaten vor.';
 
-const candidateRow = (c: Candidate): PersonRowInput => ({
-  name: c.name, party: c.party, role: c.role, note: c.note, personId: candidateKey(c),
-});
+/**
+ * Ist ein/e Hauptkandidat/in zugleich Mitglied des Bundestages (z. B. Kanzlerkandidat/in mit Mandat), zeigt
+ * die Karte Person und Abstimmungen statt nur der Kandidatenrolle: dafuer die echte people.json-id
+ * verwenden (Name und Partei muessen uebereinstimmen), sonst den Kandidatenschluessel.
+ */
+function mdbFor(data: AppData, c: Candidate): Person | undefined {
+  return data.people.find((p) => p.party === c.party && slugify(p.name) === slugify(c.name));
+}
+
+const candidateRow = (data: AppData, c: Candidate): PersonRowInput => {
+  const mdb = mdbFor(data, c);
+  return { name: c.name, party: c.party, role: c.role, note: c.note, personId: mdb ? String(mdb.id) : candidateKey(c) };
+};
 
 /** Kandidaten nach dem Ergebnis ihrer Partei (Sonstige und nicht gelistete Parteien zuletzt), stabil. */
 function byResult(list: Candidate[], results: PartyResult[]): Candidate[] {
@@ -41,7 +52,7 @@ export interface Leads {
 export function leadsOf(data: AppData, landId?: string): Leads {
   if (!landId) {
     const list = data.kandidaten?.bund ?? [];
-    return { rows: byResult(list, data.bund.second).map(candidateRow), empty: !list.length };
+    return { rows: byResult(list, data.bund.second).map((c) => candidateRow(data, c)), empty: !list.length };
   }
   const land = data.laender.find((l) => l.id === landId);
   const list = data.kandidaten?.laender?.[landId] ?? [];
@@ -50,10 +61,10 @@ export function leadsOf(data: AppData, landId?: string): Leads {
   for (const o of land?.officials ?? []) {
     const same = list.find((c) => slugify(c.name) === slugify(o.name));
     if (same) used.add(same);
-    rows.push(same ? candidateRow(same) : { name: o.name, party: o.party, role: o.role, personId: String(o.id) });
+    rows.push(same ? candidateRow(data, same) : { name: o.name, party: o.party, role: o.role, personId: String(o.id) });
   }
   const results = land?.landtag?.second ?? land?.bundestag.second ?? [];
-  rows.push(...byResult(list.filter((c) => !used.has(c)), results).map(candidateRow));
+  rows.push(...byResult(list.filter((c) => !used.has(c)), results).map((c) => candidateRow(data, c)));
   return { rows, empty: !list.length };
 }
 
