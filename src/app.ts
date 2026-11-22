@@ -1,3 +1,4 @@
+import { renderCard } from './cards.ts';
 import { renderDashboard, setDetailsMode } from './dashboard.ts';
 import type { AppData } from './data.ts';
 import { loadAll } from './data.ts';
@@ -9,7 +10,7 @@ import { formatHash, parseHash } from './nav.ts';
 import type { NavState } from './nav.ts';
 import { renderCrumbs, renderPanel } from './panel.ts';
 import { h } from './ui/dom.ts';
-import { sameState, validateState } from './validate.ts';
+import { sameState, sameView, validateState } from './validate.ts';
 
 const byId = (id: string) => document.getElementById(id);
 
@@ -39,6 +40,26 @@ export function showFatal(err: unknown): void {
 
 /** URL-Wert fuer einen Zustand: Deutschland ohne Hash. */
 const urlFor = (s: NavState) => formatHash(s) || `${location.pathname}${location.search}`;
+
+/**
+ * Zustand ohne (Info-)Karte: damit rendern Landkarte, Panel, Dashboard und Brotkrumen. Ihre Knoepfe
+ * bauen den naechsten Zustand daraus, also ohne Karte: Navigation ueber Brotkrumen, Landkarte, Details
+ * usw. schliesst eine offene Karte. (Karten-Knoepfe wie partyButton setzen `card` ausdruecklich.)
+ */
+const viewOf = (s: NavState): NavState => {
+  const { card: _card, ...view } = s;
+  return view;
+};
+
+/**
+ * Wie viele Karten-Eintraege (per pushState ueber derselben Ansicht geoeffnet) liegen ueber dem
+ * Eintrag ohne Karte? Steht im History-Zustand, damit Schliessen per history.go zurueckspringen kann.
+ */
+const cardDepth = (): number => {
+  const st: unknown = history.state;
+  const d = st && typeof st === 'object' ? (st as { cardDepth?: unknown }).cardDepth : undefined;
+  return typeof d === 'number' && Number.isInteger(d) && d > 0 ? d : 0;
+};
 
 /**
  * Startet die App: Daten laden, Zustand aus der URL lesen und pruefen, alles rendern und
@@ -95,23 +116,45 @@ export async function startApp(): Promise<() => void> {
   const legend = byId('legend');
   const footer = byId('footer')!;
 
+  const cardRoot = byId('card-root') ?? document.body.appendChild(Object.assign(h('div'), { id: 'card-root' }));
+
   // Einziger Render-Trichter fuer Start, Navigation und History
   const render = (s: NavState, immediate = false) => {
     if (current && sameState(current, s)) return;
+    // Nur die Karte hat sich geaendert (oeffnen, schliessen, wechseln): Ansicht bleibt unangetastet,
+    // keine Panel-Animation, kein Fokuswechsel, der Ausloeser der Karte bleibt im Dokument.
+    const viewChanged = !current || !sameView(current, s);
     current = s;
-    map!.update(s, immediate);
-    renderPanel(panel, s, data, navigate);
-    renderCrumbs(crumbs, s, data, navigate);
-    if (s.details) renderDashboard(dashboard, s, data, navigate).catch(fail);
-    setDetailsMode(s.details);
-    if (legend) renderLegend(legend, s, data);
-    if (footerLegend) renderLegend(footerLegend, s, data);
+    if (viewChanged) {
+      const v = viewOf(s);
+      map!.update(v, immediate);
+      renderPanel(panel, v, data, navigate);
+      renderCrumbs(crumbs, v, data, navigate);
+      if (v.details) renderDashboard(dashboard, v, data, navigate).catch(fail);
+      setDetailsMode(v.details);
+      if (legend) renderLegend(legend, v, data);
+      if (footerLegend) renderLegend(footerLegend, v, data);
+    }
+    renderCard(cardRoot, s, data, navigate);
   };
 
   function navigate(next: NavState) {
     guard(() => {
       const s = validateState(next, data);
-      if (formatHash(s) !== location.hash) history.pushState(null, '', urlFor(s));
+      const depth = cardDepth();
+      // Schliessen einer Karte, die ueber derselben Ansicht per pushState geoeffnet wurde: in der History
+      // zurueckspringen statt einen neuen Eintrag anzulegen (popstate rendert dann die Ansicht ohne Karte).
+      if (current?.card && !s.card && sameView(current, s) && depth > 0) {
+        history.go(-depth);
+        return;
+      }
+      if (formatHash(s) !== location.hash) {
+        // Karte -> Karte nur weiterzaehlen, wenn die erste Karte selbst per pushState kam (nicht per Deep Link)
+        const nextDepth = s.card && current && sameView(current, s)
+          ? (current.card ? (depth > 0 ? depth + 1 : 0) : 1)
+          : 0;
+        history.pushState(nextDepth ? { cardDepth: nextDepth } : null, '', urlFor(s));
+      }
       render(s);
     });
   }
