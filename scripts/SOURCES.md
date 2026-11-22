@@ -68,3 +68,19 @@ Source: dawum.de API, https://api.dawum.de/ (publisher dawum.de, author Dipl.-Ju
 - Parliaments: Bundestag -> `DE`; each Landtag/Buergerschaft/Abgeordnetenhaus -> its Laenderkuerzel; Europawahl ignored. Survey date = dawum `Date` (publication date). Window: last 12 months relative to the day the script runs.
 - Points (`scripts/lib/poll-merge.mjs`, average across institutes): one point per date with at least one survey in the area, ascending. For each such date every institute contributes its most recent survey dated within the 21 days up to and including that date (a survey exactly 21 days older still counts; one value per institute, several same-day surveys of one institute are averaged first), so a prolific institute does not dominate. Per party: mean over the contributing surveys that list it (parties no contributing survey lists are left out), rounded to 1 decimal. Surveys from up to 21 days before the 12-month window feed its first points; points themselves stay inside the window. The UI labels the series "Umfrage … (Durchschnitt der Institute)". CDU/CSU -> `union` (CDU+CSU summed where a survey lists them separately); only dawum's own "Sonstige" row becomes `sonstige`; other small parties are left out. Areas without surveys get no series entry.
 - `meta.json` `stand.polls` = date of the newest poll in the data; `stand.election` = day `elections.mjs` last ran (run by hand after a new election); `stand.people` = day `people.mjs`/`votes.mjs` last wrote changed content (sha256 of their output before/after, `scripts/lib/meta.mjs`). `build-data.mjs` stamps nothing itself.
+
+## Party profiles - `public/data/parteien.json` (hand-maintained)
+
+Source text shown in the footer: "Kernpunkte: Wahlprogramme der Parteien zur Bundestagswahl 2025, eigene Zusammenfassung".
+- The official programmes of the nine parties for the Bundestagswahl 2025 (Union, AfD, SPD, Gruene, Linke, FDP, BSW, Freie Waehler, SSW), read in full. Each party has the same six topics in the same order; each key point is a short neutral sentence in own words (no programme full text) with a text source (programme, chapter, page) and no URL. Chairs were checked on the party pages.
+- Evidence (quote per key point, document titles, URLs, retrieval date): `scripts/sources/parteien-evidence.md`; method and checks: `scripts/sources/parteien-report.md`; shape and neutrality checks: `tests/content-parteien.test.ts`.
+
+## Main candidates - `public/data/kandidaten.json` (hand-maintained)
+
+Source text shown in the footer: "Hauptkandidaten: Parteien, Landesregierungen, Wahlleiter und Medienberichte, Belege in scripts/sources/kandidaten-evidence.md".
+- Bund: Spitzen-/Kanzlerkandidat(in) of each party that entered the Bundestag in 2025. Laender: head of government (as in `scripts/officials.json`, Wikipedia, CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/) plus the Spitzenkandidat(in) of each party with seats after the latest Landtag election. Only entries with a source are listed; what could not be verified is left out.
+- Evidence per entry (URLs, retrieval date 2026-11-22): `scripts/sources/kandidaten-evidence.md`; conventions, omissions and open points: `scripts/sources/kandidaten-report.md`; checks: `tests/content-kandidaten.test.ts`, `tests/content-integrity.test.ts`.
+
+## No outbound links
+
+The site contains no clickable links to other sites (no profile, vote or source links, no `target=_blank`, no `window.open`). The footer names every source and licence above as text with its address to type in, e.g. "Die Bundeswahlleiterin (https://www.bundeswahlleiterin.de/)". `tests/no-external-links.test.ts` renders all views and scans `src/` to keep it that way. The `url`/`profileUrl` fields in the data stay for reference but are not rendered.

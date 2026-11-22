@@ -1,8 +1,9 @@
 # Politik-Karte Deutschland
 
 Eine dunkle, interaktive Karte zur deutschen Politik: Bund, Länder und die 299 Bundestagswahlkreise mit
-Wahlergebnissen, Abgeordneten, namentlichen Abstimmungen und Umfragen. Die Seite ist ein neutraler Explorer.
-Sie gibt keine Wahlempfehlung und wertet keine Parteien. Sie zeigt nur öffentliche Daten und nennt ihre Quellen.
+Wahlergebnissen, Abgeordneten, namentlichen Abstimmungen, Umfragen, Parteiprofilen und Hauptkandidaten. Die Seite ist
+ein neutraler Explorer. Sie gibt keine Wahlempfehlung und wertet keine Parteien. Sie zeigt nur öffentliche Daten und
+nennt ihre Quellen. Alles ist direkt auf der Seite zu sehen: Sie enthält keine Links nach außen.
 
 Die Seite ist komplett statisch (Vite, TypeScript, D3). Die Daten liegen als JSON in `public/data/`.
 
@@ -44,6 +45,26 @@ Das dauert eine Weile, weil viele API-Aufrufe nötig sind (Abgeordnete, über 58
 Pflicht. Die Skripte setzen einen beschreibenden User-Agent, weil Abgeordnetenwatch Anfragen ohne einen solchen mit
 403 beantworten kann. Schlägt ein Schritt fehl, bricht der Lauf ab, statt unvollständige Daten zu schreiben.
 
+## Personen, Parteien, Kandidaten
+
+- **Was gezeigt wird:** Jede Partei (Balken, Legenden, Tabellen, Kandidatenzeilen) und jede Person (Wahlkreis-
+  Gewinner/innen, Regierungschefs, Hauptkandidaten) ist anklickbar und öffnet eine Karte in der Seite. Die
+  Parteikarte zeigt Grunddaten, das Ergebnis der aktuellen Ebene (auf Landesebene zusätzlich das Landesergebnis)
+  und sechs Kernpunkte aus dem Bundestagswahlprogramm 2025, klar als „Bundesprogramm“ gekennzeichnet. Die
+  Personenkarte zeigt Partei, Funktion und bei Abgeordneten die namentlichen Abstimmungen. Bund und Länder haben
+  einen Bereich „Hauptkandidaten“ (Bund: Spitzenkandidaten der Parteien im Bundestag; Land: Ministerpräsident/in
+  zuerst, dann die Spitzenkandidaten der Landtagsparteien). Wo nichts belegt ist, steht ein Hinweis.
+- **Wo die Inhalte liegen:** `public/data/parteien.json` (Parteiprofile mit Kernpunkten) und
+  `public/data/kandidaten.json` (Hauptkandidaten Bund und Länder). Beide werden von Hand gepflegt; die Belege stehen
+  in `scripts/sources/parteien-evidence.md` und `scripts/sources/kandidaten-evidence.md`. Nicht Belegbares wird
+  weggelassen, nicht geraten. `tests/content-*.test.ts` prüfen Form und Zusammenspiel mit der Oberfläche.
+- **Neutralität:** Jede Partei hat dieselben sechs Themen in derselben Reihenfolge, in eigenen kurzen Worten
+  (kein Programm-Volltext), mit einer Quellenangabe als Text je Punkt (Programm und Seite). Keine Wertungen, keine
+  Rangfolge nach Meinung.
+- **Keine Links, keine Fotos:** Die Seite verlinkt nirgends nach außen (auch nicht zu Profilen oder Abstimmungen);
+  Quellen und Lizenzen stehen in der Fußzeile als Text mit Adresse zum Abtippen. `tests/no-external-links.test.ts`
+  sichert das ab. Personen erscheinen mit Initialen im Parteifarbkreis; Fotos sind geplant, aber zurückgestellt.
+
 ## Datenquellen und Lizenzen
 
 Details, URLs und Verarbeitungsschritte stehen in [`scripts/SOURCES.md`](scripts/SOURCES.md). Kurzfassung:
@@ -55,9 +76,11 @@ Details, URLs und Verarbeitungsschritte stehen in [`scripts/SOURCES.md`](scripts
 | Umfragen | dawum.de | Open Data Commons Open Database License (ODC-ODbL) |
 | Landtagswahlen, Namen von 23 Wahlkreissiegern ohne Mandat, Regierungschefs der Länder | deutschsprachige Wikipedia | CC BY-SA 4.0 |
 | Wahlbeteiligung der Landtagswahlen | Zahlen der Landeswahlleiter, von Hand übernommen | – |
+| Kernpunkte der Parteien | Wahlprogramme der Parteien zur Bundestagswahl 2025, eigene Zusammenfassung | – |
+| Hauptkandidaten | Parteien, Landesregierungen, Wahlleiter und Medienberichte (Belege in `scripts/sources/kandidaten-evidence.md`) | – |
 
 Die Grenzen sind vereinfacht (modifizierte Ableitung der Originaldaten). Die Fußzeile der Seite nennt die Quellen
-ebenfalls.
+ebenfalls, als Text mit Adresse (ohne Links).
 
 ## Bekannte Einschränkungen der Daten
 
@@ -66,9 +89,12 @@ ebenfalls.
   als einzelne Institutsreihen.
 - Die Landtagsergebnisse stammen aus Wikipedia und sind nicht vollständig gegen amtliche Quellen geprüft
   (Hamburg, Bremen und Berlin wurden stichprobenartig verglichen).
-- Je Land steht nur der Ministerpräsident bzw. die Landesregierungschefin in der Liste. Fraktionsvorsitzende sind in
-  Version 1 bewusst nicht enthalten (Gleichbehandlung der Parteien; sie waren nicht für alle Länder geprüft).
-- Amtsinhaber in Berlin und Sachsen-Anhalt sollten nochmals kontrolliert werden (`scripts/officials.json`).
+- Je Land stehen der Ministerpräsident bzw. die Landesregierungschefin (`scripts/officials.json`) und die
+  Spitzenkandidaten der Landtagsparteien der letzten Wahl (`kandidaten.json`). Hat eine Partei eine Doppelspitze
+  oder ein Team benannt, stehen alle benannten Personen mit dem Hinweis „Teil einer Doppelspitze“ bzw. „Teil eines
+  Spitzenteams“ da. Fraktionsvorsitzende sind nicht enthalten.
+- Amtsinhaber in Berlin und Sachsen-Anhalt sollten nochmals kontrolliert werden (`scripts/officials.json`); offene
+  Punkte der Kandidatenliste nennt `scripts/sources/kandidaten-report.md`.
 - Die Stände in `public/data/meta.json` bewegen sich nur bei echten Änderungen: „Wahl“ setzt `elections.mjs`
   am Tag seines Laufs, „Abgeordnete/Abstimmungen“ setzen `people.mjs`/`votes.mjs` nur, wenn sich ihre Dateien
   inhaltlich geändert haben, „Umfragen“ ist das Datum der neuesten Umfrage.
@@ -91,3 +117,5 @@ Die Workflows wurden lokal nur auf gültiges YAML geprüft, nicht auf GitHub aus
 
 - Kommunale Ebene
 - Abstimmungen der Landtage
+- Fotos von Personen (zurückgestellt)
+- Kernpunkte aus Landesprogrammen
