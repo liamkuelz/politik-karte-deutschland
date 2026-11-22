@@ -1,0 +1,133 @@
+{
+  "stand": "2026-11-22",
+  "bund": [
+    { "name": "Friedrich Merz", "party": "union", "role": "Kanzlerkandidat Bundestagswahl 2025", "source": "Nominierung durch CDU und CSU; bpb, Die Bundestagswahl 2025 (24.02.2025)" },
+    { "name": "Alice Weidel", "party": "afd", "role": "Kanzlerkandidatin Bundestagswahl 2025", "source": "Wahl durch den AfD-Bundesparteitag; bpb, Die Bundestagswahl 2025 (24.02.2025)" },
+    { "name": "Olaf Scholz", "party": "spd", "role": "Kanzlerkandidat Bundestagswahl 2025", "source": "Nominierung durch die SPD; bpb, Die Bundestagswahl 2025 (24.02.2025)" },
+    { "name": "Robert Habeck", "party": "gruene", "role": "Kanzlerkandidat Bundestagswahl 2025", "source": "bpb, Die Bundestagswahl 2025 (24.02.2025)" },
+    { "name": "Heidi Reichinnek", "party": "linke", "role": "Spitzenkandidatin Bundestagswahl 2025", "note": "Teil einer Doppelspitze", "source": "bpb, Die Bundestagswahl 2025 (24.02.2025)" },
+    { "name": "Jan van Aken", "party": "linke", "role": "Spitzenkandidat Bundestagswahl 2025", "note": "Teil einer Doppelspitze", "source": "bpb, Die Bundestagswahl 2025 (24.02.2025)" },
+    { "name": "Stefan Seidler", "party": "ssw", "role": "Spitzenkandidat Bundestagswahl 2025", "source": "SSW-Mitteilung „Stefan Seidler führt den SSW in die Bundestagswahl“; Bundeswahlleiterin, Landesliste Schleswig-Holstein, Platz 1" }
+  ],
+  "laender": {
+    "BW": [
+      { "name": "Cem Özdemir", "party": "gruene", "role": "Ministerpräsident und Spitzenkandidat Landtagswahl 2026", "source": "Ministerpräsident: Wikipedia, Liste der Ministerpräsidenten der deutschen Länder; Spitzenkandidatur: bpb, Landtagswahl Baden-Württemberg 2026 (10.03.2026)" },
+      { "name": "Manuel Hagel", "party": "union", "role": "Spitzenkandidat Landtagswahl 2026", "source": "bpb, Landtagswahl Baden-Württemberg 2026 (10.03.2026); t-online, Kandidaten bei der Landtagswahl in Baden-Württemberg (08.03.2026)" },
+      { "name": "Markus Frohnmaier", "party": "afd", "role": "Spitzenkandidat Landtagswahl 2026", "note": "Kandidierte nicht für ein Landtagsmandat", "source": "t-online, Kandidaten bei der Landtagswahl in Baden-Württemberg (08.03.2026); ZDFheute, Frohnmaier AfD-Spitzenkandidat für Wahl in Baden-Württemberg" },
+      { "name": "Andreas Stoch", "party": "spd", "role": "Spitzenkandidat Landtagswahl 2026", "source": "bpb, Landtagswahl Baden-Württemberg 2026 (10.03.2026); t-online, Kandidaten bei der Landtagswahl in Baden-Württemberg (08.03.2026)" }
+    ],
+    "BY": [
+      { "name": "Markus Söder", "party": "union", "role": "Ministerpräsident und Spitzenkandidat Landtagswahl 2023", "source": "Ministerpräsident: Wikipedia, Liste der Ministerpräsidenten der deutschen Länder; Spitzenkandidatur: bpb, Landtagswahl in Bayern 2023 (04.10.2023)" },
+      { "name": "Hubert Aiwanger", "party": "fw", "role": "Spitzenkandidat Landtagswahl 2023", "source": "bpb, Landtagswahl in Bayern 2023 (04.10.2023)" },
+      { "name": "Katrin Ebner-Steiner", "party": "afd", "role": "Spitzenkandidatin Landtagswahl 2023", "note": "Teil einer Doppelspitze", "source": "bpb, Landtagswahl in Bayern 2023 (04.10.2023)" },
+      { "name": "Martin Böhm", "party": "afd", "role": "Spitzenkandidat Landtagswahl 2023", "note": "Teil einer Doppelspitze", "source": "bpb, Landtagswahl in Bayern 2023 (04.10.2023)" },
+      { "name": "Katharina Schulze", "party": "gruene", "role": "Spitzenkandidatin Landtagswahl 2023", "note": "Teil einer Doppelspitze", "source": "bpb, Landtagswahl in Bayern 2023 (04.10.2023)" },
+      { "name": "Ludwig Hartmann", "party": "gruene", "role": "Spitzenkandidat Landtagswahl 2023", "note": "Teil einer Doppelspitze", "source": "bpb, Landtagswahl in Bayern 2023 (04.10.2023)" },
+      { "name": "Florian von Brunn", "party": "spd", "role": "Spitzenkandidat Landtagswahl 2023", "source": "bpb, Landtagswahl in Bayern 2023 (04.10.2023)" }
+    ],
+    "BE": [
+      { "name": "Kai Wegner", "party": "union", "role": "Regierender Bürgermeister (geschäftsführend)", "source": "Wikipedia, Senat Wegner (Stand 29.10.2026)" },
+      { "name": "Elif Eralp", "party": "linke", "role": "Spitzenkandidatin Landtagswahl 2026", "source": "bpb, Wahl zum Abgeordnetenhaus Berlin 2026 (16.09.2026, aktualisiert 22.09.2026)" },
+      { "name": "Stefan Evers", "party": "union", "role": "Spitzenkandidat Landtagswahl 2026", "source": "bpb, Wahl zum Abgeordnetenhaus Berlin 2026 (16.09.2026, aktualisiert 22.09.2026)" },
+      { "name": "Kristin Brinker", "party": "afd", "role": "Spitzenkandidatin Landtagswahl 2026", "source": "bpb, Wahl zum Abgeordnetenhaus Berlin 2026 (16.09.2026, aktualisiert 22.09.2026)" },
+      { "name": "Werner Graf", "party": "gruene", "role": "Spitzenkandidat Landtagswahl 2026", "source": "bpb, Wahl zum Abgeordnetenhaus Berlin 2026 (16.09.2026, aktualisiert 22.09.2026)" },
+      { "name": "Steffen Krach", "party": "spd", "role": "Spitzenkandidat Landtagswahl 2026", "source": "bpb, Wahl zum Abgeordnetenhaus Berlin 2026 (16.09.2026, aktualisiert 22.09.2026)" }
+    ],
+    "BB": [
+      { "name": "Dietmar Woidke", "party": "spd", "role": "Ministerpräsident und Spitzenkandidat Landtagswahl 2024", "source": "Ministerpräsident: Wikipedia, Liste der Ministerpräsidenten der deutschen Länder; Spitzenkandidatur: bpb, Landtagswahl in Brandenburg 2024 (23.09.2024)" },
+      { "name": "Hans-Christoph Berndt", "party": "afd", "role": "Spitzenkandidat Landtagswahl 2024", "source": "bpb, Landtagswahl in Brandenburg 2024 (23.09.2024)" },
+      { "name": "Robert Crumbach", "party": "bsw", "role": "Spitzenkandidat Landtagswahl 2024", "note": "Trat im Januar 2026 aus dem BSW aus", "source": "bpb, Landtagswahl in Brandenburg 2024 (23.09.2024); Austritt: ZDFheute, Minister Crumbach verlässt BSW (Januar 2026)" },
+      { "name": "Jan Redmann", "party": "union", "role": "Spitzenkandidat Landtagswahl 2024", "source": "bpb, Landtagswahl in Brandenburg 2024 (23.09.2024)" }
+    ],
+    "HB": [
+      { "name": "Andreas Bovenschulte", "party": "spd", "role": "Präsident des Senats und Bürgermeister und Spitzenkandidat Landtagswahl 2023", "source": "Amt: Wikipedia, Liste der Ministerpräsidenten der deutschen Länder; Spitzenkandidatur: bpb, 14. Mai 2023: Wahlen in Bremen (12.05.2023)" },
+      { "name": "Frank Imhoff", "party": "union", "role": "Spitzenkandidat Landtagswahl 2023", "note": "Teil einer Doppelspitze", "source": "bpb, 14. Mai 2023: Wahlen in Bremen (12.05.2023)" },
+      { "name": "Wiebke Winter", "party": "union", "role": "Spitzenkandidatin Landtagswahl 2023", "note": "Teil einer Doppelspitze", "source": "bpb, 14. Mai 2023: Wahlen in Bremen (12.05.2023)" },
+      { "name": "Maike Schaefer", "party": "gruene", "role": "Spitzenkandidatin Landtagswahl 2023", "source": "bpb, 14. Mai 2023: Wahlen in Bremen (12.05.2023)" },
+      { "name": "Kristina Vogt", "party": "linke", "role": "Spitzenkandidatin Landtagswahl 2023", "note": "Teil einer Doppelspitze", "source": "bpb, 14. Mai 2023: Wahlen in Bremen (12.05.2023)" },
+      { "name": "Claudia Bernhard", "party": "linke", "role": "Spitzenkandidatin Landtagswahl 2023", "note": "Teil einer Doppelspitze", "source": "bpb, 14. Mai 2023: Wahlen in Bremen (12.05.2023)" },
+      { "name": "Thore Schäck", "party": "fdp", "role": "Spitzenkandidat Landtagswahl 2023", "source": "bpb, 14. Mai 2023: Wahlen in Bremen (12.05.2023)" }
+    ],
+    "HH": [
+      { "name": "Peter Tschentscher", "party": "spd", "role": "Erster Bürgermeister und Spitzenkandidat Landtagswahl 2025", "source": "Amt: Wikipedia, Liste der Ministerpräsidenten der deutschen Länder; Spitzenkandidatur: bpb, Bürgerschaftswahl in Hamburg (25.02.2025)" },
+      { "name": "Dennis Thering", "party": "union", "role": "Spitzenkandidat Landtagswahl 2025", "source": "bpb, Bürgerschaftswahl in Hamburg (25.02.2025); ZDFheute, Bürgerschaftswahl Hamburg 2025: Die Kandidaten im Überblick (27.02.2025)" },
+      { "name": "Katharina Fegebank", "party": "gruene", "role": "Spitzenkandidatin Landtagswahl 2025", "source": "bpb, Bürgerschaftswahl in Hamburg (25.02.2025); ZDFheute, Bürgerschaftswahl Hamburg 2025: Die Kandidaten im Überblick (27.02.2025)" },
+      { "name": "Cansu Özdemir", "party": "linke", "role": "Spitzenkandidatin Landtagswahl 2025", "source": "ZDFheute, Bürgerschaftswahl Hamburg 2025: Die Kandidaten im Überblick (27.02.2025)" },
+      { "name": "Dirk Nockemann", "party": "afd", "role": "Spitzenkandidat Landtagswahl 2025", "source": "ZDFheute, Bürgerschaftswahl Hamburg 2025: Die Kandidaten im Überblick (27.02.2025)" }
+    ],
+    "HE": [
+      { "name": "Boris Rhein", "party": "union", "role": "Ministerpräsident und Spitzenkandidat Landtagswahl 2023", "source": "Ministerpräsident: Wikipedia, Liste der Ministerpräsidenten der deutschen Länder; Spitzenkandidatur: bpb, Landtagswahl in Hessen 2023 (04.10.2023)" },
+      { "name": "Robert Lambrou", "party": "afd", "role": "Spitzenkandidat Landtagswahl 2023", "source": "bpb, Landtagswahl in Hessen 2023 (04.10.2023)" },
+      { "name": "Nancy Faeser", "party": "spd", "role": "Spitzenkandidatin Landtagswahl 2023", "source": "bpb, Landtagswahl in Hessen 2023 (04.10.2023)" },
+      { "name": "Tarek Al-Wazir", "party": "gruene", "role": "Spitzenkandidat Landtagswahl 2023", "source": "bpb, Landtagswahl in Hessen 2023 (04.10.2023)" },
+      { "name": "Stefan Naas", "party": "fdp", "role": "Spitzenkandidat Landtagswahl 2023", "source": "bpb, Landtagswahl in Hessen 2023 (04.10.2023)" }
+    ],
+    "MV": [
+      { "name": "Manuela Schwesig", "party": "spd", "role": "Ministerpräsidentin und Spitzenkandidatin Landtagswahl 2026", "source": "Ministerpräsidentin: Wikipedia, Landtagswahl in Mecklenburg-Vorpommern 2026 (Wiederwahl am 16.11.2026); Spitzenkandidatur: ZDFheute, Landtagswahl in Mecklenburg-Vorpommern: Die Spitzenkandidaten (02.09.2026)" },
+      { "name": "Leif-Erik Holm", "party": "afd", "role": "Spitzenkandidat Landtagswahl 2026", "source": "ZDFheute, Landtagswahl in Mecklenburg-Vorpommern: Die Spitzenkandidaten (02.09.2026)" },
+      { "name": "Simone Oldenburg", "party": "linke", "role": "Spitzenkandidatin Landtagswahl 2026", "source": "ZDFheute, Landtagswahl in Mecklenburg-Vorpommern: Die Spitzenkandidaten (02.09.2026); Nordkurier, Linke setzt auf Oldenburg als Spitzenkandidatin" },
+      { "name": "Claudia Müller", "party": "gruene", "role": "Spitzenkandidatin Landtagswahl 2026", "source": "ZDFheute, Landtagswahl in Mecklenburg-Vorpommern: Die Spitzenkandidaten (02.09.2026)" }
+    ],
+    "NI": [
+      { "name": "Olaf Lies", "party": "spd", "role": "Ministerpräsident", "source": "Wikipedia, Liste der Ministerpräsidenten der deutschen Länder" },
+      { "name": "Stephan Weil", "party": "spd", "role": "Spitzenkandidat Landtagswahl 2022", "source": "bpb, 9. Oktober: Landtagswahl in Niedersachsen (10.10.2022)" },
+      { "name": "Bernd Althusmann", "party": "union", "role": "Spitzenkandidat Landtagswahl 2022", "source": "bpb, 9. Oktober: Landtagswahl in Niedersachsen (10.10.2022)" },
+      { "name": "Julia Willie Hamburg", "party": "gruene", "role": "Spitzenkandidatin Landtagswahl 2022", "note": "Teil einer Doppelspitze", "source": "bpb, 9. Oktober: Landtagswahl in Niedersachsen (10.10.2022)" },
+      { "name": "Christian Meyer", "party": "gruene", "role": "Spitzenkandidat Landtagswahl 2022", "note": "Teil einer Doppelspitze", "source": "bpb, 9. Oktober: Landtagswahl in Niedersachsen (10.10.2022)" },
+      { "name": "Stefan Marzischewski-Drewes", "party": "afd", "role": "Spitzenkandidat Landtagswahl 2022", "note": "Seit Juli 2026 nicht mehr Mitglied der AfD-Landtagsfraktion", "source": "dpa via Volksstimme, AfD-Ex-Fraktionschef in Niedersachsen ausgeschlossen (13.07.2026); Abgeordnetenwatch, Landesliste AfD Platz 1" }
+    ],
+    "NW": [
+      { "name": "Hendrik Wüst", "party": "union", "role": "Ministerpräsident und Spitzenkandidat Landtagswahl 2022", "source": "Ministerpräsident: Wikipedia, Liste der Ministerpräsidenten der deutschen Länder; Spitzenkandidatur: t-online, Landtagswahl in NRW: Das sind die Kandidaten im Überblick (15.05.2022)" },
+      { "name": "Thomas Kutschaty", "party": "spd", "role": "Spitzenkandidat Landtagswahl 2022", "source": "bpb, Landtagswahl in Nordrhein-Westfalen (16.05.2022)" },
+      { "name": "Mona Neubaur", "party": "gruene", "role": "Spitzenkandidatin Landtagswahl 2022", "source": "bpb, Landtagswahl in Nordrhein-Westfalen (16.05.2022)" },
+      { "name": "Joachim Stamp", "party": "fdp", "role": "Spitzenkandidat Landtagswahl 2022", "source": "t-online, Landtagswahl in NRW: Das sind die Kandidaten im Überblick (15.05.2022)" },
+      { "name": "Markus Wagner", "party": "afd", "role": "Spitzenkandidat Landtagswahl 2022", "source": "bpb, Landtagswahl in Nordrhein-Westfalen (16.05.2022); Abgeordnetenwatch, Landesliste AfD Platz 1" }
+    ],
+    "RP": [
+      { "name": "Gordon Schnieder", "party": "union", "role": "Ministerpräsident und Spitzenkandidat Landtagswahl 2026", "source": "Ministerpräsident: Wikipedia, Liste der Ministerpräsidenten der deutschen Länder; Spitzenkandidatur: ZDFheute, Wahl in Rheinland-Pfalz: Gordon Schnieder gewinnt und löst SPD ab (22.03.2026)" },
+      { "name": "Alexander Schweitzer", "party": "spd", "role": "Spitzenkandidat Landtagswahl 2026", "source": "ZDFheute, Wahl in Rheinland-Pfalz: Gordon Schnieder gewinnt und löst SPD ab (22.03.2026)" },
+      { "name": "Jan Bollinger", "party": "afd", "role": "Spitzenkandidat Landtagswahl 2026", "source": "ZDFheute, Wahl in Rheinland-Pfalz: Gordon Schnieder gewinnt und löst SPD ab (22.03.2026)" },
+      { "name": "Katrin Eder", "party": "gruene", "role": "Spitzenkandidatin Landtagswahl 2026", "source": "ZDFheute, Wahl in Rheinland-Pfalz: Gordon Schnieder gewinnt und löst SPD ab (22.03.2026)" }
+    ],
+    "SL": [
+      { "name": "Anke Rehlinger", "party": "spd", "role": "Ministerpräsidentin und Spitzenkandidatin Landtagswahl 2022", "source": "Ministerpräsidentin: Wikipedia, Liste der Ministerpräsidenten der deutschen Länder; Spitzenkandidatur: bpb, Landtagswahl im Saarland 2022 (28.03.2022)" },
+      { "name": "Tobias Hans", "party": "union", "role": "Spitzenkandidat Landtagswahl 2022", "source": "bpb, Landtagswahl im Saarland 2022 (28.03.2022)" }
+    ],
+    "SN": [
+      { "name": "Michael Kretschmer", "party": "union", "role": "Ministerpräsident und Spitzenkandidat Landtagswahl 2024", "source": "Ministerpräsident: Wikipedia, Liste der Ministerpräsidenten der deutschen Länder; Spitzenkandidatur: bpb, Sachsen nach der Landtagswahl vor schwieriger Regierungsbildung (02.09.2024)" },
+      { "name": "Jörg Urban", "party": "afd", "role": "Spitzenkandidat Landtagswahl 2024", "source": "bpb, Sachsen nach der Landtagswahl vor schwieriger Regierungsbildung (02.09.2024)" },
+      { "name": "Sabine Zimmermann", "party": "bsw", "role": "Spitzenkandidatin Landtagswahl 2024", "source": "bpb, Sachsen nach der Landtagswahl vor schwieriger Regierungsbildung (02.09.2024)" },
+      { "name": "Petra Köpping", "party": "spd", "role": "Spitzenkandidatin Landtagswahl 2024", "source": "bpb, Sachsen nach der Landtagswahl vor schwieriger Regierungsbildung (02.09.2024)" },
+      { "name": "Katja Meier", "party": "gruene", "role": "Spitzenkandidatin Landtagswahl 2024", "note": "Teil eines Spitzenteams aus drei Personen", "source": "bpb, Sachsen nach der Landtagswahl vor schwieriger Regierungsbildung (02.09.2024)" },
+      { "name": "Wolfram Günther", "party": "gruene", "role": "Spitzenkandidat Landtagswahl 2024", "note": "Teil eines Spitzenteams aus drei Personen", "source": "bpb, Sachsen nach der Landtagswahl vor schwieriger Regierungsbildung (02.09.2024)" },
+      { "name": "Franziska Schubert", "party": "gruene", "role": "Spitzenkandidatin Landtagswahl 2024", "note": "Teil eines Spitzenteams aus drei Personen", "source": "bpb, Sachsen nach der Landtagswahl vor schwieriger Regierungsbildung (02.09.2024)" },
+      { "name": "Susanne Schaper", "party": "linke", "role": "Spitzenkandidatin Landtagswahl 2024", "note": "Teil einer Doppelspitze", "source": "bpb, Sachsen nach der Landtagswahl vor schwieriger Regierungsbildung (02.09.2024)" },
+      { "name": "Stefan Hartmann", "party": "linke", "role": "Spitzenkandidat Landtagswahl 2024", "note": "Teil einer Doppelspitze", "source": "bpb, Sachsen nach der Landtagswahl vor schwieriger Regierungsbildung (02.09.2024)" },
+      { "name": "Matthias Berger", "party": "fw", "role": "Spitzenkandidat Landtagswahl 2024", "note": "Parteilos, Kandidat der Freien Wähler; Direktmandat im Wahlkreis Leipzig Land 3", "source": "bpb, Wer steht zur Wahl Sachsen 2024: Freie Wähler; Sachsen Fernsehen, Grimmaer Oberbürgermeister Spitzenkandidat der Freien Wähler Sachsen (03.02.2024)" }
+    ],
+    "ST": [
+      { "name": "Sven Schulze", "party": "union", "role": "Ministerpräsident und Spitzenkandidat Landtagswahl 2026", "source": "Ministerpräsident: Wikipedia, Landtagswahl in Sachsen-Anhalt 2026; Spitzenkandidatur: ZDFheute, Landtagswahl in Sachsen-Anhalt: Das sind die Spitzenkandidaten (14.08.2026)" },
+      { "name": "Ulrich Siegmund", "party": "afd", "role": "Spitzenkandidat Landtagswahl 2026", "source": "ZDFheute, Landtagswahl in Sachsen-Anhalt: Das sind die Spitzenkandidaten (14.08.2026)" },
+      { "name": "Armin Willingmann", "party": "spd", "role": "Spitzenkandidat Landtagswahl 2026", "source": "ZDFheute, Landtagswahl in Sachsen-Anhalt: Das sind die Spitzenkandidaten (14.08.2026)" },
+      { "name": "Susan Sziborra-Seidlitz", "party": "gruene", "role": "Spitzenkandidatin Landtagswahl 2026", "source": "ZDFheute, Landtagswahl in Sachsen-Anhalt: Das sind die Spitzenkandidaten (14.08.2026)" },
+      { "name": "Eva von Angern", "party": "linke", "role": "Spitzenkandidatin Landtagswahl 2026", "source": "ZDFheute, Landtagswahl in Sachsen-Anhalt: Das sind die Spitzenkandidaten (14.08.2026); Volksstimme, Linke Sachsen-Anhalt geht mit Eva von Angern als Spitzenkandidatin in die Landtagswahl" },
+      { "name": "Thomas Schulze", "party": "bsw", "role": "Spitzenkandidat Landtagswahl 2026", "note": "Teil einer Doppelspitze", "source": "ZDFheute, Landtagswahl in Sachsen-Anhalt: Das sind die Spitzenkandidaten (14.08.2026); Berliner Zeitung, BSW Sachsen-Anhalt: Schulze und Wittig Spitzenkandidaten (25.02.2026)" },
+      { "name": "Claudia Wittig", "party": "bsw", "role": "Spitzenkandidatin Landtagswahl 2026", "note": "Teil einer Doppelspitze", "source": "ZDFheute, Landtagswahl in Sachsen-Anhalt: Das sind die Spitzenkandidaten (14.08.2026); Berliner Zeitung, BSW Sachsen-Anhalt: Schulze und Wittig Spitzenkandidaten (25.02.2026)" }
+    ],
+    "SH": [
+      { "name": "Daniel Günther", "party": "union", "role": "Ministerpräsident und Spitzenkandidat Landtagswahl 2022", "source": "Ministerpräsident: Wikipedia, Liste der Ministerpräsidenten der deutschen Länder; Spitzenkandidatur: t-online, Landtagswahl Schleswig-Holstein: Kandidaten, Umfragen, Koalitionen (08.05.2022)" },
+      { "name": "Monika Heinold", "party": "gruene", "role": "Spitzenkandidatin Landtagswahl 2022", "note": "Teil einer Doppelspitze", "source": "t-online, Landtagswahl Schleswig-Holstein: Kandidaten, Umfragen, Koalitionen (08.05.2022); bpb, Landtagswahl in Schleswig-Holstein (09.05.2022)" },
+      { "name": "Aminata Touré", "party": "gruene", "role": "Spitzenkandidatin Landtagswahl 2022", "note": "Teil einer Doppelspitze", "source": "t-online, Landtagswahl Schleswig-Holstein: Kandidaten, Umfragen, Koalitionen (08.05.2022)" },
+      { "name": "Thomas Losse-Müller", "party": "spd", "role": "Spitzenkandidat Landtagswahl 2022", "source": "bpb, Landtagswahl in Schleswig-Holstein (09.05.2022)" },
+      { "name": "Bernd Buchholz", "party": "fdp", "role": "Spitzenkandidat Landtagswahl 2022", "source": "bpb, Landtagswahl in Schleswig-Holstein (09.05.2022)" },
+      { "name": "Lars Harms", "party": "ssw", "role": "Spitzenkandidat Landtagswahl 2022", "source": "t-online, Landtagswahl Schleswig-Holstein: Kandidaten, Umfragen, Koalitionen (08.05.2022)" }
+    ],
+    "TH": [
+      { "name": "Mario Voigt", "party": "union", "role": "Ministerpräsident und Spitzenkandidat Landtagswahl 2024", "source": "Ministerpräsident: Wikipedia, Liste der Ministerpräsidenten der deutschen Länder; Spitzenkandidatur: bpb, Landtagswahl Thüringen 2024 (02.09.2024)" },
+      { "name": "Björn Höcke", "party": "afd", "role": "Spitzenkandidat Landtagswahl 2024", "source": "bpb, Landtagswahl Thüringen 2024 (02.09.2024)" },
+      { "name": "Katja Wolf", "party": "bsw", "role": "Spitzenkandidatin Landtagswahl 2024", "source": "bpb, Landtagswahl Thüringen 2024 (02.09.2024)" },
+      { "name": "Bodo Ramelow", "party": "linke", "role": "Spitzenkandidat Landtagswahl 2024", "source": "bpb, Landtagswahl Thüringen 2024 (02.09.2024)" },
+      { "name": "Georg Maier", "party": "spd", "role": "Spitzenkandidat Landtagswahl 2024", "source": "bpb, Landtagswahl Thüringen 2024 (02.09.2024)" }
+    ]
+  }
+}
