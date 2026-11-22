@@ -1,0 +1,392 @@
+[
+  {
+    "id": "union",
+    "name": "Union",
+    "longName": "Christlich Demokratische Union Deutschlands / Christlich-Soziale Union in Bayern",
+    "founded": 1945,
+    "chairs": [
+      { "name": "Friedrich Merz", "role": "Parteivorsitzender (CDU)" },
+      { "name": "Markus Söder", "role": "Parteivorsitzender (CSU)" }
+    ],
+    "program": { "title": "Politikwechsel für Deutschland", "year": 2025 },
+    "keyPoints": [
+      {
+        "topic": "Wirtschaft & Steuern",
+        "text": "Die Union will die Steuerlast auf einbehaltene Unternehmensgewinne schrittweise auf höchstens 25 Prozent senken, den restlichen Solidaritätszuschlag abschaffen, den Einkommensteuertarif abflachen und den Grundfreibetrag erhöhen.",
+        "source": "Wahlprogramm 2025 „Politikwechsel für Deutschland“, Kapitel „Ja zu einer Agenda für die Fleißigen“, S. 12, und „Ja zu Freiräumen für die Wirtschaft“, S. 14"
+      },
+      {
+        "topic": "Soziales & Rente",
+        "text": "Laut Programm soll das Bürgergeld durch eine „Neue Grundsicherung“ ersetzt werden. Am gesetzlichen Renteneintrittsalter hält die Union fest; wer danach weiterarbeitet, soll bis zu 2.000 Euro im Monat steuerfrei verdienen.",
+        "source": "Wahlprogramm 2025 „Politikwechsel für Deutschland“, Kurzfassung S. 3; Kapitel „Ja zu einem starken und gerechten Sozialstaat“, S. 29, und „Ja zu mehr Eigentum, Vermögensbildung und sicherer Altersvorsorge“, S. 33"
+      },
+      {
+        "topic": "Migration & Integration",
+        "text": "Die Union will an den deutschen Grenzen Zurückweisungen durchsetzen, weitere Staaten zu sicheren Herkunftsländern erklären, den Familiennachzug zu subsidiär Schutzberechtigten aussetzen und freiwillige Aufnahmeprogramme beenden.",
+        "source": "Wahlprogramm 2025 „Politikwechsel für Deutschland“, Kurzfassung S. 4; Kapitel „Ja zum Stopp der illegalen Migration“, S. 40–41"
+      },
+      {
+        "topic": "Klima & Energie",
+        "text": "Geplant sind eine niedrigere Stromsteuer und geringere Netzentgelte sowie die Abschaffung des Gebäudeenergiegesetzes, das das Programm „Heizungsgesetz“ nennt. Am Ziel der Klimaneutralität bis 2045 hält die Union fest.",
+        "source": "Wahlprogramm 2025 „Politikwechsel für Deutschland“, Kapitel „Ja zu bezahlbarer, sicherer und sauberer Energie“, S. 20, und „Ja zu marktwirtschaftlichem Klima- und Umweltschutz“, S. 21"
+      },
+      {
+        "topic": "Sicherheit & Außenpolitik",
+        "text": "Die Union will eine aufwachsende Wehrpflicht einführen, mindestens zwei Prozent der Wirtschaftsleistung für Verteidigung ausgeben und im Kanzleramt einen Nationalen Sicherheitsrat schaffen. Die Ukraine soll auch mit Waffenlieferungen unterstützt werden.",
+        "source": "Wahlprogramm 2025 „Politikwechsel für Deutschland“, Kurzfassung S. 5–6; Kapitel „Ja zu unserer Verantwortung in der Welt“, S. 46, und „Ja zu einer voll verteidigungsfähigen Bundeswehr“, S. 50"
+      },
+      {
+        "topic": "Bildung & Gesundheit",
+        "text": "Vorgesehen sind verpflichtende Sprachtests im Vorschulalter und ein bundesweit vergleichbares Abitur. Haus- und Kinderarztpraxen sollen Patienten stärker steuern, um Wartezeiten auf Arzttermine zu senken.",
+        "source": "Wahlprogramm 2025 „Politikwechsel für Deutschland“, Kurzfassung S. 7; Kapitel „Ja zu guter Gesundheit und Pflege“, S. 68"
+      }
+    ],
+    "stand": "2026-11-22"
+  },
+  {
+    "id": "afd",
+    "name": "AfD",
+    "longName": "Alternative für Deutschland",
+    "founded": 2013,
+    "chairs": [
+      { "name": "Alice Weidel", "role": "Bundessprecherin" },
+      { "name": "Tino Chrupalla", "role": "Bundessprecher" }
+    ],
+    "program": { "title": "Zeit für Deutschland", "year": 2025 },
+    "keyPoints": [
+      {
+        "topic": "Wirtschaft & Steuern",
+        "text": "Die AfD will den Grundfreibetrag der Einkommensteuer auf 15.000 Euro anheben, die Unternehmensteuern senken und den Solidaritätszuschlag, die Vermögen- und Erbschaftsteuer sowie alle CO₂-Abgaben abschaffen.",
+        "source": "Wahlprogramm 2025 „Zeit für Deutschland“, Kapitel „Soziale Marktwirtschaft und Gesundheit“, S. 14, und „Finanzen und Steuern“, S. 57–60"
+      },
+      {
+        "topic": "Soziales & Rente",
+        "text": "Laut Programm soll das Rentenniveau schrittweise auf westeuropäisches Durchschnittsniveau steigen. Politiker und die meisten Staatsbediensteten sollen in die Rentenversicherung einzahlen; nach 45 Beitragsjahren soll ein abschlagsfreier Rentenbeginn möglich sein.",
+        "source": "Wahlprogramm 2025 „Zeit für Deutschland“, Kapitel „Unser Konzept für eine faire und auskömmliche Rentenversicherung“, S. 17–18"
+      },
+      {
+        "topic": "Migration & Integration",
+        "text": "Die AfD fordert Grenzkontrollen mit Zurückweisungen und eine national geregelte Zuwanderung. Unter dem Begriff „Remigration“ plant sie unter anderem konsequente Abschiebungen Ausreisepflichtiger und Widerrufsverfahren für befristete Schutztitel.",
+        "source": "Wahlprogramm 2025 „Zeit für Deutschland“, Kapitel „Asyl- und Migrationspolitik“, S. 100–101"
+      },
+      {
+        "topic": "Klima & Energie",
+        "text": "Die Partei lehnt Politik und Steuern ab, die sich auf Klimaschutz berufen, und will aus dem Pariser Klimaabkommen aussteigen. Geplant sind längere Laufzeiten für Kohlekraftwerke und ein Wiedereinstieg in die Kernenergie.",
+        "source": "Wahlprogramm 2025 „Zeit für Deutschland“, Kapitel „Energiepolitik“, S. 41, und „Klima“, S. 79"
+      },
+      {
+        "topic": "Sicherheit & Außenpolitik",
+        "text": "Die AfD will die Wehrpflicht wieder einsetzen und die NATO-Mitgliedschaft bis zum Aufbau eines europäischen Militärbündnisses beibehalten. Eine Osterweiterung von EU und NATO lehnt sie ab; die Ukraine sieht sie als neutralen Staat.",
+        "source": "Wahlprogramm 2025 „Zeit für Deutschland“, Kapitel „Äußere Sicherheit“, S. 87–88 und S. 92"
+      },
+      {
+        "topic": "Bildung & Gesundheit",
+        "text": "Das Programm sieht die Wiedereinführung von Diplom- und Magisterstudiengängen vor. Im Gesundheitswesen sollen die Fallpauschalen in Krankenhäusern abgeschafft und unvergütete ärztliche Leistungen infolge der Budgetierung beendet werden.",
+        "source": "Wahlprogramm 2025 „Zeit für Deutschland“, Kapitel „Unser Konzept für eine funktionierende Gesundheitspolitik“, S. 27, und „Hochschulsystem und Wissenschaft“, S. 162"
+      }
+    ],
+    "stand": "2026-11-22"
+  },
+  {
+    "id": "spd",
+    "name": "SPD",
+    "longName": "Sozialdemokratische Partei Deutschlands",
+    "founded": 1863,
+    "chairs": [
+      { "name": "Lars Klingbeil", "role": "Parteivorsitzender" }
+    ],
+    "program": { "title": "Mehr für Dich. Besser für Deutschland.", "year": 2025 },
+    "keyPoints": [
+      {
+        "topic": "Wirtschaft & Steuern",
+        "text": "Die SPD will etwa 95 Prozent der Einkommensteuerpflichtigen entlasten und Spitzeneinkommen stärker beteiligen. Geplant sind zudem fünf Prozent Mehrwertsteuer auf Lebensmittel, ein „Made in Germany“-Bonus für Investitionen und ein Deutschlandfonds.",
+        "source": "Regierungsprogramm 2025 „Mehr für Dich. Besser für Deutschland.“, Kapitel 1 „Wir kämpfen für neues Wachstum und sichere Arbeitsplätze“, S. 8; Kapitel 7, S. 23; Kapitel 25, S. 66"
+      },
+      {
+        "topic": "Soziales & Rente",
+        "text": "Laut Programm soll das Rentenniveau dauerhaft bei mindestens 48 Prozent gesichert werden. Der gesetzliche Mindestlohn soll sich an 60 Prozent des mittleren Einkommens orientieren und spätestens 2026 bei 15 Euro liegen.",
+        "source": "Regierungsprogramm 2025 „Mehr für Dich. Besser für Deutschland.“, Kapitel 7 „Wir kämpfen für Arbeit, die ein gutes Leben ermöglicht“, S. 23, und Kapitel 8 „Wir kämpfen für stabile Renten“, S. 25"
+      },
+      {
+        "topic": "Migration & Integration",
+        "text": "Die SPD bekennt sich zum individuellen Recht auf Asyl und zum Gemeinsamen Europäischen Asylsystem. Rückführungen sollen human und konsequent erfolgen, freiwillige Ausreisen haben Vorrang; eine Auslagerung von Asylverfahren lehnt sie ab.",
+        "source": "Regierungsprogramm 2025 „Mehr für Dich. Besser für Deutschland.“, Kapitel 20 „Wir kämpfen für eine moderne Einwanderungsgesellschaft“, S. 55–56"
+      },
+      {
+        "topic": "Klima & Energie",
+        "text": "Die SPD bekennt sich zu den deutschen und europäischen Klimazielen. Sie will die Übertragungsnetzentgelte bei 3 Cent je Kilowattstunde deckeln und den Umstieg etwa auf Wärmepumpen vor allem bei geringeren Einkommen fördern.",
+        "source": "Regierungsprogramm 2025 „Mehr für Dich. Besser für Deutschland.“, Kapitel 1, S. 7, und Kapitel 12 „Wir kämpfen für Klimaschutz, den sich jeder leisten kann“, S. 33"
+      },
+      {
+        "topic": "Sicherheit & Außenpolitik",
+        "text": "Die SPD will dauerhaft mindestens zwei Prozent des BIP für Verteidigung ausgeben und einen neuen, auf Freiwilligkeit basierenden Wehrdienst einführen. Die Ukraine soll diplomatisch, militärisch, finanziell und humanitär unterstützt werden.",
+        "source": "Regierungsprogramm 2025 „Mehr für Dich. Besser für Deutschland.“, Kapitel 21 „Wir kämpfen für Freiheit und Sicherheit“, S. 57–58"
+      },
+      {
+        "topic": "Bildung & Gesundheit",
+        "text": "Vorgesehen sind ein Startchancenprogramm für Kitas in benachteiligten Lagen und ein schrittweiser Ausbau des BAföG. Im Gesundheitswesen setzt die SPD auf eine solidarische Bürgerversicherung mit gleichem Zugang für alle.",
+        "source": "Regierungsprogramm 2025 „Mehr für Dich. Besser für Deutschland.“, Kapitel 4 „Wir kämpfen dafür, dass gute Bildung für alle zuverlässig gelingt“, S. 15–16, und Kapitel 10, S. 28"
+      }
+    ],
+    "stand": "2026-11-22"
+  },
+  {
+    "id": "gruene",
+    "name": "Grüne",
+    "longName": "Bündnis 90/Die Grünen",
+    "founded": 1980,
+    "chairs": [
+      { "name": "Franziska Brantner", "role": "Bundesvorsitzende" },
+      { "name": "Felix Banaszak", "role": "Bundesvorsitzender" }
+    ],
+    "program": { "title": "Zusammen wachsen", "year": 2025 },
+    "keyPoints": [
+      {
+        "topic": "Wirtschaft & Steuern",
+        "text": "Die Grünen planen eine fünfjährige Investitionsprämie von 10 Prozent für Unternehmen, einen Deutschlandfonds und eine Reform der Schuldenbremse. Sehr hohe Vermögen sollen stärker beitragen, etwa über eine globale Milliardärssteuer.",
+        "source": "Regierungsprogramm 2025 „Zusammen wachsen“, Kapitel 1 „Für einen wettbewerbsfähigen Standort“, S. 18, und „Für einen Deutschlandfonds und eine Reform der Schuldenbremse“, S. 36; Kapitel 2 „Für ein gerechtes Steuersystem“, S. 73"
+      },
+      {
+        "topic": "Soziales & Rente",
+        "text": "Laut Programm soll das gesetzliche Rentenniveau bei mindestens 48 Prozent bleiben. Ein öffentlich verwalteter Bürger*innenfonds soll die Altersvorsorge ergänzen; auch Abgeordnete sollen in die gesetzliche Rente einzahlen.",
+        "source": "Regierungsprogramm 2025 „Zusammen wachsen“, Kapitel 2 „Für eine zukunftsfeste und würdige Rente“, S. 97–98"
+      },
+      {
+        "topic": "Migration & Integration",
+        "text": "Die Grünen wollen das Grundrecht auf Asyl verteidigen, zügige und faire Verfahren schaffen und Arbeitsverbote für Geflüchtete abschaffen. Ausreisepflichtige, die schwere Straftaten begangen haben, sollen vorrangig zurückgeführt werden.",
+        "source": "Regierungsprogramm 2025 „Zusammen wachsen“, Kapitel 3 „Für die Gestaltung der Einwanderungsgesellschaft“ und „Für ein Land, das Schutz bietet“, S. 128–130"
+      },
+      {
+        "topic": "Klima & Energie",
+        "text": "Die Partei hält an der Klimaneutralität bis 2045 fest und will den Strom in spätestens zehn Jahren vollständig erneuerbar erzeugen. Einnahmen aus dem CO₂-Preis sollen größtenteils als sozial gestaffeltes Klimageld ausgezahlt werden.",
+        "source": "Regierungsprogramm 2025 „Zusammen wachsen“, Kapitel 1 „Für ein stabiles und sicheres Klima“, S. 38, „Für sozial gerechten Klimaschutz“, S. 40, und „Für günstige, verlässliche und klimaneutrale Energie“, S. 43"
+      },
+      {
+        "topic": "Sicherheit & Außenpolitik",
+        "text": "Die Grünen wollen dauerhaft deutlich mehr als 2 Prozent des BIP in Sicherheit und Verteidigung investieren und die Bundeswehr modernisieren. Die Unterstützung der Ukraine bezeichnet das Programm als Beitrag zum eigenen Schutz.",
+        "source": "Regierungsprogramm 2025 „Zusammen wachsen“, Präambel, S. 12; Kapitel 3 „Für die Sicherheit und Frieden in Europa und der Welt“, S. 152–153"
+      },
+      {
+        "topic": "Bildung & Gesundheit",
+        "text": "Geplant sind gesetzliche Qualitätsstandards für Kitas und ein „Zukunftsinvestitionsprogramm Bildung“ mit Ländern und Kommunen. Kranken- und Pflegeversicherung sollen zu einer Bürgerversicherung werden, die Privatversicherte einbezieht.",
+        "source": "Regierungsprogramm 2025 „Zusammen wachsen“, Kapitel 2 „Für gute und verlässliche Kitas“, S. 75, „Für starke Schulen für alle Kinder“, S. 77, und „Für eine solidarische Kranken- und Pflegeversicherung“, S. 93–94"
+      }
+    ],
+    "stand": "2026-11-22"
+  },
+  {
+    "id": "linke",
+    "name": "Die Linke",
+    "longName": "Die Linke",
+    "founded": 2007,
+    "chairs": [
+      { "name": "Ines Schwerdtner", "role": "Parteivorsitzende" },
+      { "name": "Luigi Pantisano", "role": "Parteivorsitzender" }
+    ],
+    "program": { "title": "Alle wollen regieren. Wir wollen verändern.", "year": 2025 },
+    "keyPoints": [
+      {
+        "topic": "Wirtschaft & Steuern",
+        "text": "Die Linke will die Vermögensteuer mit einem Freibetrag von einer Million Euro pro Person wieder einführen. Einkommen unter 16.800 Euro im Jahr sollen steuerfrei bleiben, sehr hohe Einkommen stärker besteuert werden.",
+        "source": "Wahlprogramm 2025 „Alle wollen regieren. Wir wollen verändern.“, Kapitel 3 „Umsteuern“, S. 10–11"
+      },
+      {
+        "topic": "Soziales & Rente",
+        "text": "Laut Programm soll das Rentenniveau auf 53 Prozent steigen und alle Erwerbstätigen sollen in eine Erwerbstätigenversicherung einzahlen. Gefordert werden eine Regelaltersgrenze von 65 Jahren und eine solidarische Mindestrente.",
+        "source": "Wahlprogramm 2025 „Alle wollen regieren. Wir wollen verändern.“, Kapitel 4 „Soziale Sicherheit für alle“, Abschnitt „Eine sichere Rente für alle“, S. 15"
+      },
+      {
+        "topic": "Migration & Integration",
+        "text": "Die Linke will das Asylrecht verteidigen und sichere, legale Einreisewege in die EU schaffen. Geflüchtete sollen dezentral in Wohnungen leben; Bezahlkarten und Sachleistungen sollen durch reguläre Geldleistungen ersetzt werden.",
+        "source": "Wahlprogramm 2025 „Alle wollen regieren. Wir wollen verändern.“, Kapitel 17 „Für eine gerechte Einwanderungsgesellschaft, Asylrecht verteidigen“, S. 52"
+      },
+      {
+        "topic": "Klima & Energie",
+        "text": "Die Partei will Deutschland bis 2040 klimaneutral machen und rückwirkend ab Januar 2025 ein Klimageld von 320 Euro pro Person und Jahr auszahlen. Die heutige Preisbildung nach dem Merit-Order-Prinzip lehnt sie ab.",
+        "source": "Wahlprogramm 2025 „Alle wollen regieren. Wir wollen verändern.“, Kapitel 1 „Leben bezahlbar machen“, S. 7, und Kapitel 8, Abschnitt „Klimagerechtigkeit und Energiewende“, S. 32"
+      },
+      {
+        "topic": "Sicherheit & Außenpolitik",
+        "text": "Die Linke fordert diplomatische Initiativen statt weiterer Waffenlieferungen an die Ukraine, den Abzug der Bundeswehr aus Auslandseinsätzen und ein Ende der nuklearen Teilhabe. Die Stationierung von US-Mittelstreckenraketen lehnt sie ab.",
+        "source": "Wahlprogramm 2025 „Alle wollen regieren. Wir wollen verändern.“, Kapitel 6 „Entspannung statt Aufrüstung und Militarisierung“, S. 21–23"
+      },
+      {
+        "topic": "Bildung & Gesundheit",
+        "text": "Vorgesehen ist eine solidarische Gesundheits- und Pflegeversicherung, in die alle mit allen Einkommensarten einzahlen. In der Bildung setzt die Partei auf „eine Schule für alle“, ganztägig und mit allen Abschlüssen.",
+        "source": "Wahlprogramm 2025 „Alle wollen regieren. Wir wollen verändern.“, Kapitel 5 „Gesundheit und Pflege: Solidarität statt Wettbewerb“, S. 18, und Kapitel 10 „Gute Bildung“, S. 39"
+      }
+    ],
+    "stand": "2026-11-22"
+  },
+  {
+    "id": "fdp",
+    "name": "FDP",
+    "longName": "Freie Demokratische Partei",
+    "founded": 1948,
+    "chairs": [
+      { "name": "Wolfgang Kubicki", "role": "Bundesvorsitzender" }
+    ],
+    "program": { "title": "Alles lässt sich ändern", "year": 2025 },
+    "keyPoints": [
+      {
+        "topic": "Wirtschaft & Steuern",
+        "text": "Die FDP will den Solidaritätszuschlag vollständig abschaffen, die Steuerbelastung von Unternehmen auf unter 25 Prozent senken, den Grundfreibetrag um mindestens 1.000 Euro anheben und den Spitzensteuersatz erst ab 96.600 Euro greifen lassen.",
+        "source": "Wahlprogramm 2025 „Alles lässt sich ändern“, Kapitel III.b „Ein Steuersystem, das Leistung und Investition belohnt“, S. 13–14"
+      },
+      {
+        "topic": "Soziales & Rente",
+        "text": "Laut Programm soll das Bürgergeld zu einer stärker aktivierenden Grundsicherung umgebaut werden. Den Rentenbeginn sollen Versicherte nach schwedischem Vorbild selbst wählen; ergänzend ist eine gesetzliche Aktienrente vorgesehen.",
+        "source": "Wahlprogramm 2025 „Alles lässt sich ändern“, Kapitel III.e „Für soziale Sicherungssysteme, die Lust auf Leistung machen“, S. 18 und S. 20"
+      },
+      {
+        "topic": "Migration & Integration",
+        "text": "Die FDP will Einwanderung in den Arbeitsmarkt erleichtern und anerkannten Flüchtlingen einen eigenen Status statt Bürgergeld geben. Abschiebungen sollen beim Bund gebündelt, Asylverfahren auch in Drittstaaten möglich werden.",
+        "source": "Wahlprogramm 2025 „Alles lässt sich ändern“, Kapitel IV.c „Für eine neue Realpolitik in der Migration“, S. 26–27"
+      },
+      {
+        "topic": "Klima & Energie",
+        "text": "Die Partei will die europäischen Klimaziele über einen einheitlichen EU-Emissionshandel als Leitinstrument erreichen und lehnt Technologieverbote ab. Die Stromsteuer soll zunächst auf das EU-Mindestmaß sinken.",
+        "source": "Wahlprogramm 2025 „Alles lässt sich ändern“, Kapitel III.c „Bezahlbare Energie für Bürger und Betriebe“, S. 16, und VI.a „Umwelt- und Klimaschutz durch Innovation und Marktwirtschaft“, S. 38–39"
+      },
+      {
+        "topic": "Sicherheit & Außenpolitik",
+        "text": "Die FDP will mindestens das 2-Prozent-Ziel der NATO erfüllen und die Bundeswehr zur stärksten konventionellen Streitkraft Europas machen. Die Verteidigung der Ukraine soll laut Programm nicht an Geld und Waffenlieferungen scheitern.",
+        "source": "Wahlprogramm 2025 „Alles lässt sich ändern“, Kapitel VII.a „Verteidigungsfähigkeit ausbauen“, S. 46–47"
+      },
+      {
+        "topic": "Bildung & Gesundheit",
+        "text": "Gefordert wird eine Reform des Bildungsföderalismus mit einheitlichen Standards und stärkerer Rolle des Bundes. Im Gesundheitswesen setzt die FDP auf ein Primärarztsystem; eine Bürgerversicherung lehnt sie ab.",
+        "source": "Wahlprogramm 2025 „Alles lässt sich ändern“, Kapitel II.b „Moderne und selbstständige Schulen“, S. 7, und IV.g „Beste Gesundheit und Pflege für die Zukunft sichern“, S. 32"
+      }
+    ],
+    "stand": "2026-11-22"
+  },
+  {
+    "id": "bsw",
+    "name": "BSW",
+    "longName": "BSW – Bündnis Soziale Gerechtigkeit und Wirtschaftliche Vernunft (bis 2026: Bündnis Sahra Wagenknecht – Vernunft und Gerechtigkeit)",
+    "founded": 2024,
+    "chairs": [
+      { "name": "Fabio De Masi", "role": "Parteivorsitzender" },
+      { "name": "Amira Mohamed Ali", "role": "Parteivorsitzende" }
+    ],
+    "program": { "title": "Unser Land verdient mehr!", "year": 2025 },
+    "keyPoints": [
+      {
+        "topic": "Wirtschaft & Steuern",
+        "text": "Das BSW will den Grundfreibetrag an der Armutsgefährdungsschwelle ausrichten, Kapitalerträge wie Arbeitseinkommen besteuern und eine Vermögensteuer ab 25 Millionen Euro mit Sätzen von 1 bis 3 Prozent wieder erheben.",
+        "source": "Wahlprogramm 2025 „Unser Land verdient mehr!“, Kapitel „Steuern und Finanzen – Für mehr Investitionen und Zusammenhalt“, S. 17"
+      },
+      {
+        "topic": "Soziales & Rente",
+        "text": "Laut Programm soll die Rentenversicherung nach österreichischem Vorbild reformiert werden, mit einer Mindestrente von 1.300 Euro nach 30 Versicherungsjahren. Renten bis 2.000 Euro sollen steuerfrei sein, der Mindestlohn 15 Euro betragen.",
+        "source": "Wahlprogramm 2025 „Unser Land verdient mehr!“, Präambel, S. 3; Kapitel „Bessere Löhne und Renten, eine leistungsgerechte Arbeitslosenversicherung“, S. 22"
+      },
+      {
+        "topic": "Migration & Integration",
+        "text": "Das BSW will das Asylrecht für Schutzbedürftige erhalten, Einreisenden aus sicheren Drittstaaten aber kein Aufenthaltsrecht gewähren. Asylverfahren sollen möglichst außerhalb der EU stattfinden; den Globalen Migrationspakt will es aufkündigen.",
+        "source": "Wahlprogramm 2025 „Unser Land verdient mehr!“, Kapitel „Sichere Grenzen: Unkontrollierte Migration stoppen“, S. 36–38"
+      },
+      {
+        "topic": "Klima & Energie",
+        "text": "Die Partei will den CO₂-Preis abschaffen und stattdessen Innovationen fördern. Sie fordert Verhandlungen mit Russland über Erdgaslieferungen durch die Nord-Stream-Pipeline und langfristige Energieimportverträge zum niedrigsten Preis.",
+        "source": "Wahlprogramm 2025 „Unser Land verdient mehr!“, Kapitel „Energiepreise senken, für eine durchdachte Klima- und Umweltpolitik“, S. 10"
+      },
+      {
+        "topic": "Sicherheit & Außenpolitik",
+        "text": "Das BSW lehnt Waffenlieferungen in Kriegsgebiete, die Stationierung von US-Mittelstreckenraketen und eine Wiedereinführung der Wehrpflicht ab. Für den Krieg in der Ukraine fordert es einen Waffenstillstand ohne Vorbedingungen und Verhandlungen.",
+        "source": "Wahlprogramm 2025 „Unser Land verdient mehr!“, Präambel, S. 2; Kapitel „Friedensfähig statt kriegstüchtig“ und „Den Ukrainekrieg durch Verhandlungen beenden“, S. 6–7"
+      },
+      {
+        "topic": "Bildung & Gesundheit",
+        "text": "Vorgesehen sind allgemeinverbindliche Bildungsmaßstäbe mit Noten und reformierten Rahmenlehrplänen. Im Gesundheitswesen fordert das BSW eine Bürgerversicherung, in die alle nach Einkommen einzahlen, und die Abschaffung der Zusatzbeiträge.",
+        "source": "Wahlprogramm 2025 „Unser Land verdient mehr!“, Kapitel „Beste Bildung für alle, von der Küste bis zu den Alpen!“, S. 24, und „Gesundheit und Pflege: Schluss mit Renditejagd und Zwei-Klassen-Medizin“, S. 26"
+      }
+    ],
+    "stand": "2026-11-22"
+  },
+  {
+    "id": "fw",
+    "name": "Freie Wähler",
+    "longName": "FREIE WÄHLER Bundesvereinigung",
+    "founded": 2009,
+    "chairs": [],
+    "program": { "title": "Verantwortung für Deutschland", "year": 2025 },
+    "keyPoints": [
+      {
+        "topic": "Wirtschaft & Steuern",
+        "text": "Die Freien Wähler wollen die Einkommensteuerpflicht erst ab 24.000 Euro Jahreseinkommen beginnen lassen, die Erbschafts- und Schenkungsteuer abschaffen und an der Schuldenbremse festhalten, ergänzt um eine Investitionsklausel.",
+        "source": "Bundestagswahlprogramm 2025–2029 „Verantwortung für Deutschland“, Kapitel „Solide und generationengerechte Finanzen für Deutschland“, S. 33–36"
+      },
+      {
+        "topic": "Soziales & Rente",
+        "text": "Laut Programm soll das Rentenalter nicht steigen und das Rentenniveau nicht unter 48 Prozent fallen; nach 45 Beitragsjahren soll die volle Rente abschlagsfrei sein. Pflege-Eigenanteile sollen gestaffelt und gedeckelt werden.",
+        "source": "Bundestagswahlprogramm 2025–2029 „Verantwortung für Deutschland“, Kapitel „Altersvorsorge in Deutschland – Rentenreform zwingend notwendig“, S. 67, und „Gesundheit für Deutschland“, S. 70"
+      },
+      {
+        "topic": "Migration & Integration",
+        "text": "Die Partei fordert einen gemeinsamen europäischen Grenzschutz und Aufnahmezentren außerhalb der EU-Außengrenzen, in denen Asylanträge geprüft werden. Asylanträge sollen in der Regel nur im ersten sicheren Drittland gestellt werden.",
+        "source": "Bundestagswahlprogramm 2025–2029 „Verantwortung für Deutschland“, Kapitel „Sicherheit für Deutschland“, Abschnitte „Kontrolle über unsere Grenzen zurückgewinnen“, S. 46, und „Sicherheit durch Außenpolitik“, S. 57–58"
+      },
+      {
+        "topic": "Klima & Energie",
+        "text": "Geplant sind ein bedarfsgerechter Ausbau erneuerbarer Energien mit zusätzlichen Gaskraftwerken für Grund- und Spitzenlast sowie Forschung zu Wasserstoff, Kernkraft und Kernfusion. Das EU-Verbrennerverbot soll gestoppt werden.",
+        "source": "Bundestagswahlprogramm 2025–2029 „Verantwortung für Deutschland“, Kapitel „Mobilität für Deutschland“, S. 37, und „Energie für Deutschland“, S. 40 und S. 44"
+      },
+      {
+        "topic": "Sicherheit & Außenpolitik",
+        "text": "Die Freien Wähler bekennen sich zum dauerhaften 2-Prozent-Ziel der NATO und wollen die Ukraine mit Waffen und Diplomatie unterstützen. Zudem schlagen sie ein Gesellschaftsjahr für alle vor.",
+        "source": "Bundestagswahlprogramm 2025–2029 „Verantwortung für Deutschland“, Kapitel „Sicherheit für Deutschland“, Abschnitte „Sicherheit durch Außenpolitik“, S. 58, und „Sicherheit durch Verteidigung“, S. 64 und S. 66"
+      },
+      {
+        "topic": "Bildung & Gesundheit",
+        "text": "Vorgesehen sind ein durchlässiges Schulsystem und ein elternunabhängiges BAföG. Im Gesundheitswesen soll die flächendeckende Notfallversorgung ausgebaut werden, etwa mit Telemedizin und landesweiten integrierten Leitstellen.",
+        "source": "Bundestagswahlprogramm 2025–2029 „Verantwortung für Deutschland“, Kapitel „Gesundheit für Deutschland“, S. 70, und „Bildung für Deutschland“, S. 85 und S. 89"
+      }
+    ],
+    "stand": "2026-11-22"
+  },
+  {
+    "id": "ssw",
+    "name": "SSW",
+    "longName": "Südschleswigscher Wählerverband",
+    "founded": 1948,
+    "chairs": [
+      { "name": "Sybilla Lena Nitsch", "role": "Landesvorsitzende" }
+    ],
+    "program": { "title": "Deine Stimme für den Norden. Wahlprogramm zur Bundestagswahl am 23. Februar 2025", "year": 2025 },
+    "keyPoints": [
+      {
+        "topic": "Wirtschaft & Steuern",
+        "text": "Der SSW will eine Vermögensteuer mit angemessenen Freibeträgen einführen, den Grundfreibetrag erhöhen und niedrige Einkommen bei Sozialbeiträgen entlasten. Die Schuldenbremse soll reformiert werden, um Investitionen zu ermöglichen.",
+        "source": "Wahlprogramm zur Bundestagswahl 2025 „Deine Stimme für den Norden.“, Kapitel „Finanzpolitik nicht auf Kosten der Schwächsten“, S. 56 und S. 59"
+      },
+      {
+        "topic": "Soziales & Rente",
+        "text": "Laut Programm lehnt der SSW Rentenkürzungen ab und strebt langfristig eine Erwerbstätigenversicherung für alle Erwerbstätigen an. Gefordert wird zudem ein Mindestlohn von mindestens 15 Euro pro Stunde.",
+        "source": "Wahlprogramm zur Bundestagswahl 2025 „Deine Stimme für den Norden.“, Kapitel „Kein Sozialabbau, sondern Daseinsvorsorge für alle“, S. 8–9"
+      },
+      {
+        "topic": "Migration & Integration",
+        "text": "Der SSW will das individuelle Asylrecht erhalten und lehnt Aufnahme-Obergrenzen sowie Schließungen der EU-Binnengrenzen ab. Geflüchtete sollen gerecht in der EU verteilt werden, der Bund soll Kommunen finanziell unterstützen.",
+        "source": "Wahlprogramm zur Bundestagswahl 2025 „Deine Stimme für den Norden.“, Kapitel „Für eine humane und realistische Asyl- und Integrationspolitik“, S. 74–75"
+      },
+      {
+        "topic": "Klima & Energie",
+        "text": "Die Partei will Klimaneutralität deutlich vor 2045, möglichst bis 2035, und einen schnelleren, sozialverträglichen Kohleausstieg. Ein Pro-Kopf-Klimageld soll die Belastung durch den CO₂-Preis ausgleichen.",
+        "source": "Wahlprogramm zur Bundestagswahl 2025 „Deine Stimme für den Norden.“, Kapitel „Klimaschutz muss sozial und gerecht für zukünftige Generationen sein“, S. 23"
+      },
+      {
+        "topic": "Sicherheit & Außenpolitik",
+        "text": "Der SSW will Bundeswehreinsätze nur in Abstimmung mit UN oder NATO. Die finanzielle, militärische, politische und humanitäre Unterstützung der Ukraine soll fortgesetzt und Sanktionen gegen Russland sollen durchgesetzt werden.",
+        "source": "Wahlprogramm zur Bundestagswahl 2025 „Deine Stimme für den Norden.“, Kapitel „Frieden, soziale Gerechtigkeit, Demokratie und Menschenrechte müssen die Säulen der deutschen Außenpolitik sein“, S. 64–65"
+      },
+      {
+        "topic": "Bildung & Gesundheit",
+        "text": "Vorgesehen sind bundesweit kostenfreie Bildung von der Krippe bis zur Hochschule und ein eltern- und altersunabhängiges BAföG. Krankenhäuser sollen langfristig in öffentliche Hand zurückkehren, gesetzliche und private Krankenversicherung zusammengeführt werden.",
+        "source": "Wahlprogramm zur Bundestagswahl 2025 „Deine Stimme für den Norden.“, Kapitel „Kein Sozialabbau, sondern Daseinsvorsorge für alle“, S. 9 und S. 12, und „Bildungs- und Ausbildungspolitik muss gleiche Chancen für alle schaffen“, S. 84"
+      }
+    ],
+    "stand": "2026-11-22"
+  }
+]
