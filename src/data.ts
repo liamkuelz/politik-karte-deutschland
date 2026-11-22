@@ -1,3 +1,4 @@
+import type { CandidatesFile, PartyProfile } from './content-types.ts';
 import type { AreaResult, Land, Meta, Person, PollSeries, Vote, Wahlkreis } from './types.ts';
 
 export interface AppData {
@@ -8,6 +9,10 @@ export interface AppData {
   people: Person[];
   polls: PollSeries[];
   meta: Meta;
+  /** Parteiprofile mit Kernpunkten aus den Bundestagswahlprogrammen 2025 */
+  parteien: PartyProfile[];
+  /** Hauptkandidaten Bund und Laender */
+  kandidaten: CandidatesFile;
 }
 
 const url = (path: string) => `${import.meta.env.BASE_URL}data/${path}`;
@@ -28,7 +33,7 @@ async function fetchRequired<T>(file: string): Promise<T> {
 }
 
 export async function loadAll(): Promise<AppData> {
-  const [geo, wahlkreise, laender, bund, people, polls, meta] = await Promise.all([
+  const [geo, wahlkreise, laender, bund, people, polls, meta, parteien, kandidaten] = await Promise.all([
     fetchRequired<any>('geo.topo.json'),
     fetchRequired<Wahlkreis[]>('wahlkreise.json'),
     fetchRequired<Land[]>('laender.json'),
@@ -36,8 +41,10 @@ export async function loadAll(): Promise<AppData> {
     fetchRequired<Person[]>('people.json'),
     fetchRequired<PollSeries[]>('polls.json'),
     fetchRequired<Meta>('meta.json'),
+    fetchRequired<PartyProfile[]>('parteien.json'),
+    fetchRequired<CandidatesFile>('kandidaten.json'),
   ]);
-  return { geo, wahlkreise, laender, bund, people, polls, meta };
+  return { geo, wahlkreise, laender, bund, people, polls, meta, parteien, kandidaten };
 }
 
 export async function loadVotes(mdbId: number): Promise<Vote[]> {

@@ -2,7 +2,8 @@ import { describe, it, expect, vi, afterEach } from 'vitest';
 import { loadAll, loadVotes } from '../src/data.ts';
 
 const base = import.meta.env.BASE_URL;
-const FILES = ['geo.topo.json', 'wahlkreise.json', 'laender.json', 'bund.json', 'people.json', 'polls.json', 'meta.json'];
+const FILES = ['geo.topo.json', 'wahlkreise.json', 'laender.json', 'bund.json', 'people.json', 'polls.json', 'meta.json',
+  'parteien.json', 'kandidaten.json'];
 
 function ok(body: unknown) {
   return { ok: true, status: 200, json: async () => body } as Response;
@@ -33,20 +34,29 @@ describe('loadVotes', () => {
 });
 
 describe('loadAll', () => {
-  it('loads all 7 files', async () => {
+  it('loads all 9 files', async () => {
     const f = vi.fn(async (url: string) => ok({ file: url.split('/').pop() }));
     vi.stubGlobal('fetch', f);
     const d = await loadAll();
-    expect(f).toHaveBeenCalledTimes(7);
+    expect(f).toHaveBeenCalledTimes(9);
     for (const n of FILES) expect(f).toHaveBeenCalledWith(`${base}data/${n}`);
     expect(d.geo).toEqual({ file: 'geo.topo.json' });
     expect(d.bund).toEqual({ file: 'bund.json' });
     expect(d.meta).toEqual({ file: 'meta.json' });
+    expect(d.parteien).toEqual({ file: 'parteien.json' });
+    expect(d.kandidaten).toEqual({ file: 'kandidaten.json' });
   });
   it('rejects with file name when a file fails', async () => {
     vi.stubGlobal('fetch', vi.fn(async (url: string) =>
       url.endsWith('polls.json') ? ({ ok: false, status: 500, json: async () => ({}) }) as Response : ok({})));
     await expect(loadAll()).rejects.toThrow(/polls\.json/);
+  });
+  it('names the new content files when they are missing', async () => {
+    for (const name of ['parteien.json', 'kandidaten.json']) {
+      vi.stubGlobal('fetch', vi.fn(async (url: string) =>
+        url.endsWith(name) ? ({ ok: false, status: 404, json: async () => ({}) }) as Response : ok({})));
+      await expect(loadAll()).rejects.toThrow(new RegExp(name.replace('.', '\\.') + '.*HTTP 404'));
+    }
   });
   it('rejects with file name on network error', async () => {
     vi.stubGlobal('fetch', vi.fn(async (url: string) => {

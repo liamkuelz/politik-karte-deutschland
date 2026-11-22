@@ -1,3 +1,4 @@
+import type { CandidatesFile, KeyPoint, PartyProfile } from '../src/content-types.ts';
 import type { AppData } from '../src/data.ts';
 import type { AreaResult, Land, Person, PollSeries, Vote, Wahlkreis } from '../src/types.ts';
 
@@ -108,6 +109,53 @@ export const fixturePolls: PollSeries[] = [
   },
 ];
 
+export const FIXTURE_TOPICS = [
+  'Wirtschaft & Steuern', 'Soziales & Rente', 'Migration & Integration',
+  'Klima & Energie', 'Sicherheit & Außenpolitik', 'Bildung & Gesundheit',
+];
+
+const keyPoints = (party: string, notCoveredAt = -1): KeyPoint[] => FIXTURE_TOPICS.map((topic, i) => ({
+  topic,
+  text: `${party} Punkt ${i + 1} zu ${topic}.`,
+  source: `${party} Programm 2025, S. ${10 + i}`,
+  ...(i === notCoveredAt ? { notCovered: true } : {}),
+}));
+
+/** Drei Parteiprofile: Union (mit Vorsitz), SPD (ohne Vorsitz-Angabe), AfD (ein Thema kein Schwerpunkt). */
+export const fixtureParteien: PartyProfile[] = [
+  {
+    id: 'union', name: 'CDU/CSU', longName: 'Christlich Demokratische Union / Christlich-Soziale Union',
+    founded: 1945, chairs: [{ name: 'Erika Vorsitz', role: 'Parteivorsitzende (CDU)' }, { name: 'Max Vorstand', role: 'Parteivorsitzender (CSU)' }],
+    program: { title: 'Union Programm', year: 2025 }, keyPoints: keyPoints('Union'), stand: '2026-11-20',
+  },
+  {
+    id: 'spd', name: 'SPD', longName: 'Sozialdemokratische Partei Deutschlands',
+    founded: 1863, chairs: [],
+    program: { title: 'SPD Programm', year: 2025 }, keyPoints: keyPoints('SPD'), stand: '2026-11-20',
+  },
+  {
+    id: 'afd', name: 'AfD', longName: 'Alternative für Deutschland',
+    founded: 2013, chairs: [{ name: 'Otto Spitze', role: 'Bundessprecher' }],
+    program: { title: 'AfD Programm', year: 2025 }, keyPoints: keyPoints('AfD', 3), stand: '2026-11-20',
+  },
+];
+
+/** Hauptkandidaten: zwei im Bund, eine/r in Bayern (auch im Bund), Baden-Württemberg ohne Eintraege. */
+export const fixtureKandidaten: CandidatesFile = {
+  bund: [
+    { name: 'Erika Vorsitz', party: 'union', role: 'Kanzlerkandidatin Bundestagswahl 2025', source: 'Union, Beschluss 2024' },
+    { name: 'Jörg Überall', party: 'spd', role: 'Kanzlerkandidat Bundestagswahl 2025', note: 'Bundesliste', source: 'SPD, Parteitag 2025' },
+  ],
+  laender: {
+    BY: [
+      { name: 'Jörg Überall', party: 'spd', role: 'Spitzenkandidat Landtagswahl 2023', source: 'SPD Bayern, Liste 2023' },
+      { name: 'Grete Straße', party: 'afd', role: 'Spitzenkandidatin Landtagswahl 2023', source: 'Landeswahlleiter Bayern 2023' },
+    ],
+    BW: [],
+  },
+  stand: '2026-11-21',
+};
+
 export const fixtureData: AppData = {
   geo: fixtureGeo,
   wahlkreise: fixtureWahlkreise,
@@ -119,6 +167,8 @@ export const fixtureData: AppData = {
   people: fixturePeople,
   polls: fixturePolls,
   meta: { stand: { election: '2025-02-23', people: '2026-11-21', polls: '2026-11-21' } },
+  parteien: fixtureParteien,
+  kandidaten: fixtureKandidaten,
 };
 
 const vote = (pollId: number, date: string, answer: Vote['answer']): Vote => ({
