@@ -1,5 +1,5 @@
 import { candidateForPerson, findCandidate, findParty, findPerson } from './content.ts';
-import type { PartyProfile } from './content-types.ts';
+import type { Bio, PartyProfile } from './content-types.ts';
 import type { AppData } from './data.ts';
 import { loadVotes } from './data.ts';
 import type { NavState } from './nav.ts';
@@ -137,6 +137,7 @@ interface PersonInfo {
   landName?: string;
   note?: string;
   source?: string;
+  bio?: Bio;
   /** Abstimmungen nur fuer Mitglieder des Bundestages (id aus people.json) */
   mdbId?: number;
 }
@@ -150,7 +151,7 @@ function personInfo(id: string, state: NavState, data: AppData): PersonInfo | un
     return {
       name: c.name, party: c.party, roles: [c.role],
       landName: landId ? (land?.name ?? landId) : 'Bund',
-      note: c.note, source: c.source,
+      note: c.note, source: c.source, bio: c.bio,
     };
   }
   const found = findPerson(data, id);
@@ -171,8 +172,18 @@ function personInfo(id: string, state: NavState, data: AppData): PersonInfo | un
     if (!roles.includes(role)) roles.push(role);
     info.note = c.note;
     info.source = c.source;
+    info.bio = c.bio;
   }
   return info;
+}
+
+function bioSection(bio: Bio): HTMLElement {
+  const facts = h('dl', 'card-facts');
+  const fact = (label: string, value: string) => facts.append(h('dt', undefined, label), h('dd', undefined, value));
+  if (bio.birthYear !== undefined) fact('Geboren', String(bio.birthYear));
+  if (bio.profession) fact('Beruf', bio.profession);
+  if (bio.career) fact('Werdegang', bio.career);
+  return section('Steckbrief', 'card-bio', facts, h('p', 'card-source', `Quelle: ${bio.source}`));
 }
 
 function personParts(info: PersonInfo, state: NavState, data: AppData, onNavigate: Navigate): CardParts {
@@ -190,6 +201,7 @@ function personParts(info: PersonInfo, state: NavState, data: AppData, onNavigat
   const body: HTMLElement[] = [section('Funktion', 'card-funktion', roles)];
   if (info.note) body[0].append(h('p', 'card-meta', info.note));
   if (info.source) body.push(h('p', 'card-source', `Quelle: ${info.source}`));
+  if (info.bio) body.push(bioSection(info.bio));
   if (info.mdbId !== undefined) {
     const box = h('div', 'card-votes');
     box.append(h('p', 'card-meta', 'Abstimmungen werden geladen …'));

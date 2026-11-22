@@ -260,8 +260,12 @@ button.crumb:focus-visible { outline: 2px solid var(--fg); outline-offset: 1px; 
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.02em;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  background-image: linear-gradient(155deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0) 60%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 1px 2px rgba(0, 0, 0, 0.35);
 }
+.card-avatar { background-image: linear-gradient(155deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0) 65%); }
 .person-text { display: flex; flex-direction: column; min-width: 0; }
 .person-name { font-weight: 600; color: var(--fg); overflow-wrap: anywhere; }
 /* Knopf zur Personenkarte: nur so breit wie der Name, damit die Unterstreichung am Text bleibt */

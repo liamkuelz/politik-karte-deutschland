@@ -50,15 +50,16 @@ Pflicht. Die Skripte setzen einen beschreibenden User-Agent, weil Abgeordnetenwa
 - **Was gezeigt wird:** Jede Partei (Balken, Legenden, Tabellen, Kandidatenzeilen) und jede Person (Wahlkreis-
   Gewinner/innen, Regierungschefs, Hauptkandidaten) ist anklickbar und öffnet eine Karte in der Seite. Die
   Parteikarte zeigt Grunddaten, das Ergebnis der aktuellen Ebene (auf Landesebene zusätzlich das Landesergebnis)
-  und sechs Kernpunkte aus dem Bundestagswahlprogramm 2025, klar als „Bundesprogramm“ gekennzeichnet. Die
-  Personenkarte zeigt Partei, Funktion und bei Abgeordneten die namentlichen Abstimmungen. Bund und Länder haben
+  und sieben Kernpunkte aus dem Bundestagswahlprogramm 2025, klar als „Bundesprogramm“ gekennzeichnet. Die
+  Personenkarte zeigt Partei, Funktion, bei Hauptkandidaten/Amtsträgern mit belegten Angaben einen kurzen
+  Steckbrief (Geburtsjahr, Beruf, Werdegang) und bei Abgeordneten die namentlichen Abstimmungen. Bund und Länder haben
   einen Bereich „Hauptkandidaten“ (Bund: Spitzenkandidaten der Parteien im Bundestag; Land: Ministerpräsident/in
   zuerst, dann die Spitzenkandidaten der Landtagsparteien). Wo nichts belegt ist, steht ein Hinweis.
 - **Wo die Inhalte liegen:** `public/data/parteien.json` (Parteiprofile mit Kernpunkten) und
   `public/data/kandidaten.json` (Hauptkandidaten Bund und Länder). Beide werden von Hand gepflegt; die Belege stehen
   in `scripts/sources/parteien-evidence.md` und `scripts/sources/kandidaten-evidence.md`. Nicht Belegbares wird
   weggelassen, nicht geraten. `tests/content-*.test.ts` prüfen Form und Zusammenspiel mit der Oberfläche.
-- **Neutralität:** Jede Partei hat dieselben sechs Themen in derselben Reihenfolge, in eigenen kurzen Worten
+- **Neutralität:** Jede Partei hat dieselben sieben Themen in derselben Reihenfolge, in eigenen kurzen Worten
   (kein Programm-Volltext), mit einer Quellenangabe als Text je Punkt (Programm und Seite). Keine Wertungen, keine
   Rangfolge nach Meinung.
 - **Keine Links, keine Fotos:** Die Seite verlinkt nirgends nach außen (auch nicht zu Profilen oder Abstimmungen);
@@ -125,3 +126,5 @@ Die Workflows wurden lokal nur auf gültiges YAML geprüft, nicht auf GitHub aus
 - Abstimmungen der Landtage
 - Fotos von Personen (zurückgestellt)
 - Kernpunkte aus Landesprogrammen
+- Kurz-Biografien (Geburtsjahr, Beruf, Werdegang) für die Hauptkandidaten/Amtsträger der 16 Länder (bisher nur
+  für die 7 Bund-Kandidaten umgesetzt, siehe `scripts/sources/kandidaten-report.md`)

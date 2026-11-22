@@ -66,7 +66,7 @@ For a sub-path deployment (e.g. GitHub Pages project site) set `VITE_BASE`, e.g.
   centralise the Abgeordnetenwatch fetch client (descriptive User-Agent — plain requests get HTTP 403 — plus
   timeout/retry). `scripts/lib/meta.mjs` updates `meta.json`'s per-data-kind "Stand" dates **only when content
   actually changed**, not on every run — don't make a script stamp "today" unconditionally again.
-- **Hand-maintained** (`public/data/parteien.json` — party profiles with exactly six key points per party, same
+- **Hand-maintained** (`public/data/parteien.json` — party profiles with exactly seven key points per party, same
   topics/order for every party, each point sourced from that party's own Bundestagswahlprogramm 2025 in the
   author's own words; `public/data/kandidaten.json` — main candidates for Bund and each Land; `scripts/officials.json`
   — heads of government): edited directly, each backed by an evidence file under `scripts/sources/` (exact

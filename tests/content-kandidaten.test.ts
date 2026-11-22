@@ -56,6 +56,13 @@ describe('kandidaten.json', () => {
         expect(c.note.trim(), label).not.toBe('');
         expect(c.note, label).not.toMatch(/http|www\./i);
       }
+      if (c.bio !== undefined) {
+        expect(c.bio.source.trim(), label).not.toBe('');
+        expect(c.bio.source, label).not.toMatch(/http|www\./i);
+        if (c.bio.birthYear !== undefined) expect(c.bio.birthYear, label).toBeGreaterThan(1900);
+        if (c.bio.profession !== undefined) expect(c.bio.profession.trim(), label).not.toBe('');
+        if (c.bio.career !== undefined) expect(c.bio.career.trim(), label).not.toBe('');
+      }
     }
   });
 

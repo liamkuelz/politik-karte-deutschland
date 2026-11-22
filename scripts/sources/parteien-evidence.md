@@ -162,3 +162,23 @@ Abgerufen am 2026-11-22. Alle Kernpunkte sind eigene Zusammenfassungen. Die Zita
 ## Gründungsjahre
 
 CDU 1945 (laut Vorgabe; die CSU erscheint im Langnamen), AfD 2013, SPD 1863 (ADAV als Ursprung), Grüne 1980 (Gründung „Die Grünen“; 1993 Zusammenschluss mit Bündnis 90), Die Linke 2007, FDP 1948, BSW 2024. Diese Jahre sind allgemein bekannt und wurden nicht einzeln online nachgeschlagen. Freie Wähler 2009 laut bpb („ist 2009 aus dem ‚Bundesverband der Freien Wähler‘ … hervorgegangen“, https://www.bpb.de/themen/parteien/wer-steht-zur-wahl/bundestagswahl-2025/558922/freie-waehler/). SSW 1948 laut bpb (https://www.bpb.de/themen/parteien/wer-steht-zur-wahl/bundestagswahl-2025/558921/suedschleswigscher-waehlerverband/) und laut eigenem Programm, S. 6.
+
+---
+
+## Neues Thema „Wohnen & Bauen" (ergänzt 2026-11-22)
+
+Anderes Vorgehen als oben: Diese sieben Eintraege stammen **nicht** aus eigener Lektuere der PDF-Programme, sondern aus einer Websuche, die Presseberichte und Verbandsuebersichten zu den Wahlprogrammen 2025 auswertet (u. a. ZDFheute, Der Paritaetische, Berliner Mieterverein, BASIC thinking, Stuttgarter Zeitung, bpb, Haus & Grund). Das ist eine schwaechere Beleglage als die direkte PDF-Lektuere der sechs ursprünglichen Themen; die `source`-Angaben in `parteien.json` nennen deshalb "(Presseauswertung, ...)" statt einer Seitenzahl. Eine spaetere Verifikation gegen die Original-PDFs (mit Seitenzahlen, wie bei den sechs anderen Themen) steht noch aus.
+
+| Partei | Kernaussage (Grundlage) |
+|---|---|
+| Union | Bauen/Wohnen bezahlbar machen, sozialer Wohnungsbau, Wohngeld-Anpassung, mehr Neubau, hoehere Erbschaftsteuer-Freibetraege fuers Eigenheim (Presseauswertung, u. a. zdfheute.de, basicthinking.de) |
+| AfD | Keine Mietpreisbremse vorgesehen, stattdessen Wohngeld auf mehr Gruppen ausweiten (Stuttgarter Zeitung, Berliner Mieterverein) |
+| SPD | Mietpreisbremse dauerhaft entfristen, Baurecht vereinfachen, Verfahren digitalisieren (ZDFheute, Der Paritaetische) |
+| Grüne | Mietpreisbremse verlaengern (auch fuer Neubauten ab 5 Jahren), eigenes Kapitel zu schnellem, guenstigem, klimavertraeglichem Bauen (BASIC thinking) |
+| Die Linke | Mietpreisdeckelung bundesweit (Gesetzentwurf der Bundestagsfraktion), oekologische Baustandards (ZDFheute) |
+| FDP | Fokus auf Neubau statt Mietpreisbremse, „Gebaeudetyp E" fuer guenstigeres Bauen (Der Paritaetische, Haus & Grund) |
+| BSW | Schaerfere Mietregulierung statt Mietpreisbremse, bundesweiter Mietendeckel (Deutscher Mieterbund) |
+| Freie Wähler | Steuerliche Foerderung von Wohnraum, kommunale Ebene als zentraler Bezugspunkt der Partei (bpb-Parteienprofil) |
+| SSW | Mehr sozialer/gemeinwohlorientierter Wohnungsbau, Schutz vor ueberhoehten Mieten, starkes Wohngeld (SSW-Pressemitteilung „Wohngeld kuerzen heisst Armut verschaerfen", keine Aussage aus dem Bundestagswahlprogramm selbst gefunden) |
+
+**Offen:** Fuer alle neun Parteien waere eine Nachpruefung gegen den Originaltext des Wahlprogramms (mit Seitenzahl, wie bei den anderen sechs Themen) sinnvoll, insbesondere fuer SSW (Quelle ist eine Pressemitteilung, nicht das Programm selbst) und fuer "Digitalisierung & Verwaltung" als moeglichem achten Thema (in dieser Runde nicht umgesetzt, weil die gefundenen Belege je Partei zu duenn/unterschiedlich belastbar waren).

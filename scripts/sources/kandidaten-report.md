@@ -50,3 +50,6 @@ Total: Bund 7, Länder 87 (94 entries).
 - **MV seats.** wahlrecht.de shows 71 seats (preliminary), but officials.json says "39 of 68 votes". I could not check the final seat count. This does not affect which parties are in the Landtag.
 - **BE head of government.** Wegner is still listed as geschäftsführend, following officials.json. The latest report found (late October 2026) shows no successor elected yet. Re-check before publishing.
 - **Press sources.** Several 2026 entries rely on major media (ZDFheute, bpb, t-online, Berliner Zeitung) rather than party or Landeswahlleiter pages; no primary party page was fetched for RP or ST.
+
+## Kurz-Biografien (pilot, 2026-11-22)
+Added `bio` (Geburtsjahr, Beruf, Werdegang) for the 7 Bund-Kandidaten only, see `kandidaten-evidence.md`. The 87 Länder-Kandidaten do not have a `bio` yet — that is a separate, much larger research batch (16 Länder × several people each), left for a follow-up pass.

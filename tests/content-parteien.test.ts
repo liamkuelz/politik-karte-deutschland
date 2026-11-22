@@ -11,6 +11,7 @@ const TOPICS = [
   'Klima & Energie',
   'Sicherheit & Außenpolitik',
   'Bildung & Gesundheit',
+  'Wohnen & Bauen',
 ];
 // Wertende Woerter, die in neutralen Zusammenfassungen nicht vorkommen sollen.
 const STOP_WORDS = [
@@ -68,7 +69,7 @@ describe('parteien.json', () => {
     }
   });
 
-  it('jede Partei hat dieselben 6 Themen in derselben Reihenfolge', () => {
+  it('jede Partei hat dieselben 7 Themen in derselben Reihenfolge', () => {
     for (const p of profiles) {
       expect(p.keyPoints.map((k) => k.topic), p.id).toEqual(TOPICS);
     }

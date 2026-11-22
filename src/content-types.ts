@@ -30,6 +30,18 @@ export interface PartyProfile {
   stand: string;
 }
 
+/** Kurzer, neutraler Steckbrief; nur Felder mit belegten Angaben gesetzt. */
+export interface Bio {
+  /** Geburtsjahr, keine genaue Adresse/Ort-Pflicht. */
+  birthYear?: number;
+  /** Beruf vor der Politik, in eigenen kurzen Worten. */
+  profession?: string;
+  /** Politischer Werdegang in ein bis zwei Saetzen, neutral beschreibend. */
+  career?: string;
+  /** Beleg als Text (Biografie-Seite/Dokument), keine URL. */
+  source: string;
+}
+
 export interface Candidate {
   name: string;
   party: PartyId;
@@ -38,6 +50,7 @@ export interface Candidate {
   note?: string;
   /** Beleg als Text (Seite/Dokument), keine URL. */
   source: string;
+  bio?: Bio;
 }
 
 export interface CandidatesFile {

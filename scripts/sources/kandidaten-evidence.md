@@ -14,6 +14,20 @@ Checked 2026-11-22. One block per source, then the entries it supports. All page
 - https://ssw-sh.de/themen/stefan-seidler-fuehrt-den-ssw-in-die-bundestagswahl.pdf - SSW, "Stefan Seidler führt den SSW in die Bundestagswahl" (seen in search results). The SSW Landesparteitag confirmed his top candidacy.
 - https://bundeswahlleiterin.de/en/bundestagswahlen/2025/wahlbewerber/bund-99/land-1.html - Bundeswahlleiterin, Landeslisten Schleswig-Holstein (seen in search results). SSW list place 001: Seidler, Stefan.
 
+### Kurz-Biografien (added 2026-11-22, pilot batch)
+
+Birth year, profession and a one-to-two sentence career summary for the seven Bund-Kandidaten, cross-checked via web search against the Bundestag's own `biografien` pages (bundestag.de/abgeordnete/biografien/...) and, for Scholz and Habeck, the Bundesregierung CV pages (bundesregierung.de, `lebenslauf-...`):
+
+- Friedrich Merz: born 11.11.1955, Rechtsanwalt; CDU-Vorsitzender seit 2022, Bundeskanzler seit 06.05.2025.
+- Alice Weidel: born 06.02.1979, promovierte Volkswirtin, zuvor Finanzanalystin; AfD seit 2013, Bundessprecherin seit Juni 2022 (mit Tino Chrupalla).
+- Olaf Scholz: born 14.06.1958, Rechtsanwalt (Arbeitsrecht); Bundesarbeitsminister 2007–2009, Erster Bürgermeister Hamburg 2011–2018, Bundesfinanzminister 2018–2021, Bundeskanzler 2021–2025.
+- Robert Habeck: born 02.09.1969, promovierter Philosoph und Schriftsteller; stellv. Ministerpräsident Schleswig-Holstein ab 2012, Grünen-Bundesvorsitzender seit 2018, Vizekanzler/Wirtschaftsminister 2021–2025.
+- Heidi Reichinnek: born 19.04.1988, pädagogische Mitarbeiterin Jugendhilfe; Linksfraktion Rat Osnabrück 2016–2021, Bundestag seit 2021, Fraktionsvorsitzende (mit Sören Pellmann) seit 2024.
+- Jan van Aken: born 01.05.1961, promovierter Biologe; Gentechnik-Experte bei Greenpeace International, UN-Waffeninspekteur 2004–2006, Bundestag 2009–2017 und erneut seit 2025.
+- Stefan Seidler: born 18.12.1979, Koordinator für deutsch-dänische Zusammenarbeit beim Land Schleswig-Holstein; SSW-Mitglied seit 1996, Bundestag seit 2021 (erster SSW-Sitz seit 1949).
+
+Not yet done: Ministerpräsidenten/Spitzenkandidaten der Länder (16 Länder × mehrere Personen) are a separate, larger follow-up batch, tracked in `scripts/sources/kandidaten-report.md`.
+
 ## BW (Landtagswahl 08.03.2026; in the Landtag: Grüne 56, CDU 56, AfD 35, SPD 10)
 
 - https://www.bpb.de/kurz-knapp/hintergrund-aktuell/575886/landtagswahl-baden-wuerttemberg-2026-gruene-mit-den-meisten-stimmen/ - bpb, "Landtagswahl Baden-Württemberg 2026: Grüne mit den meisten Stimmen", 10.03.2026 (first version 02.03.2026). Seats as above; Spitzenkandidaten Özdemir (Grüne), Hagel (CDU), Frohnmaier (AfD), Stoch (SPD); FDP and Linke out.

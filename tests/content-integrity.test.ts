@@ -195,7 +195,7 @@ describe('Hauptkandidaten who are sitting MdBs (real data)', () => {
 describe('parteien.json against the app', () => {
   it.each(data.parteien.map((p) => p.id))('party card %s renders at Bund level and in every Land', (id) => {
     const de = open({ level: 'de', details: false, card: { kind: 'party', id } });
-    expect(de.querySelectorAll('.kp')).toHaveLength(6);
+    expect(de.querySelectorAll('.kp')).toHaveLength(7);
     expect(de.textContent).toContain('Ergebnis bundesweit');
     for (const land of data.laender) {
       const root = open({ level: 'land', landId: land.id, details: false, card: { kind: 'party', id } });
