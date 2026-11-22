@@ -316,7 +316,7 @@ export function renderCard(el: HTMLElement, state: NavState, data: AppData, onNa
         // Eine neuere Karte hat uebernommen: nichts mehr eintragen
         if (!isCurrent()) return;
         const box = el.querySelector<HTMLElement>('.card-votes');
-        if (box) fillVoteList(box, votes, { links: false });
+        if (box) fillVoteList(box, votes);
       });
   }
 }

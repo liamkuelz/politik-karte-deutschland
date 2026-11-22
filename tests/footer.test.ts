@@ -64,7 +64,7 @@ describe('renderFooter', () => {
     expect(stand).toContain('Umfragen 18.11.2026');
   });
 
-  it('is a collapsible details element with a summary and safe external links', () => {
+  it('is a collapsible details element with a summary; sources and licences as text with addresses, no links', () => {
     const el = render();
     const details = el.querySelector('details')!;
     expect(details.querySelector('summary')!.textContent).toBe('Quellen & Lizenzen');
@@ -73,21 +73,31 @@ describe('renderFooter', () => {
     expect(el.querySelector('.footer-brief')!.textContent).toContain('Keine Wahlempfehlung');
     // die immer sichtbare Kurzzeile nennt Wikipedia mit Lizenz
     expect(el.querySelector('.footer-brief .footer-credit')!.textContent).toContain('Wikipedia (CC BY-SA 4.0)');
-    const links = [...el.querySelectorAll('a')];
-    expect(links.length).toBeGreaterThanOrEqual(8);
-    for (const a of links) {
-      expect(a.href).toMatch(/^https:\/\//);
-      expect(a.rel).toBe('noopener noreferrer');
-    }
-    expect(links.map((a) => a.href)).toEqual(expect.arrayContaining([
+    expect(el.querySelector('a')).toBeNull();
+    expect(el.querySelector('[href], [target]')).toBeNull();
+    const urls = [...el.querySelectorAll('.footer-url')].map((u) => u.textContent);
+    expect(urls).toEqual(expect.arrayContaining([
+      'https://www.bundeswahlleiterin.de/',
+      'https://www.abgeordnetenwatch.de/',
+      'https://dawum.de/',
+      'https://de.wikipedia.org/',
       'https://www.govdata.de/dl-de/by-2-0',
       'https://creativecommons.org/publicdomain/zero/1.0/deed.de',
       'https://opendatacommons.org/licenses/odbl/1-0/',
       'https://creativecommons.org/licenses/by-sa/4.0/',
     ]));
+    const t = el.textContent!;
+    expect(t).toContain('Die Bundeswahlleiterin (https://www.bundeswahlleiterin.de/)');
+    expect(t).toContain('CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)');
+    expect(t).toContain('Adressen zum Abtippen: Die Seite enthält keine Links nach außen.');
     expect(el.querySelector('.footer-legend')).not.toBeNull();
   });
 
+  it('names the content sources for key points and main candidates', () => {
+    const t = render().textContent!;
+    expect(t).toContain('Kernpunkte: Wahlprogramme der Parteien zur Bundestagswahl 2025, eigene Zusammenfassung');
+    expect(t).toContain('Hauptkandidaten: Parteien, Landesregierungen, Wahlleiter und Medienberichte, Belege in scripts/sources/kandidaten-evidence.md');
+  });
   it('replaces its content on re-render', () => {
     const el = render('2026-11-01');
     renderFooter(el, meta('2026-11-21'), NOW);

@@ -1,7 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import type { PartyResult } from '../src/types.ts';
 import { renderBars } from '../src/ui/bars.ts';
-import { extLink } from '../src/ui/dom.ts';
 import { fmtPct } from '../src/ui/format.ts';
 
 beforeEach(() => {
@@ -13,31 +12,6 @@ beforeEach(() => {
   }));
 });
 afterEach(() => vi.unstubAllGlobals());
-
-describe('extLink', () => {
-  it.each([
-    'javascript:alert(1)',
-    'data:text/html,<script>alert(1)</script>',
-    'http://example.org',
-    'not a url',
-    '/relative/path',
-    '',
-  ])('renders a plain span without href for %j', (href) => {
-    const el = extLink(href, 'Titel', 'x');
-    expect(el.tagName).toBe('SPAN');
-    expect(el.hasAttribute('href')).toBe(false);
-    expect(el.textContent).toBe('Titel');
-    expect(el.className).toBe('x');
-  });
-
-  it('renders an anchor for absolute https URLs', () => {
-    const el = extLink('https://www.abgeordnetenwatch.de/x', 'Titel') as HTMLAnchorElement;
-    expect(el.tagName).toBe('A');
-    expect(el.getAttribute('href')).toBe('https://www.abgeordnetenwatch.de/x');
-    expect(el.getAttribute('rel')).toBe('noopener noreferrer');
-    expect(el.getAttribute('target')).toBe('_blank');
-  });
-});
 
 describe('fmtPct', () => {
   it('returns "–" for invalid values', () => {
