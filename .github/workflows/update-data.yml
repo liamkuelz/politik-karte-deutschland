@@ -1,0 +1,52 @@
+name: Daten aktualisieren
+
+# Holt taeglich Abgeordnete, Abstimmungen und Umfragen neu (--only people,votes,polls --fresh).
+# geo/elections laufen bewusst NICHT hier: sie haengen von Live-Wikipedia und einmaligen amtlichen
+# Downloads ab und werden von Hand ausgefuehrt, wenn eine neue Wahl stattgefunden hat.
+# Anfragen haben ein 30s-Timeout mit wenigen Wiederholungen (scripts/lib/http.mjs); ein fehlender Schritt
+# bricht den Lauf ab, statt unvollstaendige Daten zu committen.
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  # Zum ausdruecklichen Anstossen von deploy.yml danach: ein Push mit dem Standard-GITHUB_TOKEN loest
+  # keine weiteren Workflows aus.
+  actions: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm ci
+      - run: npm run build:data -- --fresh --only people,votes,polls
+      - run: npm test
+      - name: Commit bei Aenderungen
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A public/data
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "data: update public data"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Push und Deploy anstossen
+        if: steps.commit.outputs.changed == 'true' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull --rebase origin main
+          git push origin main
+          gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
