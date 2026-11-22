@@ -1,9 +1,12 @@
 import type { AppData } from './data.ts';
 import { loadVotes } from './data.ts';
+import { LEADS_CAPTION_DE, LEADS_CAPTION_LAND, LEADS_TITLE, renderLeads, winnerPersonId } from './leads.ts';
 import type { NavState } from './nav.ts';
 import { resolve, resolvedKey } from './resolve.ts';
 import type { AreaResult, Land, Vote, Wahlkreis } from './types.ts';
 import { renderBars } from './ui/bars.ts';
+import type { CardContext } from './ui/clickables.ts';
+import { cardContext, personName } from './ui/clickables.ts';
 import { h } from './ui/dom.ts';
 import { fmtPct } from './ui/format.ts';
 import { renderPersonRow, winnerRole } from './ui/people.ts';
@@ -17,9 +20,13 @@ const MAX_VOTES = 5;
 /** Pro Panel-Element: zuletzt gezeigter Inhalt und Render-Zaehler (gegen veraltete Abstimmungs-Antworten). */
 const memo = new WeakMap<HTMLElement, { key: string; token: number }>();
 
-function section(title: string, ...children: (Node | string)[]): HTMLElement {
+/** Abschnitt mit Ueberschrift; die Ueberschrift darf Knoepfe enthalten (z. B. den Namen einer Person). */
+function section(title: string | (Node | string)[], ...children: (Node | string)[]): HTMLElement {
   const s = h('section', 'panel-section');
-  s.append(h('h3', undefined, title), ...children);
+  const h3 = h('h3');
+  if (typeof title === 'string') h3.textContent = title;
+  else h3.append(...title);
+  s.append(h3, ...children);
   return s;
 }
 
@@ -39,27 +46,27 @@ function header(kicker: string, title: string, state: NavState, onNavigate: Navi
   return { head, heading };
 }
 
-function deContent(data: AppData): HTMLElement[] {
+function deContent(data: AppData, ctx: CardContext): HTMLElement[] {
   return [
     section(`Bundestagswahl ${data.bund.year}`, h('p', 'meta', 'Zweitstimmen bundesweit'),
-      renderBars(data.bund.second), turnoutLine(data.bund)),
-    section(pollTitle('Bund'), renderSparkline(data.polls.find((p) => p.areaId === 'DE'))),
+      renderBars(data.bund.second, undefined, undefined, ctx), turnoutLine(data.bund)),
+    section(LEADS_TITLE, h('p', 'meta', LEADS_CAPTION_DE), renderLeads(data, undefined, ctx)),
+    section(pollTitle('Bund'), renderSparkline(data.polls.find((p) => p.areaId === 'DE'), ctx)),
   ];
 }
 
-function landContent(land: Land, data: AppData): HTMLElement[] {
+function landContent(land: Land, data: AppData, ctx: CardContext): HTMLElement[] {
   const bt = land.bundestag;
   const lt = land.landtag;
-  const people = h('div', 'people');
-  for (const p of land.officials) people.append(renderPersonRow(p, land.id));
   return [
     section(`Bundestagswahl ${bt.year}`, h('p', 'meta', `Zweitstimmen in ${land.name}`),
-      renderBars(bt.second, land.id), turnoutLine(bt)),
+      renderBars(bt.second, land.id, undefined, ctx), turnoutLine(bt)),
     lt
-      ? section(`Landtagswahl ${lt.year}`, renderBars(lt.second, land.id), turnoutLine(lt))
+      ? section(`Landtagswahl ${lt.year}`, renderBars(lt.second, land.id, undefined, ctx), turnoutLine(lt))
       : section('Landtagswahl', h('p', 'empty', 'Keine Landtagswahl-Daten')),
-    section('Spitzenpolitik', land.officials.length ? people : h('p', 'empty', 'Keine Angaben')),
-    section(pollTitle(land.name), renderSparkline(data.polls.find((p) => p.areaId === land.id))),
+    // Regierungschef/in (laender.json) steht hier an erster Stelle, daher kein eigener Abschnitt mehr
+    section(LEADS_TITLE, h('p', 'meta', LEADS_CAPTION_LAND), renderLeads(data, land.id, ctx)),
+    section(pollTitle(land.name), renderSparkline(data.polls.find((p) => p.areaId === land.id), ctx)),
   ];
 }
 
@@ -81,26 +88,27 @@ function fillVotes(box: HTMLElement, votes: Vote[], state: NavState, onNavigate:
 }
 
 function wkContent(wk: Wahlkreis, land: Land, data: AppData, state: NavState, onNavigate: Navigate,
-  isCurrent: () => boolean): HTMLElement[] {
+  ctx: CardContext, isCurrent: () => boolean): HTMLElement[] {
   const { name, party, mdbId, seated } = wk.winner;
-  // Profil und Abstimmungen nur fuer Gewinner/innen, die derzeit im Bundestag sitzen
-  const person = seated && mdbId !== null ? data.people.find((p) => p.id === mdbId) : undefined;
+  // Personenkarte nur, wenn die Person aufloesbar ist; sonst bleibt der Name Text
+  const personId = winnerPersonId(data, wk.winner);
   const winner = h('div', 'winner');
-  winner.append(renderPersonRow({ name, party, role: winnerRole(wk.winner), profileUrl: person?.profileUrl }, land.id));
+  winner.append(renderPersonRow({ name, party, role: winnerRole(wk.winner), personId }, land.id, ctx));
   const out = [
     winner,
-    section('Erststimmen', renderBars(wk.first, land.id, party)),
-    section('Zweitstimmen', renderBars(wk.second, land.id), turnoutLine(wk)),
+    section('Erststimmen', renderBars(wk.first, land.id, party, ctx)),
+    section('Zweitstimmen', renderBars(wk.second, land.id, undefined, ctx), turnoutLine(wk)),
   ];
+  // Abstimmungen nur fuer Gewinner/innen, die derzeit im Bundestag sitzen
   if (seated && mdbId !== null) {
     const box = h('div', 'votes');
     box.append(h('p', 'meta', 'Abstimmungen werden geladen …'));
-    out.push(section(`Letzte Abstimmungen von ${name}`, box));
+    out.push(section(['Letzte Abstimmungen von ', personName(name, personId, ctx)], box));
     loadVotes(mdbId)
       .catch(() => [] as Vote[])
       .then((votes) => { if (isCurrent()) fillVotes(box, votes, state, onNavigate); });
   }
-  out.push(section(pollTitle(`Bundesland ${land.name}`), renderSparkline(data.polls.find((p) => p.areaId === land.id))));
+  out.push(section(pollTitle(`Bundesland ${land.name}`), renderSparkline(data.polls.find((p) => p.areaId === land.id), ctx)));
   return out;
 }
 
@@ -112,13 +120,14 @@ export function renderPanel(el: HTMLElement, state: NavState, data: AppData, onN
   memo.set(el, { key, token });
   // Jeder Render baut neue Knoten; der Token verhindert zusaetzlich Arbeit fuer veraltete Antworten.
   const isCurrent = () => memo.get(el)?.token === token;
+  const ctx = cardContext(state, data, onNavigate);
 
   const kicker = r.level === 'wk' ? `Wahlkreis ${r.wk!.id} · ${r.land!.name}` : r.level === 'land' ? 'Bundesland' : 'Bund';
   const title = r.wk?.name ?? r.land?.name ?? 'Deutschland';
   const { head, heading } = header(kicker, title, state, onNavigate);
-  const body = r.level === 'wk' ? wkContent(r.wk!, r.land!, data, state, onNavigate, isCurrent)
-    : r.level === 'land' ? landContent(r.land!, data)
-      : deContent(data);
+  const body = r.level === 'wk' ? wkContent(r.wk!, r.land!, data, state, onNavigate, ctx, isCurrent)
+    : r.level === 'land' ? landContent(r.land!, data, ctx)
+      : deContent(data, ctx);
 
   const inner = h('div', 'panel-inner');
   if (!prev || prev.key !== key) inner.classList.add('panel-enter');

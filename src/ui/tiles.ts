@@ -1,6 +1,8 @@
 import { applyPartyEdge, partyColor, partyLabel } from '../parties.ts';
 import type { PartyId, PartyResult, Vote } from '../types.ts';
 import { sortResults } from './bars.ts';
+import type { CardContext } from './clickables.ts';
+import { partyName } from './clickables.ts';
 import { h } from './dom.ts';
 import { fmtPct } from './format.ts';
 import { renderTable } from './table.ts';
@@ -11,8 +13,8 @@ const MAX_STAGGER = 10;
 export interface TileOptions {
   /** ganze Zeile des Rasters */
   wide?: boolean;
-  /** Untertitel unter der Kachelueberschrift */
-  caption?: string;
+  /** Untertitel unter der Kachelueberschrift (Text oder Text mit Knoepfen) */
+  caption?: string | (Node | string)[];
 }
 
 /** Glas-Kachel mit Ueberschrift; die Position im Raster steuert die gestaffelte Einblendung (--i). */
@@ -20,7 +22,12 @@ export function renderTile(title: string, index: number, children: (Node | strin
   const tile = h('section', `tile glass${opts.wide ? ' tile-wide' : ''}`);
   tile.style.setProperty('--i', String(Math.min(index, MAX_STAGGER)));
   tile.append(h('h3', 'tile-title', title));
-  if (opts.caption) tile.append(h('p', 'tile-caption', opts.caption));
+  if (opts.caption) {
+    const cap = h('p', 'tile-caption');
+    if (typeof opts.caption === 'string') cap.textContent = opts.caption;
+    else cap.append(...opts.caption);
+    tile.append(cap);
+  }
   tile.append(...children);
   return tile;
 }
@@ -54,8 +61,12 @@ function stack(label: string, results: PartyResult[], landId?: string, leader?: 
   return row;
 }
 
-/** Erst- und Zweitstimmen als zwei gestapelte Balken plus Tabelle der Anteile; `leader` gewinnt Gleichstaende der Erststimmen. */
-export function renderStackedComparison(first: PartyResult[], second: PartyResult[], landId?: string, leader?: PartyId): HTMLElement {
+/**
+ * Erst- und Zweitstimmen als zwei gestapelte Balken plus Tabelle der Anteile (zugleich Legende; mit `ctx`
+ * oeffnen die Parteinamen die Parteikarte); `leader` gewinnt Gleichstaende der Erststimmen.
+ */
+export function renderStackedComparison(first: PartyResult[], second: PartyResult[], landId?: string, leader?: PartyId,
+  ctx?: CardContext): HTMLElement {
   const wrap = h('div', 'stack-compare');
   wrap.append(stack('Erststimmen', first, landId, leader), stack('Zweitstimmen', second, landId));
   const share = (list: PartyResult[], p: PartyId) => list.find((r) => r.party === p)?.share;
@@ -66,7 +77,7 @@ export function renderStackedComparison(first: PartyResult[], second: PartyResul
   for (const p of parties) {
     const tr = h('tr');
     const name = h('td', 'party-cell');
-    name.append(partyDot(p), h('span', undefined, partyLabel(p, landId)));
+    name.append(partyDot(p), partyName(p, partyLabel(p, landId), ctx));
     tr.append(name, h('td', 'num', fmtPct(share(first, p))), h('td', 'num', fmtPct(share(second, p))));
     body.append(tr);
   }
@@ -77,7 +88,7 @@ export function renderStackedComparison(first: PartyResult[], second: PartyResul
 type Filter = 'all' | Vote['answer'];
 
 /** Vollstaendige Abstimmungsliste mit Filterknoepfen (clientseitig) in einem intern scrollenden Kasten. */
-export function fillVoteList(box: HTMLElement, votes: Vote[], opts: { links?: boolean } = {}): void {
+export function fillVoteList(box: HTMLElement, votes: Vote[]): void {
   if (!votes.length) {
     box.replaceChildren(h('p', 'empty', 'Keine Abstimmungen verfügbar'));
     return;
@@ -92,7 +103,7 @@ export function fillVoteList(box: HTMLElement, votes: Vote[], opts: { links?: bo
   const list = h('ul', 'vote-list vote-scroll');
   list.tabIndex = 0; // scrollbarer Bereich auch per Tastatur
   list.setAttribute('aria-label', 'Abstimmungen');
-  const rows = sorted.map((v) => renderVoteRow(v, { link: opts.links }));
+  const rows = sorted.map((v) => renderVoteRow(v));
   list.append(...rows);
 
   const buttons: HTMLButtonElement[] = [];

@@ -1,5 +1,7 @@
 import { applyPartyEdge, partyColor, partyLabel } from '../parties.ts';
 import type { PartyId, PartyResult } from '../types.ts';
+import type { CardContext } from './clickables.ts';
+import { partyName } from './clickables.ts';
 import { h, reducedMotion } from './dom.ts';
 import { fmtPct } from './format.ts';
 
@@ -16,11 +18,11 @@ export function sortResults(results: PartyResult[], leader?: PartyId): PartyResu
 }
 
 /**
- * Balkenliste je Partei. Breite relativ zum groessten Anteil.
+ * Balkenliste je Partei. Breite relativ zum groessten Anteil. Mit `ctx` sind die Parteinamen Karten-Knoepfe.
  * Die Balken wachsen per CSS-Transition, sobald die Liste im Dokument steht
  * (naechster Frame); ohne requestAnimationFrame oder bei reduzierter Bewegung sofort.
  */
-export function renderBars(results: PartyResult[], landId?: string, leader?: PartyId): HTMLElement {
+export function renderBars(results: PartyResult[], landId?: string, leader?: PartyId, ctx?: CardContext): HTMLElement {
   const list = h('ul', 'bars');
   const sorted = sortResults(results, leader);
   // ungueltige Anteile zaehlen als 0, gueltige werden auf 0-100 begrenzt
@@ -30,7 +32,8 @@ export function renderBars(results: PartyResult[], landId?: string, leader?: Par
   for (const r of sorted) {
     const li = h('li', 'bar');
     li.dataset.party = r.party;
-    const label = h('span', 'bar-label', partyLabel(r.party, landId));
+    // Mit Kontext ist der Parteiname ein Knopf zur Parteikarte (der Balken selbst bleibt Grafik)
+    const label = partyName(r.party, partyLabel(r.party, landId), ctx, 'bar-label');
     const value = h('span', 'bar-value', fmtPct(r.share));
     const track = h('span', 'bar-track');
     track.setAttribute('aria-hidden', 'true');

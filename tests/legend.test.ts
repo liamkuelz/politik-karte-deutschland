@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { renderLegend } from '../src/legend.ts';
 import type { NavState } from '../src/nav.ts';
 import { partyColor } from '../src/parties.ts';
@@ -34,6 +34,24 @@ describe('renderLegend', () => {
     const el = document.createElement('div');
     renderLegend(el, { level: 'land', landId: 'BY', details: false }, data);
     expect(labels(el)).toEqual(['CSU', 'Sonstige']);
+  });
+
+  it('with onNavigate the party names are party buttons (Sonstige stays text); without it all text', () => {
+    const nav = vi.fn();
+    const el = document.createElement('div');
+    const s: NavState = { level: 'land', landId: 'BY', details: false };
+    renderLegend(el, s, fixtureData, nav);
+    const btn = el.querySelector<HTMLButtonElement>('.legend-item button[data-party="spd"]')!;
+    expect(btn.textContent).toBe('SPD');
+    expect(btn.hasAttribute('data-card-trigger')).toBe(true);
+    btn.click();
+    expect(nav).toHaveBeenCalledWith({ ...s, card: { kind: 'party', id: 'spd' } });
+    expect(el.querySelector('[data-party="sonstige"]')).toBeNull();
+    expect(labels(el)).toEqual(['SPD', 'Grüne', 'Sonstige']);
+    const de = document.createElement('div');
+    renderLegend(de, { level: 'de', details: false }, fixtureData, nav);
+    expect([...de.querySelectorAll('button[data-party]')].map((b) => b.textContent)).toEqual(['Union', 'AfD']);
+    expect(legend({ level: 'de', details: false }).querySelector('button')).toBeNull();
   });
 
   it('unknown Land falls back to the Länder rule and re-render replaces content', () => {

@@ -234,7 +234,7 @@ button.crumb:focus-visible { outline: 2px solid var(--fg); outline-offset: 1px; 
   row-gap: 3px;
   font-size: 13px;
 }
-.bar-label { grid-area: label; }
+.bar-label { grid-area: label; justify-self: start; }
 .bar-value { grid-area: value; font-variant-numeric: tabular-nums; color: var(--fg-dim); }
 .bar-track { grid-area: track; height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.06); overflow: hidden; }
 .bar-fill {
@@ -263,9 +263,10 @@ button.crumb:focus-visible { outline: 2px solid var(--fg); outline-offset: 1px; 
 }
 .person-text { display: flex; flex-direction: column; min-width: 0; }
 .person-name { font-weight: 600; color: var(--fg); overflow-wrap: anywhere; }
-a.person-name { text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, 0.25); align-self: flex-start; }
-a.person-name:hover { border-bottom-color: var(--fg); }
+/* Knopf zur Personenkarte: nur so breit wie der Name, damit die Unterstreichung am Text bleibt */
+button.person-name { align-self: flex-start; font-weight: 600; }
 .person-sub { font-size: 12px; color: var(--fg-dim); }
+.person-note { font-size: 11px; color: var(--fg-dim); font-style: italic; }
 .winner { margin-top: 14px; }
 .winner .avatar { width: 44px; height: 44px; font-size: 15px; }
 .winner .person-name { font-size: 16px; }
@@ -273,8 +274,7 @@ a.person-name:hover { border-bottom-color: var(--fg); }
 /* Abstimmungen */
 .vote-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .vote { display: grid; gap: 4px; }
-.vote-title { color: var(--fg); text-decoration: none; font-size: 13px; line-height: 1.35; }
-.vote-title:hover { text-decoration: underline; }
+.vote-title { color: var(--fg); font-size: 13px; line-height: 1.35; }
 .vote-meta { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--fg-dim); }
 /* neutrale Grautoene, unterschieden durch Form statt Farbe: keine Wertung */
 .chip {
@@ -472,7 +472,7 @@ a.person-name:hover { border-bottom-color: var(--fg); }
   width: 100%;
   display: grid;
   grid-template-columns: 2.6em 1fr;
-  grid-template-areas: 'nr name' 'nr winner';
+  grid-template-areas: 'nr name';
   column-gap: 6px;
   text-align: left;
   font: inherit;
@@ -486,7 +486,20 @@ a.person-name:hover { border-bottom-color: var(--fg); }
 .wk-item:hover { background: rgba(255, 255, 255, 0.05); }
 .wk-nr { grid-area: nr; padding-top: 1px; font-size: 12px; color: var(--fg-dim); font-variant-numeric: tabular-nums; }
 .wk-name { grid-area: name; font-weight: 600; overflow-wrap: anywhere; }
-.wk-winner { grid-area: winner; display: flex; align-items: center; gap: 6px; min-width: 0; font-size: 12px; color: var(--fg-dim); }
+/* Gewinner/in unter dem Wahlkreis-Knopf (eigene Knoepfe fuer Person und Partei, nicht verschachtelt) */
+.wk-entry { display: flex; flex-direction: column; min-width: 0; }
+.wk-entry .wk-item { padding-bottom: 1px; }
+.wk-winner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 4px;
+  min-width: 0;
+  padding: 0 8px 6px calc(8px + 2.6em + 6px);
+  font-size: 12px;
+  color: var(--fg-dim);
+}
+.wk-winner .dot { margin-right: 2px; }
 
 /* Gestapelte Balken Erst-/Zweitstimmen */
 .stack-compare { display: grid; gap: 10px; }
@@ -586,8 +599,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   line-height: 1.4;
   color: var(--fg-dim);
 }
-#footer a { color: inherit; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.25); }
-#footer a:hover { color: var(--fg); }
+/* Adressen nur als Text (keine Links): mit einem Klick markierbar, lange Adressen brechen um */
+.footer-url { color: var(--fg); overflow-wrap: anywhere; user-select: all; -webkit-user-select: all; }
+.footer-note { font-style: italic; }
 .footer-summary {
   padding: 6px 10px;
   font-weight: 600;
@@ -797,7 +811,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .card-roles { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
 .card-votes .vote-scroll { max-height: 320px; }
 .card-votes .empty { margin: 4px 0; font-size: 13px; color: var(--fg-dim); font-style: italic; }
-.card-votes .vote-title:hover { text-decoration: none; }
 
 .card-enter .card-backdrop { animation: card-fade 200ms ease both; }
 .card-enter .card { animation: card-in 200ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }

@@ -1,5 +1,7 @@
 import { applyPartyEdge, partyInk, partyLabel, partyColor } from '../parties.ts';
 import type { PartyId, PollPoint, PollSeries } from '../types.ts';
+import type { CardContext } from './clickables.ts';
+import { partyName } from './clickables.ts';
 import { h } from './dom.ts';
 import { fmtDate, fmtPct } from './format.ts';
 
@@ -35,9 +37,9 @@ function partiesOf(p: PollPoint): PartyId[] {
 
 /**
  * Mini-Linienchart der letzten 12 Monate (relativ zum neuesten Punkt) plus aktuelle Werte.
- * Ohne Reihe oder Punkte: Hinweistext.
+ * Ohne Reihe oder Punkte: Hinweistext. Mit `ctx` oeffnen die Parteinamen der Legende die Parteikarte.
  */
-export function renderSparkline(series: PollSeries | undefined): HTMLElement {
+export function renderSparkline(series: PollSeries | undefined, ctx?: CardContext): HTMLElement {
   const wrap = h('div', 'spark');
   const all = (series?.points ?? []).filter((p) => !Number.isNaN(time(p.date)))
     .sort((a, b) => time(a.date) - time(b.date));
@@ -84,7 +86,7 @@ export function renderSparkline(series: PollSeries | undefined): HTMLElement {
     const dot = h('span', 'dot');
     dot.style.backgroundColor = partyColor(id);
     applyPartyEdge(dot, id);
-    li.append(dot, h('span', 'spark-label', partyLabel(id, series.areaId)), h('span', 'spark-value', fmtPct(last.values[id]!, 0, 1)));
+    li.append(dot, partyName(id, partyLabel(id, series.areaId), ctx, 'spark-label'), h('span', 'spark-value', fmtPct(last.values[id]!, 0, 1)));
     legend.append(li);
   }
   const note = h('p', 'note', `Stand ${fmtDate(last.date)} · Verlauf seit ${fmtDate(pts[0].date)}`);

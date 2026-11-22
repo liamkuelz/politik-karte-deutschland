@@ -1,10 +1,13 @@
 import type { AppData } from './data.ts';
 import { loadVotes } from './data.ts';
+import { LEADS_CAPTION_DE, LEADS_CAPTION_LAND, LEADS_TITLE, renderLeads, winnerPersonId } from './leads.ts';
 import type { NavState } from './nav.ts';
 import { partyLabel, strongestParty } from './parties.ts';
 import { resolve, resolvedKey } from './resolve.ts';
 import type { AreaResult, Land, Vote, Wahlkreis } from './types.ts';
 import { renderBars } from './ui/bars.ts';
+import type { CardContext } from './ui/clickables.ts';
+import { cardContext, partyName, personName } from './ui/clickables.ts';
 import { h } from './ui/dom.ts';
 import { fmtPct } from './ui/format.ts';
 import { renderPersonRow, winnerRole } from './ui/people.ts';
@@ -19,7 +22,6 @@ const memo = new WeakMap<HTMLElement, { key: string; token: number }>();
 
 const turnoutLine = (r: AreaResult) => h('p', 'meta', `Wahlbeteiligung ${fmtPct(r.turnout)}`);
 const pollOf = (data: AppData, areaId: string) => data.polls.find((p) => p.areaId === areaId);
-const personOf = (data: AppData, id: number | null) => (id === null ? undefined : data.people.find((p) => p.id === id));
 
 /** Kopf mit Ueberschrift (fokussierbar) und Knopf zurueck zur grossen Karte. */
 function header(kicker: string, title: string, state: NavState, onNavigate: Navigate) {
@@ -36,7 +38,7 @@ function header(kicker: string, title: string, state: NavState, onNavigate: Navi
   return { head, heading };
 }
 
-function deTiles(data: AppData, onNavigate: Navigate): HTMLElement[] {
+function deTiles(data: AppData, onNavigate: Navigate, ctx: CardContext): HTMLElement[] {
   const { table, body } = renderTable([{ label: 'Land' }, { label: 'Stärkste Partei' }, { label: 'Wahlbeteiligung', num: true }]);
   for (const land of [...data.laender].sort((a, b) => a.name.localeCompare(b.name, 'de'))) {
     const best = strongestParty(land.bundestag.second);
@@ -47,70 +49,74 @@ function deTiles(data: AppData, onNavigate: Navigate): HTMLElement[] {
     const nameCell = h('td');
     nameCell.append(go);
     const partyCell = h('td', 'party-cell');
-    partyCell.append(partyDot(best), h('span', undefined, `${partyLabel(best, land.id)} ${fmtPct(share)}`));
+    // Der Parteiname oeffnet die Parteikarte (stoppt den Zeilenklick); der Rest der Zeile fuehrt zum Land
+    partyCell.append(partyDot(best), partyName(best, partyLabel(best, land.id), ctx), ` ${fmtPct(share)}`);
     tr.append(nameCell, partyCell, h('td', 'num', fmtPct(land.bundestag.turnout)));
     // Klick irgendwo in der Zeile; der Knopf macht sie per Tastatur erreichbar (sein Klick steigt hierher auf)
     tr.addEventListener('click', () => onNavigate({ level: 'land', landId: land.id, details: true }));
     body.append(tr);
   }
   return [
-    renderTile('Zweitstimmen Bund', 0, [renderBars(data.bund.second), turnoutLine(data.bund)],
+    renderTile('Zweitstimmen Bund', 0, [renderBars(data.bund.second, undefined, undefined, ctx), turnoutLine(data.bund)],
       { caption: `Bundestagswahl ${data.bund.year}` }),
-    renderTile(pollTitle('Bund'), 1, [renderSparkline(pollOf(data, 'DE'))]),
-    renderTile('Bundesländer', 2, [table], { wide: true, caption: `Bundestagswahl ${data.bund.year}, Zweitstimmen` }),
+    renderTile(pollTitle('Bund'), 1, [renderSparkline(pollOf(data, 'DE'), ctx)]),
+    renderTile(LEADS_TITLE, 2, [renderLeads(data, undefined, ctx)], { caption: LEADS_CAPTION_DE }),
+    renderTile('Bundesländer', 3, [table], { wide: true, caption: `Bundestagswahl ${data.bund.year}, Zweitstimmen` }),
   ];
 }
 
-function landTiles(land: Land, data: AppData, onNavigate: Navigate): HTMLElement[] {
+function landTiles(land: Land, data: AppData, onNavigate: Navigate, ctx: CardContext): HTMLElement[] {
   const bt = land.bundestag;
   const lt = land.landtag;
-  const people = h('div', 'people');
-  // Amtstraeger stehen nicht in people.json: ihr eigenes profileUrl zaehlt (Link nur bei https, siehe extLink)
-  for (const o of land.officials) people.append(renderPersonRow(o, land.id));
   const wkList = h('ul', 'wk-list');
   for (const wk of data.wahlkreise.filter((w) => w.landId === land.id).sort((a, b) => a.id - b.id)) {
-    const li = h('li');
+    const li = h('li', 'wk-entry');
     const btn = h('button', 'wk-item');
     btn.type = 'button';
-    const winner = h('span', 'wk-winner');
-    winner.append(partyDot(wk.winner.party), h('span', undefined, `${wk.winner.name} (${partyLabel(wk.winner.party, land.id)})`));
-    btn.append(h('span', 'wk-nr', String(wk.id)), h('span', 'wk-name', wk.name), winner);
+    btn.append(h('span', 'wk-nr', String(wk.id)), h('span', 'wk-name', wk.name));
     btn.addEventListener('click', () => onNavigate({ level: 'wk', landId: land.id, wkId: wk.id, details: true }));
-    li.append(btn);
+    // Gewinner/in neben (nicht in) dem Wahlkreis-Knopf: Name und Partei oeffnen ihre Karten
+    const winner = h('span', 'wk-winner');
+    const party = h('span', 'wk-party');
+    party.append('(', partyName(wk.winner.party, partyLabel(wk.winner.party, land.id), ctx), ')');
+    winner.append(partyDot(wk.winner.party), personName(wk.winner.name, winnerPersonId(data, wk.winner), ctx), party);
+    li.append(btn, winner);
     wkList.append(li);
   }
   return [
-    renderTile(`Bundestagswahl ${bt.year}`, 0, [renderBars(bt.second, land.id), turnoutLine(bt)],
+    renderTile(`Bundestagswahl ${bt.year}`, 0, [renderBars(bt.second, land.id, undefined, ctx), turnoutLine(bt)],
       { caption: `Zweitstimmen in ${land.name}` }),
     lt
-      ? renderTile(`Landtagswahl ${lt.year}`, 1, [renderBars(lt.second, land.id), turnoutLine(lt)])
+      ? renderTile(`Landtagswahl ${lt.year}`, 1, [renderBars(lt.second, land.id, undefined, ctx), turnoutLine(lt)])
       : renderTile('Landtagswahl', 1, [h('p', 'empty', 'Keine Landtagswahl-Daten')]),
-    renderTile(pollTitle(land.name), 2, [renderSparkline(pollOf(data, land.id))]),
-    renderTile('Politiker', 3, [land.officials.length ? people : h('p', 'empty', 'Keine Angaben')]),
+    renderTile(pollTitle(land.name), 2, [renderSparkline(pollOf(data, land.id), ctx)]),
+    // Regierungschef/in (laender.json) steht in den Hauptkandidaten an erster Stelle
+    renderTile(LEADS_TITLE, 3, [renderLeads(data, land.id, ctx)], { caption: LEADS_CAPTION_LAND }),
     renderTile('Wahlkreise', 4, [wkList.childElementCount ? wkList : h('p', 'empty', 'Keine Wahlkreise')],
       { wide: true, caption: 'Gewinner/in der Erststimmen je Wahlkreis' }),
   ];
 }
 
 /** votesBox nur fuer Gewinner/innen, die derzeit im Bundestag sitzen (sonst keine Abstimmungs-Kachel). */
-function wkTiles(wk: Wahlkreis, land: Land, data: AppData, votesBox: HTMLElement | null): HTMLElement[] {
-  const { name, party, mdbId, seated, directMandate } = wk.winner;
+function wkTiles(wk: Wahlkreis, land: Land, data: AppData, votesBox: HTMLElement | null, ctx: CardContext): HTMLElement[] {
+  const { name, party, seated, directMandate } = wk.winner;
+  const personId = winnerPersonId(data, wk.winner);
   const winner = h('div', 'winner');
-  const profileUrl = seated ? personOf(data, mdbId)?.profileUrl : undefined;
-  winner.append(renderPersonRow({ name, party, role: winnerRole(wk.winner), profileUrl }, land.id));
+  winner.append(renderPersonRow({ name, party, role: winnerRole(wk.winner), personId }, land.id, ctx));
   const turnout = h('p', 'big-number', fmtPct(wk.turnout));
   const compare = h('p', 'meta', `${land.name}: ${fmtPct(land.bundestag.turnout)} · Bund: ${fmtPct(data.bund.turnout)}`);
   const tiles = [
     renderTile(seated && directMandate ? 'Direktmandat' : 'Erststimmen-Gewinner/in', 0, [winner],
       { caption: `Bundestagswahl ${land.bundestag.year}` }),
     renderTile('Wahlbeteiligung', 1, [turnout, compare]),
-    renderTile('Erst- und Zweitstimmen', 2, [renderStackedComparison(wk.first, wk.second, land.id, party)],
+    renderTile('Erst- und Zweitstimmen', 2, [renderStackedComparison(wk.first, wk.second, land.id, party, ctx)],
       { caption: 'Erststimmen: Direktkandidaten · Zweitstimmen: Parteien' }),
-    renderTile(pollTitle(`Bundesland ${land.name}`), 3, [renderSparkline(pollOf(data, land.id))],
+    renderTile(pollTitle(`Bundesland ${land.name}`), 3, [renderSparkline(pollOf(data, land.id), ctx)],
       { caption: 'Landesweite Umfragen, nicht für den Wahlkreis' }),
   ];
   if (votesBox) {
-    tiles.push(renderTile('Abstimmungsverhalten', 4, [votesBox], { wide: true, caption: `Namentliche Abstimmungen von ${name}` }));
+    tiles.push(renderTile('Abstimmungsverhalten', 4, [votesBox],
+      { wide: true, caption: ['Namentliche Abstimmungen von ', personName(name, personId, ctx)] }));
   }
   return tiles;
 }
@@ -126,6 +132,7 @@ export async function renderDashboard(el: HTMLElement, state: NavState, data: Ap
   const key = resolvedKey(r);
   memo.set(el, { key, token });
   const isCurrent = () => memo.get(el)?.token === token;
+  const ctx = cardContext(state, data, onNavigate);
 
   const kicker = r.level === 'wk' ? `Wahlkreis ${r.wk!.id} · ${r.land!.name}` : r.level === 'land' ? 'Bundesland' : 'Bund';
   const title = r.wk?.name ?? r.land?.name ?? 'Deutschland';
@@ -144,9 +151,9 @@ export async function renderDashboard(el: HTMLElement, state: NavState, data: Ap
         votes = loadVotes(mdbId).catch(() => [] as Vote[]);
       }
     }
-    tiles = wkTiles(r.wk!, r.land!, data, box);
+    tiles = wkTiles(r.wk!, r.land!, data, box, ctx);
   } else {
-    tiles = r.level === 'land' ? landTiles(r.land!, data, onNavigate) : deTiles(data, onNavigate);
+    tiles = r.level === 'land' ? landTiles(r.land!, data, onNavigate, ctx) : deTiles(data, onNavigate, ctx);
   }
 
   const grid = h('div', 'dash-grid');

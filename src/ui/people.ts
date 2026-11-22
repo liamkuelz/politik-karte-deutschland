@@ -1,6 +1,8 @@
 import { applyPartyEdge, partyColor, partyLabel } from '../parties.ts';
 import type { PartyId, WahlkreisWinner } from '../types.ts';
-import { extLink, h } from './dom.ts';
+import type { CardContext } from './clickables.ts';
+import { partyName, personName } from './clickables.ts';
+import { h } from './dom.ts';
 
 /** Initialen aus erstem und letztem Namensteil, Titel wie "Dr." werden uebersprungen. */
 export function initials(name: string): string {
@@ -35,8 +37,10 @@ export interface PersonRowInput {
   name: string;
   party: PartyId;
   role: string;
-  /** ohne URL kein Profil-Link */
-  profileUrl?: string;
+  /** id fuer die Personenkarte (Ziffern-id oder Kandidatenschluessel); ohne id bleibt der Name Text */
+  personId?: string;
+  /** sachlicher Zusatz in einer eigenen Zeile (z. B. „Teil einer Doppelspitze“) */
+  note?: string;
 }
 
 /**
@@ -50,16 +54,17 @@ export function winnerRole(w: WahlkreisWinner): string {
     : 'Erststimmen-Gewinner/in – kein Bundestagsmandat (Zweitstimmendeckung)';
 }
 
-/** Zeile mit Initialen-Kreis in Parteifarbe, Name und "Partei · Rolle". */
-export function renderPersonRow(p: PersonRowInput, landId?: string): HTMLElement {
+/**
+ * Zeile mit Initialen-Kreis in Parteifarbe, Name und "Partei · Rolle". Mit `ctx` sind der Name (wenn
+ * `personId` gesetzt ist) und die Partei (wenn sie ein Profil hat) Knoepfe, die eine Karte in der Seite oeffnen.
+ */
+export function renderPersonRow(p: PersonRowInput, landId?: string, ctx?: CardContext): HTMLElement {
   const row = h('div', 'person');
   const text = h('div', 'person-text');
-  const name = p.profileUrl
-    ? extLink(p.profileUrl, p.name, 'person-name profile-link')
-    : h('span', 'person-name', p.name);
-  if (name instanceof HTMLAnchorElement) name.title = 'Profil bei abgeordnetenwatch.de (neuer Tab)';
-  const sub = h('span', 'person-sub', `${partyLabel(p.party, landId)} · ${p.role}`);
-  text.append(name, sub);
+  const sub = h('span', 'person-sub');
+  sub.append(partyName(p.party, partyLabel(p.party, landId), ctx), ` · ${p.role}`);
+  text.append(personName(p.name, p.personId, ctx, 'person-name'), sub);
+  if (p.note) text.append(h('span', 'person-note', p.note));
   row.append(renderAvatar(p.name, p.party), text);
   return row;
 }

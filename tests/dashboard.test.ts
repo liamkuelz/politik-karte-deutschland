@@ -52,7 +52,7 @@ describe('renderDashboard: Deutschland', () => {
     const nav = vi.fn();
     await renderDashboard(el, DE, fixtureData, nav);
     expect(el.querySelector('h2')!.textContent).toBe('Deutschland');
-    expect(tileTitles(el)).toEqual(['Zweitstimmen Bund', 'Umfrage Bund (Durchschnitt der Institute)', 'Bundesländer']);
+    expect(tileTitles(el)).toEqual(['Zweitstimmen Bund', 'Umfrage Bund (Durchschnitt der Institute)', 'Hauptkandidaten', 'Bundesländer']);
     expect(tile(el, 'Zweitstimmen Bund').textContent).toContain('Bundestagswahl 2025');
     expect(tile(el, 'Umfrage Bund').querySelectorAll('polyline').length).toBeGreaterThan(0);
     const rows = [...el.querySelectorAll<HTMLTableRowElement>('.tile tbody tr')];
@@ -78,51 +78,61 @@ describe('renderDashboard: Land', () => {
     const el = makeDash();
     const nav = vi.fn();
     await renderDashboard(el, land('BY'), fixtureData, nav);
-    const items = [...tile(el, 'Wahlkreise').querySelectorAll<HTMLButtonElement>('button')];
+    const items = [...tile(el, 'Wahlkreise').querySelectorAll<HTMLButtonElement>('button.wk-item')];
     expect(items.map((b) => b.textContent)).toEqual([
       expect.stringContaining('220'), expect.stringContaining('221'),
     ]);
     expect(items[0].textContent).toContain('München-West');
-    expect(items[0].textContent).toContain('Bernd Muster');
+    expect(items[0].closest('li')!.textContent).toContain('Bernd Muster');
     expect(tile(el, 'Wahlkreise').textContent).not.toContain('Stuttgart');
     items[1].click();
     expect(nav).toHaveBeenCalledWith({ level: 'wk', landId: 'BY', wkId: 221, details: true });
   });
 
-  it('shows Bundestag, Landtag (or empty), poll and officials tiles', async () => {
+  it('shows Bundestag, Landtag (or empty), poll and Hauptkandidaten tiles', async () => {
     const el = makeDash();
     await renderDashboard(el, land('BY'), fixtureData, () => {});
-    expect(tileTitles(el)).toEqual(['Bundestagswahl 2025', 'Landtagswahl', 'Umfrage Bayern (Durchschnitt der Institute)', 'Politiker', 'Wahlkreise']);
+    expect(tileTitles(el)).toEqual(['Bundestagswahl 2025', 'Landtagswahl', 'Umfrage Bayern (Durchschnitt der Institute)', 'Hauptkandidaten', 'Wahlkreise']);
     expect(tile(el, 'Bundestagswahl').textContent).toContain('CSU');
     expect(tile(el, 'Bundestagswahl').textContent).toContain('Wahlbeteiligung 82,0 %');
     expect(tile(el, 'Landtagswahl').textContent).toContain('Keine Landtagswahl-Daten');
     expect(tile(el, 'Umfrage Bayern').textContent).toContain('Keine Umfragen verfügbar');
-    const pol = tile(el, 'Politiker');
+    const pol = tile(el, 'Hauptkandidaten');
     expect(pol.textContent).toContain('Anna Beispiel');
     expect(pol.querySelector('.avatar')!.textContent).toBe('AB');
-    expect(pol.querySelector('a')!.getAttribute('href')).toBe('https://www.abgeordnetenwatch.de/profile/anna-beispiel');
+    expect(pol.querySelector('a')).toBeNull();
     await renderDashboard(el, land('BW'), fixtureData, () => {});
     expect(tile(el, 'Landtagswahl 2021').textContent).toContain('Grüne');
   });
 
-  it('officials link their own profileUrl (they are not in people.json), https only', async () => {
+  it('Hauptkandidaten: head of government first, candidates as person buttons, party buttons; empty Land shows the note', async () => {
     const el = makeDash();
-    await renderDashboard(el, land('BY'), { ...fixtureData, people: [] }, () => {});
-    expect(tile(el, 'Politiker').querySelector('a')!.getAttribute('href')).toBe('https://www.abgeordnetenwatch.de/profile/anna-beispiel');
+    const nav = vi.fn();
+    await renderDashboard(el, land('BY'), fixtureData, nav);
+    const t = tile(el, 'Hauptkandidaten');
+    expect(t.querySelector('.tile-caption')!.textContent).toBe('Ministerpräsident/in und Spitzenkandidaten der Landtagsparteien');
+    const people = [...t.querySelectorAll<HTMLButtonElement>('button[data-person]')];
+    expect(people.map((b) => b.dataset.person)).toEqual(['1001', 'c-grete-strasse', 'c-joerg-ueberall']);
+    people[2].click();
+    expect(nav).toHaveBeenCalledWith({ ...land('BY'), card: { kind: 'person', id: 'c-joerg-ueberall' } });
+    t.querySelector<HTMLButtonElement>('button[data-party="afd"]')!.click();
+    expect(nav).toHaveBeenLastCalledWith({ ...land('BY'), card: { kind: 'party', id: 'afd' } });
 
-    const unsafe = {
-      ...fixtureData,
-      laender: fixtureData.laender.map((l) => (l.id === 'BY'
-        ? { ...l, officials: [{ ...l.officials[0], profileUrl: 'javascript:alert(1)' }] } : l)),
-    };
-    await renderDashboard(el, land('BY'), unsafe, () => {});
-    const pol = tile(el, 'Politiker');
-    expect(pol.textContent).toContain('Anna Beispiel');
-    expect(pol.querySelector('a')).toBeNull();
-    expect(pol.querySelector('[href^="javascript:"]')).toBeNull();
+    await renderDashboard(el, land('BW'), fixtureData, () => {});
+    expect(tile(el, 'Hauptkandidaten').textContent).toContain('Für diese Ebene liegen keine belegten Angaben zu Hauptkandidaten vor.');
+  });
+
+  it('Wahlkreis list: winner name and party are their own buttons next to the Wahlkreis button', async () => {
+    const el = makeDash();
+    const nav = vi.fn();
+    await renderDashboard(el, land('BY'), fixtureData, nav);
+    const li = tile(el, 'Wahlkreise').querySelector('li')!;
+    expect(li.querySelector('.wk-item button')).toBeNull(); // keine verschachtelten Knoepfe
+    li.querySelector<HTMLButtonElement>('button[data-person="1002"]')!.click();
+    expect(nav).toHaveBeenCalledWith({ ...land('BY'), card: { kind: 'person', id: '1002' } });
+    expect(nav).toHaveBeenCalledTimes(1);
   });
 });
-
 describe('renderDashboard: Wahlkreis', () => {
   it('contains Direktmandat, stacked Erst-/Zweitstimmen, turnout and the tile "Umfrage Bundesland"', async () => {
     const el = makeDash();
@@ -134,7 +144,7 @@ describe('renderDashboard: Wahlkreis', () => {
     expect(titles).toContain('Umfrage Bundesland Bayern (Durchschnitt der Institute)');
     expect(titles).toContain('Abstimmungsverhalten');
     expect(tile(el, 'Direktmandat').textContent).toContain('Bernd Muster');
-    expect(tile(el, 'Direktmandat').querySelector('a')!.getAttribute('href')).toContain('bernd-muster');
+    expect(tile(el, 'Direktmandat').querySelector('button[data-person]')!.getAttribute('data-person')).toBe('1002');
     expect(tile(el, 'Wahlbeteiligung').textContent).toContain('84,2 %');
     const stacks = tile(el, 'Erst- und Zweitstimmen').querySelectorAll('.stack');
     expect(stacks).toHaveLength(2);
@@ -155,7 +165,7 @@ describe('renderDashboard: Wahlkreis', () => {
     expect(rows[0].textContent).toContain('Abstimmung 6');
     expect(rows[0].querySelector('time')!.textContent).toBe('13.11.2026');
     expect(rows.map((r) => r.querySelector('.chip')!.textContent)).toEqual(['Ja', 'Nein', 'Enthalten', 'Abwesend', 'Ja', 'Nein']);
-    expect(rows[0].querySelector('a')!.getAttribute('href')).toBe('https://www.abgeordnetenwatch.de/bundestag/21/abstimmungen/6');
+    expect(rows[0].querySelector('a')).toBeNull(); // Titel nur als Text, kein Link nach aussen
   });
 
   it('filter buttons filter the list client-side and show counts', async () => {
@@ -190,7 +200,7 @@ describe('renderDashboard: Wahlkreis', () => {
     expect(tile(el, 'Abstimmungsverhalten').textContent).toContain('Keine Abstimmungen verfügbar');
   });
 
-  it('winner without mdbId or Person: name without profile link, no vote request', async () => {
+  it('winner without mdbId or Person: name as text (no button), no vote request', async () => {
     const data: AppData = {
       ...fixtureData,
       wahlkreise: fixtureData.wahlkreise.map((w) => (w.id === 220 ? { ...w, winner: { ...w.winner, mdbId: null } } : w)),
@@ -198,16 +208,16 @@ describe('renderDashboard: Wahlkreis', () => {
     const el = makeDash();
     await renderDashboard(el, wk('BY', 220), data, () => {});
     expect(tile(el, 'Direktmandat').textContent).toContain('Bernd Muster');
-    expect(tile(el, 'Direktmandat').querySelector('a')).toBeNull();
+    expect(tile(el, 'Direktmandat').querySelector('[data-person]')).toBeNull();
     expect(loadVotesMock).not.toHaveBeenCalled();
     expect(tile(el, 'Abstimmungsverhalten').textContent).toContain('Keine Abstimmungen verfügbar');
 
     await renderDashboard(el, wk('BY', 220), { ...fixtureData, people: [] }, () => {});
-    expect(tile(el, 'Direktmandat').querySelector('a')).toBeNull();
+    expect(tile(el, 'Direktmandat').querySelector('[data-person]')).toBeNull();
     expect(loadVotesMock).toHaveBeenCalledWith(1002);
   });
 
-  it('winner without a seat: neutral tile and caption, no votes tile, no profile link, no vote request', async () => {
+  it('winner without a seat: neutral tile and caption, no votes tile, name as text, no vote request', async () => {
     const unseated = (directMandate: boolean): AppData => ({
       ...fixtureData,
       wahlkreise: fixtureData.wahlkreise.map((w) => (w.id === 220
@@ -221,7 +231,7 @@ describe('renderDashboard: Wahlkreis', () => {
     const t = tile(el, 'Erststimmen-Gewinner/in');
     expect(t.textContent).toContain('Bernd Muster');
     expect(t.textContent).toContain('Erststimmen-Gewinner/in – kein Bundestagsmandat (Zweitstimmendeckung)');
-    expect(t.querySelector('a')).toBeNull();
+    expect(t.querySelector('[data-person]')).toBeNull();
     expect(el.querySelector('.dash-votes')).toBeNull();
     expect(loadVotesMock).not.toHaveBeenCalled();
 
@@ -243,7 +253,7 @@ describe('renderDashboard: Wahlkreis', () => {
     expect(seg.style.backgroundColor).toBe('rgb(70, 150, 43)'); // Grüne (Gewinnerpartei) vor CSU
   });
 
-  it('unsafe vote URLs render as plain text without href', async () => {
+  it('vote URLs from the data never become links, titles stay text', async () => {
     const bad: Vote[] = [
       { ...fixtureVotes[0], title: 'Boese', url: 'javascript:alert(1)' },
       { ...fixtureVotes[1], title: 'Daten', url: 'data:text/html,x' },
@@ -349,6 +359,49 @@ describe('renderCrumbs in details mode', () => {
     by.click();
     expect(nav).toHaveBeenNthCalledWith(1, { level: 'de', details: true });
     expect(nav).toHaveBeenNthCalledWith(2, { level: 'land', landId: 'BY', details: true });
+  });
+});
+
+describe('renderDashboard: Parteien als Karten-Knoepfe', () => {
+  it('de: Bundesländer table "Stärkste Partei" opens the party card without navigating to the Land', async () => {
+    const el = makeDash();
+    const nav = vi.fn();
+    await renderDashboard(el, DE, fixtureData, nav);
+    const by = [...el.querySelectorAll<HTMLTableRowElement>('.tile tbody tr')].find((r) => r.textContent!.includes('Bayern'))!;
+    const btn = by.querySelector<HTMLButtonElement>('.party-cell button[data-party="afd"]')!;
+    expect(btn.textContent).toBe('AfD');
+    btn.click();
+    expect(nav).toHaveBeenCalledTimes(1);
+    expect(nav).toHaveBeenCalledWith({ ...DE, card: { kind: 'party', id: 'afd' } });
+    // Balken und Umfrage-Legende ebenso; Hauptkandidaten des Bundes mit Knoepfen
+    expect(tile(el, 'Zweitstimmen Bund').querySelector('button.bar-label[data-party="union"]')).not.toBeNull();
+    expect(tile(el, 'Umfrage Bund').querySelector('.spark-legend button[data-party="spd"]')).not.toBeNull();
+    const leads = tile(el, 'Hauptkandidaten');
+    expect(leads.querySelector('.tile-caption')!.textContent).toBe('Spitzenkandidaten der Parteien im Bundestag (Bundestagswahl 2025)');
+    expect([...leads.querySelectorAll('button[data-person]')].map((b) => b.textContent)).toEqual(['Erika Vorsitz', 'Jörg Überall']);
+  });
+
+  it('land: bars of Bundestag and Landtag carry party buttons (CSU in Bayern)', async () => {
+    const el = makeDash();
+    const nav = vi.fn();
+    await renderDashboard(el, land('BY'), fixtureData, nav);
+    const csu = tile(el, 'Bundestagswahl').querySelector<HTMLButtonElement>('button[data-party="union"]')!;
+    expect(csu.textContent).toBe('CSU');
+    csu.click();
+    expect(nav).toHaveBeenCalledWith({ ...land('BY'), card: { kind: 'party', id: 'union' } });
+    await renderDashboard(el, land('BW'), fixtureData, () => {});
+    expect(tile(el, 'Landtagswahl 2021').querySelector('button[data-party="union"]')).not.toBeNull();
+  });
+
+  it('wk: party names in the Erst-/Zweitstimmen table and the winner party are buttons; votes caption names the person', async () => {
+    const el = makeDash();
+    const nav = vi.fn();
+    await renderDashboard(el, wk('BY', 220), fixtureData, nav);
+    const table = tile(el, 'Erst- und Zweitstimmen');
+    table.querySelector<HTMLButtonElement>('.party-cell button[data-party="union"]')!.click();
+    expect(nav).toHaveBeenCalledWith({ ...wk('BY', 220), card: { kind: 'party', id: 'union' } });
+    expect(table.querySelector('.party-cell [data-party="sonstige"]')).toBeNull();
+    expect(tile(el, 'Abstimmungsverhalten').querySelector('.tile-caption button[data-person="1002"]')).not.toBeNull();
   });
 });
 

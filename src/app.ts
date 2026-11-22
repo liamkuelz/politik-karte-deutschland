@@ -132,8 +132,8 @@ export async function startApp(): Promise<() => void> {
       renderCrumbs(crumbs, v, data, navigate);
       if (v.details) renderDashboard(dashboard, v, data, navigate).catch(fail);
       setDetailsMode(v.details);
-      if (legend) renderLegend(legend, v, data);
-      if (footerLegend) renderLegend(footerLegend, v, data);
+      if (legend) renderLegend(legend, v, data, navigate);
+      if (footerLegend) renderLegend(footerLegend, v, data, navigate);
     }
     renderCard(cardRoot, s, data, navigate);
   };
