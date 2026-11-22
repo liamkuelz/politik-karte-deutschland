@@ -1,4 +1,4 @@
-import { findCandidate, findParty, findPerson } from './content.ts';
+import { candidateForPerson, findCandidate, findParty, findPerson } from './content.ts';
 import type { PartyProfile } from './content-types.ts';
 import type { AppData } from './data.ts';
 import { loadVotes } from './data.ts';
@@ -34,7 +34,8 @@ const memo = new WeakMap<HTMLElement, CardMemo>();
 
 const TITLE_ID = 'card-title';
 const NOTE = 'Kernpunkte aus dem Bundestagswahlprogramm 2025 (Bundesprogramm), eigene Zusammenfassung in kurzen Worten';
-const FOCUSABLE = 'button, [href], input, select, textarea, summary, [tabindex]:not([tabindex="-1"])';
+export const CHAIRS_NONE = 'derzeit nicht belegt';
+const FOCUSABLE ='button, [href], input, select, textarea, summary, [tabindex]:not([tabindex="-1"])';
 
 function section(title: string, cls: string, ...children: (Node | string)[]): HTMLElement {
   const s = h('section', `card-section ${cls}`);
@@ -98,6 +99,9 @@ function partyParts(p: PartyProfile, state: NavState, data: AppData): CardParts 
       list.append(li);
     }
     fact('Vorsitz', list);
+  } else {
+    // Lieber sichtbar als stillschweigend weggelassen (z. B. Wechsel noch nicht belegt)
+    fact('Vorsitz', h('span', 'card-chairs-none', CHAIRS_NONE));
   }
   fact('Wahlprogramm', `${p.program.title} (${p.program.year})`);
 
@@ -157,7 +161,18 @@ function personInfo(id: string, state: NavState, data: AppData): PersonInfo | un
   if (mdb && wk) roles.push(`Wahlkreis ${wk.id} · ${wk.name}`);
   for (const o of offices) roles.push(offices.length > 1 || o.land !== land ? `${o.role} (${o.land.name})` : o.role);
   if (!roles.length && person.role) roles.push(person.role);
-  return { name: person.name, party: person.party, roles, landName: land?.name, mdbId: mdb ? person.id : undefined };
+  const info: PersonInfo = { name: person.name, party: person.party, roles, landName: land?.name, mdbId: mdb ? person.id : undefined };
+  // Mitglied des Bundestages, das zugleich Hauptkandidat/in ist: Kandidatenrolle, Hinweis und Beleg ergaenzen
+  const cand = mdb ? candidateForPerson(data, person.id, state.landId) : undefined;
+  if (cand) {
+    const { candidate: c, landId: candLand } = cand;
+    const candLandName = candLand ? (data.laender.find((l) => l.id === candLand)?.name ?? candLand) : undefined;
+    const role = candLandName && candLandName !== land?.name ? `${c.role} (${candLandName})` : c.role;
+    if (!roles.includes(role)) roles.push(role);
+    info.note = c.note;
+    info.source = c.source;
+  }
+  return info;
 }
 
 function personParts(info: PersonInfo, state: NavState, data: AppData, onNavigate: Navigate): CardParts {

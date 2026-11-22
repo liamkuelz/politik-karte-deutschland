@@ -58,15 +58,17 @@ describe('party card', () => {
     expect(root.querySelector('a, a[href]')).toBeNull();
   });
 
-  it('lists founding year, program and chairs only when there are any', () => {
+  it('lists founding year, program and chairs; empty chairs say "derzeit nicht belegt" instead of vanishing', () => {
     open(withCard(DE, party('union')));
     expect(texts('.card-facts dt')).toEqual(['Gegründet', 'Vorsitz', 'Wahlprogramm']);
     expect(texts('.card-facts dd')[0]).toBe('1945');
     expect(texts('.card-facts dd')[2]).toBe('Union Programm (2025)');
     expect(texts('.card-chairs li')).toEqual(['Erika VorsitzParteivorsitzende (CDU)', 'Max VorstandParteivorsitzender (CSU)']);
+    expect(root.querySelector('.card-chairs-none')).toBeNull();
 
-    open(withCard(DE, party('spd')));
-    expect(texts('.card-facts dt')).toEqual(['Gegründet', 'Wahlprogramm']);
+    open(withCard(DE, party('spd'))); // Fixture-Partei mit leerem `chairs`
+    expect(texts('.card-facts dt')).toEqual(['Gegründet', 'Vorsitz', 'Wahlprogramm']);
+    expect(texts('.card-facts dd')[1]).toBe('derzeit nicht belegt');
     expect(root.querySelector('.card-chairs')).toBeNull();
   });
 
@@ -168,6 +170,44 @@ describe('person card', () => {
     expect(root.querySelector('.card-funktion .card-meta')!.textContent).toBe('Bundesliste');
     open(withCard(BY, person('c-joerg-ueberall')));
     expect(texts('.card-roles li')).toEqual(['Spitzenkandidat Landtagswahl 2023']);
+  });
+
+  it('MdB who is also a Hauptkandidat/in: MdB roles and votes plus candidate role, note and source', async () => {
+    // Erika Vorsitz steht in der Bundesliste der Fixtures; hier zusaetzlich als MdB in people.json
+    const data: AppData = {
+      ...fixtureData,
+      people: [...fixtureData.people, { id: 1005, name: 'Erika Vorsitz', party: 'union', role: 'Abgeordnete/r', profileUrl: '' }],
+      kandidaten: {
+        ...fixtureData.kandidaten,
+        bund: fixtureData.kandidaten.bund.map((c) => (c.name === 'Erika Vorsitz' ? { ...c, note: 'Teil einer Doppelspitze' } : c)),
+      },
+    };
+    open(withCard(DE, person('1005')), data);
+    expect(texts('.card-roles li')).toEqual(['Mitglied des Bundestages', 'Kanzlerkandidatin Bundestagswahl 2025']);
+    expect(root.querySelector('.card-funktion .card-meta')!.textContent).toBe('Teil einer Doppelspitze');
+    expect(root.querySelector('.card-source')!.textContent).toBe('Quelle: Union, Beschluss 2024');
+    expect(root.querySelector('.card-votes-section h3')!.textContent).toBe('Abstimmungsverhalten');
+    expect(loadVotesMock).toHaveBeenCalledWith(1005);
+    await flush();
+    expect(root.querySelector('a, a[href]')).toBeNull();
+
+    // Landesliste: Land in Klammern, wenn die Karte keinen Bezug zu diesem Land hat
+    const land: AppData = {
+      ...fixtureData,
+      people: [...fixtureData.people, { id: 1006, name: 'Grete Straße', party: 'afd', role: 'Abgeordnete/r', profileUrl: '' }],
+    };
+    open(withCard(DE, person('1006')), land);
+    expect(texts('.card-roles li')).toEqual(['Mitglied des Bundestages', 'Spitzenkandidatin Landtagswahl 2023 (Bayern)']);
+    expect(root.querySelector('.card-source')!.textContent).toBe('Quelle: Landeswahlleiter Bayern 2023');
+
+    // gleicher Name, andere Partei: kein Kandidatenbezug
+    const other: AppData = {
+      ...fixtureData,
+      people: [...fixtureData.people, { id: 1007, name: 'Grete Straße', party: 'spd', role: 'Abgeordnete/r', profileUrl: '' }],
+    };
+    open(withCard(DE, person('1007')), other);
+    expect(texts('.card-roles li')).toEqual(['Mitglied des Bundestages']);
+    expect(root.querySelector('.card-source')).toBeNull();
   });
 
   it('officials from laender.json: their office, no votes; MdB with an office shows both', () => {

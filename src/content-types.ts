@@ -44,5 +44,10 @@ export interface CandidatesFile {
   bund: Candidate[];
   /** Schluessel = Laenderkuerzel (BW, BY, ...). */
   laender: Record<string, Candidate[]>;
+  /**
+   * Bekannte Luecken je Land (Schluessel = Laenderkuerzel): kurze, neutrale Hinweise, z. B. eine
+   * Landtagspartei ohne belegte Spitzenkandidatur. Werden unter den Hauptkandidaten angezeigt.
+   */
+  omissions?: Record<string, string[]>;
   stand: string;
 }

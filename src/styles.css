@@ -224,6 +224,7 @@ button.crumb:focus-visible { outline: 2px solid var(--fg); outline-offset: 1px; 
 }
 .panel-inner .meta, .panel-inner .note { margin: 6px 0; font-size: 12px; color: var(--fg-dim); }
 .panel-inner .empty { margin: 4px 0; font-size: 13px; color: var(--fg-dim); font-style: italic; }
+.leads-omission { margin: 8px 0 0; font-size: 12px; color: var(--fg-dim); font-style: italic; }
 
 /* Balken */
 .bars { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }

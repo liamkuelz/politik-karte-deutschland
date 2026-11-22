@@ -342,6 +342,25 @@ describe('renderPanel: Karten-Knoepfe (Parteien und Personen)', () => {
     expect(sec.querySelectorAll('.person')).toHaveLength(0);
   });
 
+  it('land: documented gaps (kandidaten.omissions) appear as small notes below the list, only for that Land', () => {
+    const data = {
+      ...fixtureData,
+      kandidaten: { ...fixtureData.kandidaten, omissions: { BY: ['FW: keine Spitzenkandidatur belegt.'] } },
+    };
+    const leadsSec = (el: HTMLElement) =>
+      [...el.querySelectorAll('.panel-section')].find((s) => s.querySelector('h3')!.textContent === 'Hauptkandidaten')!;
+    const el = makePanel();
+    renderPanel(el, land('BY'), data, () => {});
+    const notes = [...leadsSec(el).querySelectorAll('.leads-omission')];
+    expect(notes.map((n) => n.textContent)).toEqual(['FW: keine Spitzenkandidatur belegt.']);
+    // steht unter den Zeilen
+    expect(leadsSec(el).querySelector('.leads')!.lastElementChild).toBe(notes[0]);
+
+    const bw = makePanel();
+    renderPanel(bw, land('BW'), data, () => {});
+    expect(leadsSec(bw).querySelector('.leads-omission')).toBeNull();
+  });
+
   it('wk: winner name opens the person card, bars open party cards, no candidate list', async () => {
     const el = makePanel();
     const nav = vi.fn();

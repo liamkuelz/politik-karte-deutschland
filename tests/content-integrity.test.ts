@@ -15,7 +15,7 @@ vi.mock('../src/data.ts', () => ({ loadVotes: async () => [] }));
 
 const { candidateKey, findCandidate } = await import('../src/content.ts');
 const { renderCard } = await import('../src/cards.ts');
-const { leadsOf, winnerPersonId } = await import('../src/leads.ts');
+const { leadsOf, renderLeads, winnerPersonId } = await import('../src/leads.ts');
 const { PARTIES } = await import('../src/parties.ts');
 const { cardExists, validateState } = await import('../src/validate.ts');
 
@@ -110,8 +110,85 @@ describe('kandidaten.json against the app', () => {
       const head = land.officials[0];
       if (head) expect(rows[0].name, land.id).toBe(head.name);
     }
-    // Stichprobe: Bayern beginnt mit Markus Söder
-    expect(leadsOf(data, 'BY').rows[0]).toMatchObject({ name: 'Markus Söder', party: 'union' });
+    // Stichprobe Bayern, aus den Daten abgeleitet (kein fester Name, damit Amtswechsel den Test nicht brechen)
+    const by = data.laender.find((l) => l.id === 'BY')!.officials[0];
+    expect(leadsOf(data, 'BY').rows[0]).toMatchObject({ name: by.name, party: by.party });
+  });
+
+  it('documented omissions: valid Land keys, short neutral text, rendered below the Hauptkandidaten', () => {
+    const omissions = data.kandidaten.omissions ?? {};
+    const ids = new Set(data.laender.map((l) => l.id));
+    for (const [landId, notes] of Object.entries(omissions)) {
+      expect(ids.has(landId), landId).toBe(true);
+      for (const n of notes) {
+        expect(n.trim(), landId).not.toBe('');
+        expect(n, landId).not.toMatch(/http|www\./i);
+        expect(leadsOf(data, landId).omissions).toContain(n);
+      }
+    }
+    // Saarland: AfD sitzt im Landtag, Spitzenkandidatur nicht belegt
+    expect(omissions.SL?.some((n) => n.startsWith('AfD:'))).toBe(true);
+    const box = renderLeads(data, 'SL', { state: { level: 'land', landId: 'SL', details: false }, onNavigate: nav, profiles: new Set() });
+    expect([...box.querySelectorAll('.leads-omission')].map((p) => p.textContent)).toEqual(omissions.SL);
+  });
+});
+
+describe('Hauptkandidaten who are sitting MdBs (real data)', () => {
+  /** people.json-id zu einem Namen; die Daten bestimmen, wer heute im Bundestag sitzt. */
+  const mdbId = (name: string) => data.people.find((p) => p.name === name)?.id;
+
+  it('Friedrich Merz: card shows the MdB role, the candidate role and source, and the votes section', () => {
+    const id = mdbId('Friedrich Merz');
+    const c = data.kandidaten.bund.find((x) => x.name === 'Friedrich Merz');
+    // Beide Eintraege existieren am 22.11.2026 (people.json id 118559); faellt einer weg, ist der Test gegenstandslos
+    if (id === undefined || !c) return;
+    const row = leadsOf(data).rows.find((r) => r.name === 'Friedrich Merz')!;
+    expect(row.personId).toBe(String(id));
+    const root = open({ level: 'de', details: false, card: { kind: 'person', id: String(id) } });
+    const roles = [...root.querySelectorAll('.card-roles li')].map((li) => li.textContent);
+    expect(roles).toContain('Mitglied des Bundestages');
+    expect(roles).toContain(c.role); // "Kanzlerkandidat Bundestagswahl 2025"
+    expect(root.querySelector('.card-source')!.textContent).toBe(`Quelle: ${c.source}`);
+    expect(root.querySelector('.card-votes-section h3')!.textContent).toBe('Abstimmungsverhalten');
+  });
+
+  it('Heidi Reichinnek (Bund, Doppelspitze): candidate note appears on the MdB card', () => {
+    const id = mdbId('Heidi Reichinnek');
+    const c = data.kandidaten.bund.find((x) => x.name === 'Heidi Reichinnek');
+    if (id === undefined || !c) return;
+    const root = open({ level: 'de', details: false, card: { kind: 'person', id: String(id) } });
+    expect(root.textContent).toContain(c.role);
+    if (c.note) expect(root.querySelector('.card-funktion .card-meta')!.textContent).toBe(c.note);
+  });
+
+  it('Cansu Özdemir (Hamburg list): Land candidate role, note if any, source and votes', () => {
+    const id = mdbId('Cansu Özdemir');
+    const c = data.kandidaten.laender.HH?.find((x) => x.name === 'Cansu Özdemir');
+    if (id === undefined || !c) return;
+    const row = leadsOf(data, 'HH').rows.find((r) => r.name === 'Cansu Özdemir')!;
+    expect(row.personId).toBe(String(id));
+    const root = open({ level: 'land', landId: 'HH', details: false, card: { kind: 'person', id: String(id) } });
+    expect(root.textContent).toContain(c.role);
+    if (c.note) expect(root.textContent).toContain(c.note);
+    expect(root.querySelector('.card-source')!.textContent).toBe(`Quelle: ${c.source}`);
+    expect(root.querySelector('.card-votes-section')).not.toBeNull();
+  });
+
+  it('every MdB-matched Hauptkandidat/in card carries the candidate role; other MdBs get no candidate source', () => {
+    for (const [landId, list] of lists) {
+      for (const c of list) {
+        const p = data.people.find((x) => x.party === c.party && x.name === c.name);
+        if (!p) continue;
+        const root = open(landId
+          ? { level: 'land', landId, details: false, card: { kind: 'person', id: String(p.id) } }
+          : { level: 'de', details: false, card: { kind: 'person', id: String(p.id) } });
+        expect(root.textContent, `${landId ?? 'Bund'} ${c.name}`).toContain(c.role);
+        root.remove();
+      }
+    }
+    const plain = data.people.find((p) => !lists.some(([, l]) => l.some((c) => c.name === p.name)))!;
+    const root = open({ level: 'de', details: false, card: { kind: 'person', id: String(plain.id) } });
+    expect(root.querySelector('.card-source')).toBeNull();
   });
 });
 
@@ -138,6 +215,10 @@ describe('Wahlkreis winners', () => {
       buttons++;
       expect(cardExists({ kind: 'person', id }, data), `${wk.id} ${wk.winner.name}`).toBe(true);
     }
-    expect(buttons).toBeGreaterThan(250);
+    // Frueher fest "> 250": bricht bei normalem Wechsel im Bundestag (taeglicher Datenabgleich). Jetzt relativ:
+    // mindestens die Haelfte der Direktmandate mit Gewinner-id loest auf.
+    const withId = data.wahlkreise.filter((wk) => wk.winner.mdbId !== null).length;
+    expect(buttons).toBeGreaterThan(0);
+    expect(buttons).toBeGreaterThanOrEqual(Math.floor(withId * 0.5));
   });
 });

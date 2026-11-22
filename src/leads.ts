@@ -1,8 +1,7 @@
-import { candidateKey, findPerson, slugify } from './content.ts';
+import { candidateKey, findPerson, mdbForCandidate, slugify } from './content.ts';
 import type { Candidate } from './content-types.ts';
 import type { AppData } from './data.ts';
 import type { PartyId, PartyResult, WahlkreisWinner } from './types.ts';
-import type { Person } from './types.ts';
 import { sortResults } from './ui/bars.ts';
 import type { CardContext } from './ui/clickables.ts';
 import { h } from './ui/dom.ts';
@@ -23,15 +22,11 @@ export const LEADS_EMPTY = 'Für diese Ebene liegen keine belegten Angaben zu Ha
 
 /**
  * Ist ein/e Hauptkandidat/in zugleich Mitglied des Bundestages (z. B. Kanzlerkandidat/in mit Mandat), zeigt
- * die Karte Person und Abstimmungen statt nur der Kandidatenrolle: dafuer die echte people.json-id
- * verwenden (Name und Partei muessen uebereinstimmen), sonst den Kandidatenschluessel.
+ * die Karte Person und Abstimmungen plus die Kandidatenrolle (siehe cards.ts): dafuer die echte
+ * people.json-id verwenden (Name und Partei muessen uebereinstimmen), sonst den Kandidatenschluessel.
  */
-function mdbFor(data: AppData, c: Candidate): Person | undefined {
-  return data.people.find((p) => p.party === c.party && slugify(p.name) === slugify(c.name));
-}
-
 const candidateRow = (data: AppData, c: Candidate): PersonRowInput => {
-  const mdb = mdbFor(data, c);
+  const mdb = mdbForCandidate(data, c);
   return { name: c.name, party: c.party, role: c.role, note: c.note, personId: mdb ? String(mdb.id) : candidateKey(c) };
 };
 
@@ -46,13 +41,15 @@ export interface Leads {
   rows: PersonRowInput[];
   /** keine belegten Kandidaten-Eintraege fuer diese Ebene */
   empty: boolean;
+  /** Hinweise auf bekannte Luecken (kandidaten.json `omissions`, nur Laender), z. B. Partei ohne belegte Spitzenkandidatur */
+  omissions: string[];
 }
 
 /** Zeilen der Hauptkandidaten fuer den Bund (ohne landId) oder ein Land. */
 export function leadsOf(data: AppData, landId?: string): Leads {
   if (!landId) {
     const list = data.kandidaten?.bund ?? [];
-    return { rows: byResult(list, data.bund.second).map((c) => candidateRow(data, c)), empty: !list.length };
+    return { rows: byResult(list, data.bund.second).map((c) => candidateRow(data, c)), empty: !list.length, omissions: [] };
   }
   const land = data.laender.find((l) => l.id === landId);
   const list = data.kandidaten?.laender?.[landId] ?? [];
@@ -65,15 +62,19 @@ export function leadsOf(data: AppData, landId?: string): Leads {
   }
   const results = land?.landtag?.second ?? land?.bundestag.second ?? [];
   rows.push(...byResult(list.filter((c) => !used.has(c)), results).map((c) => candidateRow(data, c)));
-  return { rows, empty: !list.length };
+  return { rows, empty: !list.length, omissions: data.kandidaten?.omissions?.[landId] ?? [] };
 }
 
-/** Liste der Hauptkandidaten (Zeilen mit Karten-Knoepfen) plus Hinweis, wenn keine Eintraege belegt sind. */
+/**
+ * Liste der Hauptkandidaten (Zeilen mit Karten-Knoepfen) plus Hinweis, wenn keine Eintraege belegt sind,
+ * und darunter die belegten Luecken als kleine Hinweise (damit nichts stillschweigend fehlt).
+ */
 export function renderLeads(data: AppData, landId: string | undefined, ctx: CardContext): HTMLElement {
-  const { rows, empty } = leadsOf(data, landId);
+  const { rows, empty, omissions } = leadsOf(data, landId);
   const box = h('div', 'people leads');
   for (const r of rows) box.append(renderPersonRow(r, landId, ctx));
   if (empty) box.append(h('p', 'empty', LEADS_EMPTY));
+  for (const note of omissions) box.append(h('p', 'leads-omission', note));
   return box;
 }
 
