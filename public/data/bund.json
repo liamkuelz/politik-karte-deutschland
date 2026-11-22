@@ -1,0 +1,47 @@
+{
+ "electionType": "bundestag",
+ "year": 2025,
+ "turnout": 82.51,
+ "second": [
+  {
+   "party": "union",
+   "share": 28.52
+  },
+  {
+   "party": "afd",
+   "share": 20.8
+  },
+  {
+   "party": "spd",
+   "share": 16.41
+  },
+  {
+   "party": "gruene",
+   "share": 11.61
+  },
+  {
+   "party": "linke",
+   "share": 8.77
+  },
+  {
+   "party": "bsw",
+   "share": 4.98
+  },
+  {
+   "party": "fdp",
+   "share": 4.33
+  },
+  {
+   "party": "sonstige",
+   "share": 2.87
+  },
+  {
+   "party": "fw",
+   "share": 1.55
+  },
+  {
+   "party": "ssw",
+   "share": 0.15
+  }
+ ]
+}

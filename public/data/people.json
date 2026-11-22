@@ -1,0 +1,4684 @@
+[
+ {
+  "id": 28896,
+  "name": "Inge Gräßle",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/inge-graessle",
+  "wahlkreisId": 269
+ },
+ {
+  "id": 29084,
+  "name": "Knut Abraham",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/knut-abraham"
+ },
+ {
+  "id": 29094,
+  "name": "Michael Hose",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-hose"
+ },
+ {
+  "id": 29202,
+  "name": "Beatrix von Storch",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/beatrix-von-storch"
+ },
+ {
+  "id": 29441,
+  "name": "Johannes Schraps",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/johannes-schraps",
+  "wahlkreisId": 46
+ },
+ {
+  "id": 29476,
+  "name": "Christina Baum",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christina-baum",
+  "wahlkreisId": 68
+ },
+ {
+  "id": 29490,
+  "name": "Tilman Kuban",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/tilman-kuban"
+ },
+ {
+  "id": 29534,
+  "name": "Sandra Detzer",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sandra-detzer"
+ },
+ {
+  "id": 30789,
+  "name": "Saskia Ludwig",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/saskia-ludwig"
+ },
+ {
+  "id": 30917,
+  "name": "Holger Mann",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/holger-mann"
+ },
+ {
+  "id": 30936,
+  "name": "Lars Rohwer",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lars-rohwer"
+ },
+ {
+  "id": 31073,
+  "name": "Isabelle Vandre",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/isabelle-vandre"
+ },
+ {
+  "id": 31216,
+  "name": "Alexander Gauland",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/alexander-gauland",
+  "wahlkreisId": 161
+ },
+ {
+  "id": 31218,
+  "name": "Birgit Bessin",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/birgit-bessin",
+  "wahlkreisId": 65
+ },
+ {
+  "id": 31221,
+  "name": "Steffen Kotré",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/steffen-kotre",
+  "wahlkreisId": 62
+ },
+ {
+  "id": 31274,
+  "name": "Thomas Dietz",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thomas-dietz",
+  "wahlkreisId": 163
+ },
+ {
+  "id": 31607,
+  "name": "Bodo Ramelow",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/bodo-ramelow",
+  "wahlkreisId": 192
+ },
+ {
+  "id": 31707,
+  "name": "Paula Piechotta",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/paula-piechotta"
+ },
+ {
+  "id": 32337,
+  "name": "Stephan Brandner",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stephan-brandner",
+  "wahlkreisId": 193
+ },
+ {
+  "id": 66002,
+  "name": "Christoph de Vries",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christoph-de-vries"
+ },
+ {
+  "id": 66004,
+  "name": "Henri Schmidt",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/henri-schmidt",
+  "wahlkreisId": 10
+ },
+ {
+  "id": 66005,
+  "name": "Christoph Ploß",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christoph-ploss",
+  "wahlkreisId": 21
+ },
+ {
+  "id": 66273,
+  "name": "Bernd Baumann",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/bernd-baumann"
+ },
+ {
+  "id": 66277,
+  "name": "Alexander Wolf",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/alexander-wolf-0"
+ },
+ {
+  "id": 66285,
+  "name": "Kay Gottschalk",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/kay-gottschalk"
+ },
+ {
+  "id": 66475,
+  "name": "Till Steffen",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/till-steffen",
+  "wahlkreisId": 20
+ },
+ {
+  "id": 66491,
+  "name": "Linda Heitmann",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/linda-heitmann",
+  "wahlkreisId": 19
+ },
+ {
+  "id": 66563,
+  "name": "Cansu Özdemir",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/cansu-oezdemir"
+ },
+ {
+  "id": 66924,
+  "name": "Olaf Scholz",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/olaf-scholz",
+  "wahlkreisId": 61
+ },
+ {
+  "id": 73300,
+  "name": "Thomas Röwekamp",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thomas-roewekamp"
+ },
+ {
+  "id": 73426,
+  "name": "Kirsten Kappert-Gonther",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/kirsten-kappert-gonther"
+ },
+ {
+  "id": 78797,
+  "name": "Johannes Steiniger",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/johannes-steiniger",
+  "wahlkreisId": 207
+ },
+ {
+  "id": 78805,
+  "name": "Nina Warken",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/nina-warken",
+  "wahlkreisId": 276
+ },
+ {
+  "id": 78810,
+  "name": "Artur Auernhammer",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/artur-auernhammer",
+  "wahlkreisId": 240
+ },
+ {
+  "id": 78812,
+  "name": "Silke Launert",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/silke-launert",
+  "wahlkreisId": 236
+ },
+ {
+  "id": 78817,
+  "name": "Kai Whittaker",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/kai-whittaker",
+  "wahlkreisId": 273
+ },
+ {
+  "id": 78818,
+  "name": "Johann Wadephul",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/johann-wadephul",
+  "wahlkreisId": 4
+ },
+ {
+  "id": 78819,
+  "name": "Konstantin von Notz",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/konstantin-von-notz"
+ },
+ {
+  "id": 78825,
+  "name": "Detlef Seif",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/detlef-seif",
+  "wahlkreisId": 91
+ },
+ {
+  "id": 78831,
+  "name": "Thomas Silberhorn",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thomas-silberhorn",
+  "wahlkreisId": 235
+ },
+ {
+  "id": 78834,
+  "name": "Mahmut Özdemir",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/mahmut-oezdemir",
+  "wahlkreisId": 115
+ },
+ {
+  "id": 78836,
+  "name": "Patrick Schnieder",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/patrick-schnieder",
+  "wahlkreisId": 201
+ },
+ {
+  "id": 78838,
+  "name": "Rolf Mützenich",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/rolf-muetzenich"
+ },
+ {
+  "id": 78847,
+  "name": "Jan Metzler",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jan-metzler",
+  "wahlkreisId": 205
+ },
+ {
+  "id": 78859,
+  "name": "Oliver Kaczmarek",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/oliver-kaczmarek",
+  "wahlkreisId": 143
+ },
+ {
+  "id": 78863,
+  "name": "Jürgen Hardt",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/juergen-hardt",
+  "wahlkreisId": 102
+ },
+ {
+  "id": 78865,
+  "name": "Christian Hirte",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christian-hirte"
+ },
+ {
+  "id": 78878,
+  "name": "Agnieszka Brugger",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/agnieszka-brugger"
+ },
+ {
+  "id": 78881,
+  "name": "Michael Brand",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-brand",
+  "wahlkreisId": 173
+ },
+ {
+  "id": 78884,
+  "name": "Sören Bartol",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/soeren-bartol",
+  "wahlkreisId": 170
+ },
+ {
+  "id": 78886,
+  "name": "Katrin Göring-Eckardt",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/katrin-goering-eckardt"
+ },
+ {
+  "id": 78902,
+  "name": "Stefan Zierke",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stefan-zierke"
+ },
+ {
+  "id": 78904,
+  "name": "Emmi Zeulner",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/emmi-zeulner",
+  "wahlkreisId": 239
+ },
+ {
+  "id": 78913,
+  "name": "Dirk Wiese",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/dirk-wiese"
+ },
+ {
+  "id": 78914,
+  "name": "Klaus-Peter Willsch",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/klaus-peter-willsch",
+  "wahlkreisId": 177
+ },
+ {
+  "id": 78916,
+  "name": "Elisabeth Winkelmeier-Becker",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/elisabeth-winkelmeier-becker",
+  "wahlkreisId": 96
+ },
+ {
+  "id": 78919,
+  "name": "Anja Weisgerber",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/anja-weisgerber",
+  "wahlkreisId": 249
+ },
+ {
+  "id": 78938,
+  "name": "Dirk Vöpel",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/dirk-voepel",
+  "wahlkreisId": 116
+ },
+ {
+  "id": 78939,
+  "name": "Christian von Stetten",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christian-von-stetten",
+  "wahlkreisId": 268
+ },
+ {
+  "id": 78944,
+  "name": "Julia Verlinden",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/julia-verlinden"
+ },
+ {
+  "id": 78952,
+  "name": "Jan van Aken",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jan-van-aken"
+ },
+ {
+  "id": 78958,
+  "name": "Astrid Timmermann-Fechter",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/astrid-timmermann-fechter"
+ },
+ {
+  "id": 78960,
+  "name": "Michael Thews",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-thews",
+  "wahlkreisId": 144
+ },
+ {
+  "id": 78976,
+  "name": "Stephan Stracke",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stephan-stracke",
+  "wahlkreisId": 257
+ },
+ {
+  "id": 78979,
+  "name": "Dieter Stier",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/dieter-stier"
+ },
+ {
+  "id": 78981,
+  "name": "Albert Stegemann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/albert-stegemann",
+  "wahlkreisId": 31
+ },
+ {
+  "id": 78988,
+  "name": "Wolfgang Stefinger",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/wolfgang-stefinger",
+  "wahlkreisId": 217
+ },
+ {
+  "id": 78992,
+  "name": "Tino Sorge",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/tino-sorge"
+ },
+ {
+  "id": 78993,
+  "name": "Jens Spahn",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jens-spahn",
+  "wahlkreisId": 123
+ },
+ {
+  "id": 78996,
+  "name": "Svenja Stadler",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/svenja-stadler"
+ },
+ {
+  "id": 78998,
+  "name": "Frank Schwabe",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/frank-schwabe",
+  "wahlkreisId": 120
+ },
+ {
+  "id": 78999,
+  "name": "Stefan Schwartze",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stefan-schwartze"
+ },
+ {
+  "id": 79000,
+  "name": "Andreas Schwarz",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/andreas-schwarz"
+ },
+ {
+  "id": 79001,
+  "name": "Rita Schwarzelühr-Sutter",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/rita-schwarzeluehr-sutter"
+ },
+ {
+  "id": 79014,
+  "name": "Carsten Schneider",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/carsten-schneider"
+ },
+ {
+  "id": 79021,
+  "name": "Ulle Schauws",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ulle-schauws"
+ },
+ {
+  "id": 79023,
+  "name": "Nina Scheer",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/nina-scheer"
+ },
+ {
+  "id": 79032,
+  "name": "Johann Saathoff",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/johann-saathoff",
+  "wahlkreisId": 24
+ },
+ {
+  "id": 79036,
+  "name": "Dagmar Schmidt",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/dagmar-schmidt"
+ },
+ {
+  "id": 79041,
+  "name": "Claudia Roth",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/claudia-roth"
+ },
+ {
+  "id": 79043,
+  "name": "Norbert Röttgen",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/norbert-roettgen",
+  "wahlkreisId": 97
+ },
+ {
+  "id": 79046,
+  "name": "Corinna Rüffer",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/corinna-rueffer"
+ },
+ {
+  "id": 79047,
+  "name": "Albert Rupprecht",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/albert-rupprecht",
+  "wahlkreisId": 234
+ },
+ {
+  "id": 79051,
+  "name": "Bernd Rützel",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/bernd-ruetzel"
+ },
+ {
+  "id": 79066,
+  "name": "Dennis Rohde",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/dennis-rohde",
+  "wahlkreisId": 27
+ },
+ {
+  "id": 79067,
+  "name": "Alois Rainer",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/alois-rainer",
+  "wahlkreisId": 230
+ },
+ {
+  "id": 79069,
+  "name": "Alexander Radwan",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/alexander-radwan",
+  "wahlkreisId": 222
+ },
+ {
+  "id": 79070,
+  "name": "Kerstin Radomski",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/kerstin-radomski",
+  "wahlkreisId": 113
+ },
+ {
+  "id": 79071,
+  "name": "Thomas Rachel",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thomas-rachel",
+  "wahlkreisId": 89
+ },
+ {
+  "id": 79073,
+  "name": "Martin Rabanus",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/martin-rabanus"
+ },
+ {
+  "id": 79077,
+  "name": "Sabine Poschmann",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sabine-poschmann",
+  "wahlkreisId": 142
+ },
+ {
+  "id": 79090,
+  "name": "Lisa Paus",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lisa-paus"
+ },
+ {
+  "id": 79097,
+  "name": "Aydan Özoğuz",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/aydan-oezoguz",
+  "wahlkreisId": 22
+ },
+ {
+  "id": 79103,
+  "name": "Omid Nouripour",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/omid-nouripour"
+ },
+ {
+  "id": 79106,
+  "name": "Wilfried Oellers",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/wilfried-oellers",
+  "wahlkreisId": 88
+ },
+ {
+  "id": 79108,
+  "name": "Florian Oßner",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/florian-ossner",
+  "wahlkreisId": 227
+ },
+ {
+  "id": 79116,
+  "name": "Carsten Müller",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/carsten-mueller"
+ },
+ {
+  "id": 79129,
+  "name": "Irene Mihalic",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/irene-mihalic"
+ },
+ {
+  "id": 79132,
+  "name": "Mathias Middelberg",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/mathias-middelberg",
+  "wahlkreisId": 39
+ },
+ {
+  "id": 79133,
+  "name": "Matthias Miersch",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/matthias-miersch",
+  "wahlkreisId": 47
+ },
+ {
+  "id": 79134,
+  "name": "Stephan Mayer",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stephan-mayer",
+  "wahlkreisId": 211
+ },
+ {
+  "id": 79135,
+  "name": "Michael Meister",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-meister",
+  "wahlkreisId": 187
+ },
+ {
+  "id": 79140,
+  "name": "Katja Mast",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/katja-mast"
+ },
+ {
+  "id": 79141,
+  "name": "Andreas Mattfeldt",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/andreas-mattfeldt",
+  "wahlkreisId": 34
+ },
+ {
+  "id": 79146,
+  "name": "Daniela Ludwig",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/daniela-ludwig",
+  "wahlkreisId": 221
+ },
+ {
+  "id": 79147,
+  "name": "Jan-Marco Luczak",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jan-marco-luczak"
+ },
+ {
+  "id": 79149,
+  "name": "Carsten Linnemann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/carsten-linnemann",
+  "wahlkreisId": 136
+ },
+ {
+  "id": 79150,
+  "name": "Patricia Lips",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/patricia-lips",
+  "wahlkreisId": 186
+ },
+ {
+  "id": 79192,
+  "name": "Andrea Lindholz",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/andrea-lindholz",
+  "wahlkreisId": 246
+ },
+ {
+  "id": 79194,
+  "name": "Andreas Lenz",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/andreas-lenz",
+  "wahlkreisId": 212
+ },
+ {
+  "id": 79199,
+  "name": "Steffi Lemke",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/steffi-lemke"
+ },
+ {
+  "id": 79205,
+  "name": "Caren Lay",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/caren-lay"
+ },
+ {
+  "id": 79214,
+  "name": "Ulrich Lange",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ulrich-lange",
+  "wahlkreisId": 253
+ },
+ {
+  "id": 79215,
+  "name": "Karl Lauterbach",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/karl-lauterbach",
+  "wahlkreisId": 100
+ },
+ {
+  "id": 79223,
+  "name": "Anette Kramme",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/anette-kramme"
+ },
+ {
+  "id": 79226,
+  "name": "Gunther Krichbaum",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/gunther-krichbaum",
+  "wahlkreisId": 279
+ },
+ {
+  "id": 79227,
+  "name": "Günter Krings",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/guenter-krings",
+  "wahlkreisId": 108
+ },
+ {
+  "id": 79234,
+  "name": "Bärbel Kofler",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/baerbel-kofler"
+ },
+ {
+  "id": 79237,
+  "name": "Markus Koob",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/markus-koob",
+  "wahlkreisId": 175
+ },
+ {
+  "id": 79238,
+  "name": "Carsten Körber",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/carsten-koerber"
+ },
+ {
+  "id": 79239,
+  "name": "Axel Knoerig",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/axel-knoerig",
+  "wahlkreisId": 33
+ },
+ {
+  "id": 79241,
+  "name": "Lars Klingbeil",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lars-klingbeil",
+  "wahlkreisId": 35
+ },
+ {
+  "id": 79242,
+  "name": "Georg Kippels",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/georg-kippels",
+  "wahlkreisId": 90
+ },
+ {
+  "id": 79246,
+  "name": "Roderich Kiesewetter",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/roderich-kiesewetter",
+  "wahlkreisId": 270
+ },
+ {
+  "id": 79249,
+  "name": "Anja Karliczek",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/anja-karliczek",
+  "wahlkreisId": 127
+ },
+ {
+  "id": 79277,
+  "name": "Thomas Jarzombek",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thomas-jarzombek",
+  "wahlkreisId": 105
+ },
+ {
+  "id": 79293,
+  "name": "Hendrik Hoppenstedt",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/hendrik-hoppenstedt",
+  "wahlkreisId": 43
+ },
+ {
+  "id": 79294,
+  "name": "Anton Hofreiter",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/anton-hofreiter"
+ },
+ {
+  "id": 79295,
+  "name": "Alexander Hoffmann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/alexander-hoffmann",
+  "wahlkreisId": 248
+ },
+ {
+  "id": 79299,
+  "name": "Mark Helfrich",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/mark-helfrich",
+  "wahlkreisId": 3
+ },
+ {
+  "id": 79316,
+  "name": "Hubertus Heil",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/hubertus-heil",
+  "wahlkreisId": 45
+ },
+ {
+  "id": 79317,
+  "name": "Mechthild Heil",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/mechthild-heil",
+  "wahlkreisId": 197
+ },
+ {
+  "id": 79320,
+  "name": "Gabriela Heinrich",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/gabriela-heinrich"
+ },
+ {
+  "id": 79322,
+  "name": "Matthias Hauer",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/matthias-hauer",
+  "wahlkreisId": 119
+ },
+ {
+  "id": 79325,
+  "name": "Britta Haßelmann",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/britta-hasselmann"
+ },
+ {
+  "id": 79326,
+  "name": "Sebastian Hartmann",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sebastian-hartmann"
+ },
+ {
+  "id": 79327,
+  "name": "Metin Hakverdi",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/metin-hakverdi",
+  "wahlkreisId": 23
+ },
+ {
+  "id": 79329,
+  "name": "Florian Hahn",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/florian-hahn",
+  "wahlkreisId": 220
+ },
+ {
+  "id": 79332,
+  "name": "Christian Haase",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christian-haase",
+  "wahlkreisId": 135
+ },
+ {
+  "id": 79333,
+  "name": "Bettina Hagedorn",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/bettina-hagedorn"
+ },
+ {
+  "id": 79334,
+  "name": "Gregor Gysi",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/gregor-gysi",
+  "wahlkreisId": 83
+ },
+ {
+  "id": 79335,
+  "name": "Fritz Güntzler",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/fritz-guentzler",
+  "wahlkreisId": 53
+ },
+ {
+  "id": 79336,
+  "name": "Olav Gutting",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/olav-gutting",
+  "wahlkreisId": 278
+ },
+ {
+  "id": 79349,
+  "name": "Kerstin Griese",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/kerstin-griese"
+ },
+ {
+  "id": 79353,
+  "name": "Nicole Gohlke",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/nicole-gohlke"
+ },
+ {
+  "id": 79356,
+  "name": "Martin Gerster",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/martin-gerster"
+ },
+ {
+  "id": 79364,
+  "name": "Matthias Gastel",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/matthias-gastel"
+ },
+ {
+  "id": 79366,
+  "name": "Thomas Gebhart",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thomas-gebhart",
+  "wahlkreisId": 210
+ },
+ {
+  "id": 79370,
+  "name": "Michael Frieser",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-frieser",
+  "wahlkreisId": 244
+ },
+ {
+  "id": 79378,
+  "name": "Thorsten Frei",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thorsten-frei",
+  "wahlkreisId": 286
+ },
+ {
+  "id": 79387,
+  "name": "Saskia Esken",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/saskia-esken"
+ },
+ {
+  "id": 79389,
+  "name": "Hermann Färber",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/hermann-faerber",
+  "wahlkreisId": 263
+ },
+ {
+  "id": 79390,
+  "name": "Johannes Fechner",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/johannes-fechner"
+ },
+ {
+  "id": 79391,
+  "name": "Uwe Feiler",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/uwe-feiler"
+ },
+ {
+  "id": 79397,
+  "name": "Michael Donth",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-donth",
+  "wahlkreisId": 289
+ },
+ {
+  "id": 79403,
+  "name": "Katharina Dröge",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/katharina-droege",
+  "wahlkreisId": 94
+ },
+ {
+  "id": 79404,
+  "name": "Hansjörg Durz",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/hansjoerg-durz",
+  "wahlkreisId": 252
+ },
+ {
+  "id": 79405,
+  "name": "Harald Ebner",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/harald-ebner"
+ },
+ {
+  "id": 79411,
+  "name": "Sabine Dittmar",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sabine-dittmar"
+ },
+ {
+  "id": 79412,
+  "name": "Alexander Dobrindt",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/alexander-dobrindt",
+  "wahlkreisId": 225
+ },
+ {
+  "id": 79416,
+  "name": "Lars Castellucci",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lars-castellucci"
+ },
+ {
+  "id": 79418,
+  "name": "Gitta Connemann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/gitta-connemann",
+  "wahlkreisId": 25
+ },
+ {
+  "id": 79427,
+  "name": "Reinhard Brandl",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/reinhard-brandl",
+  "wahlkreisId": 215
+ },
+ {
+  "id": 79429,
+  "name": "Franziska Brantner",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/franziska-brantner"
+ },
+ {
+  "id": 79434,
+  "name": "Ralph Brinkhaus",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ralph-brinkhaus",
+  "wahlkreisId": 130
+ },
+ {
+  "id": 79444,
+  "name": "Steffen Bilger",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/steffen-bilger",
+  "wahlkreisId": 265
+ },
+ {
+  "id": 79446,
+  "name": "Peter Beyer",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/peter-beyer",
+  "wahlkreisId": 104
+ },
+ {
+  "id": 79454,
+  "name": "Dietmar Bartsch",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/dietmar-bartsch"
+ },
+ {
+  "id": 79455,
+  "name": "Bärbel Bas",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/baerbel-bas",
+  "wahlkreisId": 114
+ },
+ {
+  "id": 79465,
+  "name": "Thomas Bareiß",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thomas-bareiss",
+  "wahlkreisId": 295
+ },
+ {
+  "id": 79468,
+  "name": "Dorothee Bär",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/dorothee-baer",
+  "wahlkreisId": 247
+ },
+ {
+  "id": 79476,
+  "name": "Stephan Albani",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stephan-albani"
+ },
+ {
+  "id": 79481,
+  "name": "Angelika Glöckner",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/angelika-gloeckner"
+ },
+ {
+  "id": 97972,
+  "name": "Stefan Möller",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stefan-moeller",
+  "wahlkreisId": 189
+ },
+ {
+  "id": 108373,
+  "name": "Alexander Arpaschi",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/alexander-arpaschi"
+ },
+ {
+  "id": 108379,
+  "name": "Alice Weidel",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/alice-weidel"
+ },
+ {
+  "id": 108563,
+  "name": "Gökay Akbulut",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/goekay-akbulut"
+ },
+ {
+  "id": 108585,
+  "name": "Heinrich Koch",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/heinrich-koch"
+ },
+ {
+  "id": 108605,
+  "name": "Alexander Throm",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/alexander-throm",
+  "wahlkreisId": 267
+ },
+ {
+  "id": 108738,
+  "name": "Fabian Gramling",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/fabian-gramling",
+  "wahlkreisId": 266
+ },
+ {
+  "id": 108754,
+  "name": "Marc Bernhard",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/marc-bernhard"
+ },
+ {
+  "id": 108761,
+  "name": "Markus Frohnmaier",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/markus-frohnmaier"
+ },
+ {
+  "id": 108783,
+  "name": "Felix Schreiner",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/felix-schreiner",
+  "wahlkreisId": 288
+ },
+ {
+  "id": 108815,
+  "name": "Paul Schmidt",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/paul-schmidt"
+ },
+ {
+  "id": 108876,
+  "name": "Sahra Mirow",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sahra-mirow"
+ },
+ {
+  "id": 108960,
+  "name": "Nils Schmid",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/nils-schmid"
+ },
+ {
+  "id": 110038,
+  "name": "Ellen Demuth",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ellen-demuth",
+  "wahlkreisId": 196
+ },
+ {
+  "id": 110066,
+  "name": "Julia Klöckner",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/julia-kloeckner",
+  "wahlkreisId": 200
+ },
+ {
+  "id": 110102,
+  "name": "Tanja Machalet",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/tanja-machalet"
+ },
+ {
+  "id": 110154,
+  "name": "Iris Nieland",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/iris-nieland"
+ },
+ {
+  "id": 117904,
+  "name": "Pascal Meiser",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/pascal-meiser",
+  "wahlkreisId": 82
+ },
+ {
+  "id": 118131,
+  "name": "Anna Lührmann",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/anna-luehrmann"
+ },
+ {
+  "id": 118559,
+  "name": "Friedrich Merz",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/friedrich-merz",
+  "wahlkreisId": 146
+ },
+ {
+  "id": 118790,
+  "name": "Jens Lehmann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jens-lehmann"
+ },
+ {
+  "id": 118997,
+  "name": "Maren Kaminski",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/maren-kaminski"
+ },
+ {
+  "id": 119861,
+  "name": "Janosch Dahmen",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/janosch-dahmen"
+ },
+ {
+  "id": 120205,
+  "name": "Karl Bär",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/karl-baer"
+ },
+ {
+  "id": 120254,
+  "name": "Lisa Badum",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lisa-badum"
+ },
+ {
+  "id": 120442,
+  "name": "Peter Aumer",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/peter-aumer",
+  "wahlkreisId": 232
+ },
+ {
+  "id": 121468,
+  "name": "Jörn König",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/joern-koenig"
+ },
+ {
+  "id": 121492,
+  "name": "Jürgen Coße",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/juergen-cosse"
+ },
+ {
+  "id": 121602,
+  "name": "Macit Karaahmetoğlu",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/macit-karaahmetoglu"
+ },
+ {
+  "id": 121673,
+  "name": "Martin Erwin Renner",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/martin-erwin-renner"
+ },
+ {
+  "id": 121738,
+  "name": "Michael Schrodi",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-schrodi"
+ },
+ {
+  "id": 121794,
+  "name": "Ophelia Nick",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ophelia-nick"
+ },
+ {
+  "id": 121799,
+  "name": "Parsa Marvi",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/parsa-marvi"
+ },
+ {
+  "id": 121837,
+  "name": "Michael Kaufmann",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-kaufmann",
+  "wahlkreisId": 194
+ },
+ {
+  "id": 121977,
+  "name": "Stefan Schmidt",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stefan-schmidt"
+ },
+ {
+  "id": 121997,
+  "name": "Stephan Protschka",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stephan-protschka"
+ },
+ {
+  "id": 122063,
+  "name": "Tobias Matthias Peterka",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/tobias-matthias-peterka"
+ },
+ {
+  "id": 122336,
+  "name": "Ina Latendorf",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ina-latendorf"
+ },
+ {
+  "id": 122755,
+  "name": "Lukas Krieger",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lukas-krieger",
+  "wahlkreisId": 79
+ },
+ {
+  "id": 122834,
+  "name": "Ferat Koçak",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ferat-kocak",
+  "wahlkreisId": 81
+ },
+ {
+  "id": 122857,
+  "name": "Katalin Gennburg",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/katalin-gennburg"
+ },
+ {
+  "id": 123018,
+  "name": "Ronald Gläser",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ronald-glaeser"
+ },
+ {
+  "id": 123031,
+  "name": "Sebastian Maack",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sebastian-maack"
+ },
+ {
+  "id": 123289,
+  "name": "Adrian Grasse",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/adrian-grasse",
+  "wahlkreisId": 78
+ },
+ {
+  "id": 123532,
+  "name": "Enrico Komning",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/enrico-komning",
+  "wahlkreisId": 16
+ },
+ {
+  "id": 123546,
+  "name": "Ulrike Schielke-Ziesing",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ulrike-schielke-ziesing",
+  "wahlkreisId": 17
+ },
+ {
+  "id": 123558,
+  "name": "Christoph Grimm",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christoph-grimm",
+  "wahlkreisId": 13
+ },
+ {
+  "id": 123559,
+  "name": "Leif-Erik Holm",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/leif-erik-holm",
+  "wahlkreisId": 12
+ },
+ {
+  "id": 125186,
+  "name": "Jonas Geissler",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jonas-geissler",
+  "wahlkreisId": 237
+ },
+ {
+  "id": 130072,
+  "name": "Armin Laschet",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/armin-laschet",
+  "wahlkreisId": 86
+ },
+ {
+  "id": 130301,
+  "name": "Henning Rehbaum",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/henning-rehbaum",
+  "wahlkreisId": 129
+ },
+ {
+  "id": 130480,
+  "name": "Lukas Benner",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lukas-benner"
+ },
+ {
+  "id": 130574,
+  "name": "Stefan Nacke",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stefan-nacke"
+ },
+ {
+  "id": 130612,
+  "name": "Peter Bohnhof",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/peter-bohnhof"
+ },
+ {
+  "id": 130691,
+  "name": "Serap Güler",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/serap-gueler"
+ },
+ {
+  "id": 130692,
+  "name": "Serdar Yüksel",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/serdar-yueksel",
+  "wahlkreisId": 139
+ },
+ {
+  "id": 131019,
+  "name": "Svenja Schulze",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/svenja-schulze"
+ },
+ {
+  "id": 132357,
+  "name": "Lars Haise",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lars-haise"
+ },
+ {
+  "id": 132869,
+  "name": "Christian Görke",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christian-goerke"
+ },
+ {
+  "id": 133683,
+  "name": "Mechthilde Wittmann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/mechthilde-wittmann",
+  "wahlkreisId": 256
+ },
+ {
+  "id": 135302,
+  "name": "Janine Wissler",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/janine-wissler"
+ },
+ {
+  "id": 135391,
+  "name": "Nancy Faeser",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/nancy-faeser"
+ },
+ {
+  "id": 135459,
+  "name": "Tarek Al-Wazir",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/tarek-al-wazir"
+ },
+ {
+  "id": 136013,
+  "name": "Filiz Polat",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/filiz-polat"
+ },
+ {
+  "id": 136025,
+  "name": "Frauke Heiligenstadt",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/frauke-heiligenstadt",
+  "wahlkreisId": 52
+ },
+ {
+  "id": 136080,
+  "name": "Helge Limburg",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/helge-limburg"
+ },
+ {
+  "id": 136381,
+  "name": "Christos Pantazis",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christos-pantazis",
+  "wahlkreisId": 50
+ },
+ {
+  "id": 136824,
+  "name": "Markus Töns",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/markus-toens",
+  "wahlkreisId": 122
+ },
+ {
+  "id": 138330,
+  "name": "Philip Hoffmann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/philip-hoffmann",
+  "wahlkreisId": 297
+ },
+ {
+  "id": 138346,
+  "name": "Roland Theis",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/roland-theis",
+  "wahlkreisId": 298
+ },
+ {
+  "id": 138463,
+  "name": "Esra Limbacher",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/esra-limbacher",
+  "wahlkreisId": 299
+ },
+ {
+  "id": 139062,
+  "name": "Ralf Stegner",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ralf-stegner"
+ },
+ {
+  "id": 139271,
+  "name": "Luise Amtsberg",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/luise-amtsberg",
+  "wahlkreisId": 5
+ },
+ {
+  "id": 140944,
+  "name": "Uwe Schmidt",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/uwe-schmidt-1",
+  "wahlkreisId": 55
+ },
+ {
+  "id": 141110,
+  "name": "Gottfried Curio",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/gottfried-curio",
+  "wahlkreisId": 84
+ },
+ {
+  "id": 141210,
+  "name": "Ates Gürpinar",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ates-guerpinar"
+ },
+ {
+  "id": 141311,
+  "name": "Christoph Schmid",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christoph-schmid-0"
+ },
+ {
+  "id": 141591,
+  "name": "Hans Koller",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/hans-koller",
+  "wahlkreisId": 228
+ },
+ {
+  "id": 142212,
+  "name": "Susanne Hierl",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/susanne-hierl",
+  "wahlkreisId": 231
+ },
+ {
+  "id": 142259,
+  "name": "Tobias Winkler",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/tobias-winkler",
+  "wahlkreisId": 242
+ },
+ {
+  "id": 145700,
+  "name": "Andreas Paul",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/andreas-paul"
+ },
+ {
+  "id": 145703,
+  "name": "Danny Meiners",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/danny-meiners"
+ },
+ {
+  "id": 145714,
+  "name": "Mirco Hanker",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/mirco-hanker"
+ },
+ {
+  "id": 145723,
+  "name": "René Springer",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/rene-springer",
+  "wahlkreisId": 59
+ },
+ {
+  "id": 145732,
+  "name": "Kay-Uwe Ziegler",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/kay-uwe-ziegler",
+  "wahlkreisId": 73
+ },
+ {
+  "id": 145741,
+  "name": "Markus Matzerath",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/markus-matzerath"
+ },
+ {
+  "id": 145742,
+  "name": "Rüdiger Lucassen",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ruediger-lucassen"
+ },
+ {
+  "id": 145749,
+  "name": "Udo Hemmelgarn",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/udo-hemmelgarn"
+ },
+ {
+  "id": 145751,
+  "name": "Matthias Helferich",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/matthias-helferich"
+ },
+ {
+  "id": 145754,
+  "name": "Karsten Hilse",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/karsten-hilse",
+  "wahlkreisId": 155
+ },
+ {
+  "id": 145755,
+  "name": "Tino Chrupalla",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/tino-chrupalla",
+  "wahlkreisId": 156
+ },
+ {
+  "id": 145764,
+  "name": "Jan Ralf Nolte",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jan-ralf-nolte"
+ },
+ {
+  "id": 145768,
+  "name": "Julian Schmidt",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/julian-schmidt"
+ },
+ {
+  "id": 145770,
+  "name": "Uwe Schulz",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/uwe-schulz-0"
+ },
+ {
+  "id": 145789,
+  "name": "Andreas Bleck",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/andreas-bleck"
+ },
+ {
+  "id": 145791,
+  "name": "Nicole Höchst",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/nicole-hoechst"
+ },
+ {
+  "id": 145795,
+  "name": "Sebastian Münzenmaier",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sebastian-muenzenmaier"
+ },
+ {
+  "id": 145806,
+  "name": "Wolfgang Wiehle",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/wolfgang-wiehle"
+ },
+ {
+  "id": 145808,
+  "name": "Gerold Otten",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/gerold-otten"
+ },
+ {
+  "id": 145817,
+  "name": "Peter Boehringer",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/peter-boehringer"
+ },
+ {
+  "id": 145823,
+  "name": "Martin Sichert",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/martin-sichert"
+ },
+ {
+  "id": 145830,
+  "name": "Rainer Kraft",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/rainer-kraft"
+ },
+ {
+  "id": 145833,
+  "name": "Peter Felser",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/peter-felser"
+ },
+ {
+  "id": 145840,
+  "name": "Martin Hess",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/martin-hess"
+ },
+ {
+  "id": 145841,
+  "name": "Jürgen Kögel",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/juergen-koegel"
+ },
+ {
+  "id": 145843,
+  "name": "Ruben Rupp",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ruben-rupp"
+ },
+ {
+  "id": 145844,
+  "name": "Malte Kaufmann",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/malte-kaufmann"
+ },
+ {
+  "id": 145845,
+  "name": "Achim Köhler",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/achim-koehler"
+ },
+ {
+  "id": 145860,
+  "name": "Melanie Bernstein",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/melanie-bernstein",
+  "wahlkreisId": 8
+ },
+ {
+  "id": 145862,
+  "name": "Philipp Amthor",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/philipp-amthor"
+ },
+ {
+  "id": 145863,
+  "name": "Silvia Breher",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/silvia-breher",
+  "wahlkreisId": 32
+ },
+ {
+  "id": 145867,
+  "name": "Sepp Müller",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sepp-mueller"
+ },
+ {
+  "id": 145870,
+  "name": "Carsten Brodesser",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/carsten-brodesser",
+  "wahlkreisId": 98
+ },
+ {
+  "id": 145872,
+  "name": "Stefan Rouenhoff",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stefan-rouenhoff",
+  "wahlkreisId": 111
+ },
+ {
+  "id": 145873,
+  "name": "Michael Breilmann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-breilmann"
+ },
+ {
+  "id": 145874,
+  "name": "Marc Henrichmann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/marc-henrichmann",
+  "wahlkreisId": 126
+ },
+ {
+  "id": 145876,
+  "name": "Oliver Vogt",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/oliver-vogt",
+  "wahlkreisId": 133
+ },
+ {
+  "id": 145877,
+  "name": "Kerstin Vieregge",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/kerstin-vieregge",
+  "wahlkreisId": 134
+ },
+ {
+  "id": 145878,
+  "name": "Paul Ziemiak",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/paul-ziemiak",
+  "wahlkreisId": 149
+ },
+ {
+  "id": 145885,
+  "name": "Norbert Maria Altenkamp",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/norbert-maria-altenkamp",
+  "wahlkreisId": 180
+ },
+ {
+  "id": 145888,
+  "name": "Björn Simon",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/bjoern-simon",
+  "wahlkreisId": 184
+ },
+ {
+  "id": 145890,
+  "name": "Josef Oster",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/josef-oster",
+  "wahlkreisId": 198
+ },
+ {
+  "id": 145893,
+  "name": "Marc Biadacz",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/marc-biadacz",
+  "wahlkreisId": 260
+ },
+ {
+  "id": 145896,
+  "name": "Axel Müller",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/axel-mueller",
+  "wahlkreisId": 294
+ },
+ {
+  "id": 145898,
+  "name": "Katrin Staffler",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/katrin-staffler",
+  "wahlkreisId": 214
+ },
+ {
+  "id": 145901,
+  "name": "Stephan Pilsinger",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stephan-pilsinger",
+  "wahlkreisId": 219
+ },
+ {
+  "id": 145902,
+  "name": "Michael Kießling",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-kiessling",
+  "wahlkreisId": 223
+ },
+ {
+  "id": 145903,
+  "name": "Thomas Erndl",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thomas-erndl",
+  "wahlkreisId": 226
+ },
+ {
+  "id": 145921,
+  "name": "Swantje Michaelsen",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/swantje-michaelsen"
+ },
+ {
+  "id": 145948,
+  "name": "Sven Lehmann",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sven-lehmann",
+  "wahlkreisId": 93
+ },
+ {
+  "id": 145959,
+  "name": "Felix Banaszak",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/felix-banaszak"
+ },
+ {
+  "id": 145969,
+  "name": "Robin Wagener",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/robin-wagener"
+ },
+ {
+  "id": 145984,
+  "name": "Boris Mijatović",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/boris-mijatovic"
+ },
+ {
+  "id": 146003,
+  "name": "Misbah Khan",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/misbah-khan"
+ },
+ {
+  "id": 146013,
+  "name": "Tina Winklmann",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/tina-winklmann"
+ },
+ {
+  "id": 146018,
+  "name": "Sascha Müller",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sascha-mueller-0"
+ },
+ {
+  "id": 146020,
+  "name": "Niklas Wagener",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/niklas-wagener"
+ },
+ {
+  "id": 146042,
+  "name": "Marcel Emmerich",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/marcel-emmerich"
+ },
+ {
+  "id": 146043,
+  "name": "Anja Reinalter",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/anja-reinalter"
+ },
+ {
+  "id": 146046,
+  "name": "Lorenz Gösta Beutin",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lorenz-goesta-beutin"
+ },
+ {
+  "id": 146117,
+  "name": "Sören Pellmann",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/soeren-pellmann",
+  "wahlkreisId": 152
+ },
+ {
+  "id": 146135,
+  "name": "Jörg Cezanne",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/joerg-cezanne"
+ },
+ {
+  "id": 146180,
+  "name": "Doris Achelwilm",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/doris-achelwilm"
+ },
+ {
+  "id": 146780,
+  "name": "Siemtje Möller",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/siemtje-moeller",
+  "wahlkreisId": 26
+ },
+ {
+  "id": 146784,
+  "name": "Marja-Liisa Völlers",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/marja-liisa-voellers",
+  "wahlkreisId": 40
+ },
+ {
+  "id": 146793,
+  "name": "Franziska Kersten",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/franziska-kersten"
+ },
+ {
+  "id": 146801,
+  "name": "Claudia Moll",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/claudia-moll"
+ },
+ {
+  "id": 146804,
+  "name": "Helge Lindh",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/helge-lindh",
+  "wahlkreisId": 101
+ },
+ {
+  "id": 146806,
+  "name": "Daniel Rinkert",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/daniel-rinkert"
+ },
+ {
+  "id": 146813,
+  "name": "Wiebke Esdar",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/wiebke-esdar",
+  "wahlkreisId": 131
+ },
+ {
+  "id": 146823,
+  "name": "Esther Dilcher",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/esther-dilcher"
+ },
+ {
+  "id": 146824,
+  "name": "Natalie Pawlik",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/natalie-pawlik"
+ },
+ {
+  "id": 146830,
+  "name": "Elisabeth Kaiser",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/elisabeth-kaiser"
+ },
+ {
+  "id": 146837,
+  "name": "Isabel Mackensen-Geis",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/isabel-mackensen-geis"
+ },
+ {
+  "id": 146839,
+  "name": "Sebastian Roloff",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sebastian-roloff"
+ },
+ {
+  "id": 146856,
+  "name": "Jasmina Hostert",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jasmina-hostert"
+ },
+ {
+  "id": 146867,
+  "name": "Josephine Ortleb",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/josephine-ortleb",
+  "wahlkreisId": 296
+ },
+ {
+  "id": 147218,
+  "name": "Fabian Jacobi",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/fabian-jacobi"
+ },
+ {
+  "id": 147226,
+  "name": "Jochen Haug",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jochen-haug"
+ },
+ {
+  "id": 147321,
+  "name": "Gereon Bollmann",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/gereon-bollmann"
+ },
+ {
+  "id": 147328,
+  "name": "Jan-Niclas Gesenhues",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jan-niclas-gesenhues"
+ },
+ {
+  "id": 147331,
+  "name": "Stefan Keuter",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stefan-keuter"
+ },
+ {
+  "id": 147569,
+  "name": "Michael Espendiller",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-espendiller"
+ },
+ {
+  "id": 149381,
+  "name": "Stefan Henze",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stefan-henze"
+ },
+ {
+  "id": 149389,
+  "name": "Boris Pistorius",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/boris-pistorius",
+  "wahlkreisId": 42
+ },
+ {
+  "id": 149570,
+  "name": "Heidi Reichinnek",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/heidi-reichinnek"
+ },
+ {
+  "id": 149653,
+  "name": "Mareike Lotte Wulf",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/mareike-lotte-wulf"
+ },
+ {
+  "id": 149682,
+  "name": "Dunja Kreiser",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/dunja-kreiser",
+  "wahlkreisId": 49
+ },
+ {
+  "id": 150288,
+  "name": "Götz Frömming",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/goetz-froemming",
+  "wahlkreisId": 56
+ },
+ {
+  "id": 150296,
+  "name": "Christian Wirth",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christian-wirth"
+ },
+ {
+  "id": 150298,
+  "name": "Martin Reichardt",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/martin-reichardt",
+  "wahlkreisId": 72
+ },
+ {
+  "id": 150299,
+  "name": "Marcus Bühl",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/marcus-buehl",
+  "wahlkreisId": 191
+ },
+ {
+  "id": 152755,
+  "name": "Jan Wenzel Schmidt",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jan-wenzel-schmidt",
+  "wahlkreisId": 67
+ },
+ {
+  "id": 158590,
+  "name": "Ingo Hahn",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ingo-hahn"
+ },
+ {
+  "id": 158593,
+  "name": "Rainer Gross",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/rainer-gross-0"
+ },
+ {
+  "id": 158594,
+  "name": "Tobias Teich",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/tobias-teich"
+ },
+ {
+  "id": 158609,
+  "name": "Reinhard Mixl",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/reinhard-mixl"
+ },
+ {
+  "id": 158687,
+  "name": "Hans Theiss",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/hans-theiss",
+  "wahlkreisId": 216
+ },
+ {
+  "id": 158733,
+  "name": "Marlene Schönberger",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/marlene-schoenberger"
+ },
+ {
+  "id": 159437,
+  "name": "Violetta Bock",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/violetta-bock"
+ },
+ {
+  "id": 159482,
+  "name": "Pierre Lamely",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/pierre-lamely"
+ },
+ {
+  "id": 164990,
+  "name": "Ricarda Lang",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ricarda-lang"
+ },
+ {
+  "id": 164992,
+  "name": "Nyke Slawik",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/nyke-slawik"
+ },
+ {
+  "id": 164996,
+  "name": "Hanna Steinmüller",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/hanna-steinmueller",
+  "wahlkreisId": 74
+ },
+ {
+  "id": 165049,
+  "name": "Simone Borchardt",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/simone-borchardt"
+ },
+ {
+  "id": 165055,
+  "name": "Cornell-Anette Babendererde",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/cornell-anette-babendererde",
+  "wahlkreisId": 36
+ },
+ {
+  "id": 165152,
+  "name": "Maximilian Krah",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/maximilian-krah",
+  "wahlkreisId": 162
+ },
+ {
+  "id": 165158,
+  "name": "Rainer Rothfuß",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/rainer-rothfuss"
+ },
+ {
+  "id": 165159,
+  "name": "Christoph Birghan",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christoph-birghan"
+ },
+ {
+  "id": 165168,
+  "name": "Konrad Körner",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/konrad-koerner",
+  "wahlkreisId": 241
+ },
+ {
+  "id": 165836,
+  "name": "Daniel Walter",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/daniel-walter"
+ },
+ {
+  "id": 166077,
+  "name": "Sergej Minich",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sergej-minich"
+ },
+ {
+  "id": 168306,
+  "name": "René Bochmann",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/rene-bochmann",
+  "wahlkreisId": 150
+ },
+ {
+  "id": 168310,
+  "name": "Thomas Ladzinski",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thomas-ladzinski",
+  "wahlkreisId": 158
+ },
+ {
+  "id": 168396,
+  "name": "Kathrin Michel",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/kathrin-michel"
+ },
+ {
+  "id": 168672,
+  "name": "Lars Schieske",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lars-schieske",
+  "wahlkreisId": 64
+ },
+ {
+  "id": 170151,
+  "name": "Stefan Schröder",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stefan-schroeder",
+  "wahlkreisId": 190
+ },
+ {
+  "id": 170159,
+  "name": "Torben Braga",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/torben-braga"
+ },
+ {
+  "id": 170273,
+  "name": "Donata Vogtschmidt",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/donata-vogtschmidt"
+ },
+ {
+  "id": 170325,
+  "name": "Christiane Schenderlein",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christiane-schenderlein"
+ },
+ {
+  "id": 174123,
+  "name": "Hans-Jürgen Goßner",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/hans-juergen-gossner"
+ },
+ {
+  "id": 174133,
+  "name": "Johann Martel",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/johann-martel"
+ },
+ {
+  "id": 174144,
+  "name": "Michael Blos",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-blos"
+ },
+ {
+  "id": 175003,
+  "name": "Thomas Korell",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thomas-korell",
+  "wahlkreisId": 66
+ },
+ {
+  "id": 175015,
+  "name": "Claudia Weiss",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/claudia-weiss",
+  "wahlkreisId": 69
+ },
+ {
+  "id": 175017,
+  "name": "Volker Scheurell",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/volker-scheurell",
+  "wahlkreisId": 70
+ },
+ {
+  "id": 175138,
+  "name": "Janina Böttger",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/janina-boettger"
+ },
+ {
+  "id": 175286,
+  "name": "David Schliesing",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/david-schliesing"
+ },
+ {
+  "id": 175308,
+  "name": "Mirze Edis",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/mirze-edis"
+ },
+ {
+  "id": 175309,
+  "name": "Sascha Wagner",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sascha-wagner-0"
+ },
+ {
+  "id": 175323,
+  "name": "Sonja Lemke",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sonja-lemke"
+ },
+ {
+  "id": 175334,
+  "name": "Clara Bünger",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/clara-buenger"
+ },
+ {
+  "id": 175351,
+  "name": "Gerhard Trabert",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/gerhard-trabert"
+ },
+ {
+  "id": 175370,
+  "name": "Evelyn Schötz",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/evelyn-schoetz"
+ },
+ {
+  "id": 175374,
+  "name": "Luigi Pantisano",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/luigi-pantisano"
+ },
+ {
+  "id": 175389,
+  "name": "Adis Ahmetović",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/adis-ahmetovic",
+  "wahlkreisId": 41
+ },
+ {
+  "id": 175394,
+  "name": "Anja Troff-Schaffarzyk",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/anja-troff-schaffarzyk"
+ },
+ {
+  "id": 175401,
+  "name": "Annika Klose",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/annika-klose"
+ },
+ {
+  "id": 175403,
+  "name": "Armand Zorn",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/armand-zorn"
+ },
+ {
+  "id": 175406,
+  "name": "Bettina Lugk",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/bettina-lugk"
+ },
+ {
+  "id": 175409,
+  "name": "Carmen Wegge",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/carmen-wegge"
+ },
+ {
+  "id": 175410,
+  "name": "Carolin Wagner",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/carolin-wagner"
+ },
+ {
+  "id": 175416,
+  "name": "Daniel Baldy",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/daniel-baldy"
+ },
+ {
+  "id": 175419,
+  "name": "Derya Türk-Nachbaur",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/derya-tuerk-nachbaur"
+ },
+ {
+  "id": 175424,
+  "name": "Falko Droßmann",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/falko-drossmann",
+  "wahlkreisId": 18
+ },
+ {
+  "id": 175425,
+  "name": "Felix Döring",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/felix-doering"
+ },
+ {
+  "id": 175431,
+  "name": "Hakan Demir",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/hakan-demir"
+ },
+ {
+  "id": 175432,
+  "name": "Heike Heubach",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/heike-heubach"
+ },
+ {
+  "id": 175433,
+  "name": "Helmut Kleebank",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/helmut-kleebank",
+  "wahlkreisId": 77
+ },
+ {
+  "id": 175436,
+  "name": "Isabel Cademartori",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/isabel-cademartori"
+ },
+ {
+  "id": 175437,
+  "name": "Jakob Blankenburg",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jakob-blankenburg",
+  "wahlkreisId": 37
+ },
+ {
+  "id": 175438,
+  "name": "Jan Dieren",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jan-dieren"
+ },
+ {
+  "id": 175443,
+  "name": "Jens Peick",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jens-peick",
+  "wahlkreisId": 141
+ },
+ {
+  "id": 175453,
+  "name": "Katrin Zschau",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/katrin-zschau"
+ },
+ {
+  "id": 175464,
+  "name": "Maja Wallstein",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/maja-wallstein"
+ },
+ {
+  "id": 175467,
+  "name": "Martin Kröber",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/martin-kroeber"
+ },
+ {
+  "id": 175471,
+  "name": "Matthias Mieves",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/matthias-mieves",
+  "wahlkreisId": 208
+ },
+ {
+  "id": 175476,
+  "name": "Nadine Heselhaus",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/nadine-heselhaus"
+ },
+ {
+  "id": 175484,
+  "name": "Rasha Nasr",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/rasha-nasr"
+ },
+ {
+  "id": 175486,
+  "name": "Reem Alabali Radovan",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/reem-alabali-radovan"
+ },
+ {
+  "id": 175488,
+  "name": "Ruppert Stüwe",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ruppert-stuewe"
+ },
+ {
+  "id": 175489,
+  "name": "Sanae Abdi",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sanae-abdi",
+  "wahlkreisId": 92
+ },
+ {
+  "id": 175491,
+  "name": "Sebastian Fiedler",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sebastian-fiedler",
+  "wahlkreisId": 117
+ },
+ {
+  "id": 175496,
+  "name": "Sonja Eichwede",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sonja-eichwede"
+ },
+ {
+  "id": 175502,
+  "name": "Thorsten Rudolph",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thorsten-rudolph"
+ },
+ {
+  "id": 175503,
+  "name": "Tim Klüssendorf",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/tim-kluessendorf",
+  "wahlkreisId": 11
+ },
+ {
+  "id": 175512,
+  "name": "Verena Hubertz",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/verena-hubertz"
+ },
+ {
+  "id": 175519,
+  "name": "Lina Seitzl",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lina-seitzl"
+ },
+ {
+  "id": 175522,
+  "name": "Johannes Schätzl",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/johannes-schaetzl"
+ },
+ {
+  "id": 175526,
+  "name": "Andreas Audretsch",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/andreas-audretsch"
+ },
+ {
+  "id": 175537,
+  "name": "Armin Grau",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/armin-grau"
+ },
+ {
+  "id": 175538,
+  "name": "Awet Tesfaiesus",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/awet-tesfaiesus"
+ },
+ {
+  "id": 175543,
+  "name": "Chantal Kopf",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/chantal-kopf",
+  "wahlkreisId": 281
+ },
+ {
+  "id": 175555,
+  "name": "Deborah Düring",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/deborah-duering"
+ },
+ {
+  "id": 175557,
+  "name": "Denise Loop",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/denise-loop"
+ },
+ {
+  "id": 175580,
+  "name": "Jamila Anna Schäfer",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jamila-anna-schaefer"
+ },
+ {
+  "id": 175584,
+  "name": "Johannes Wagner",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/johannes-wagner"
+ },
+ {
+  "id": 175588,
+  "name": "Julian Joswig",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/julian-joswig"
+ },
+ {
+  "id": 175593,
+  "name": "Karoline Otte",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/karoline-otte"
+ },
+ {
+  "id": 175594,
+  "name": "Kassem Taher Saleh",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/kassem-taher-saleh"
+ },
+ {
+  "id": 175596,
+  "name": "Katharina Beck",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/katharina-beck"
+ },
+ {
+  "id": 175599,
+  "name": "Katrin Uhlig",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/katrin-uhlig"
+ },
+ {
+  "id": 175603,
+  "name": "Lamya Kaddor",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lamya-kaddor"
+ },
+ {
+  "id": 175610,
+  "name": "Leon Eckert",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/leon-eckert"
+ },
+ {
+  "id": 175624,
+  "name": "Max Lucks",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/max-lucks"
+ },
+ {
+  "id": 175629,
+  "name": "Michael Kellner",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-kellner"
+ },
+ {
+  "id": 175643,
+  "name": "Sara Nanni",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sara-nanni"
+ },
+ {
+  "id": 175645,
+  "name": "Schahina Gambir",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/schahina-gambir"
+ },
+ {
+  "id": 175649,
+  "name": "Sebastian Schäfer",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sebastian-schaefer-0"
+ },
+ {
+  "id": 175676,
+  "name": "Victoria Broßart",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/victoria-brossart"
+ },
+ {
+  "id": 175679,
+  "name": "Zoe Mayer",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/zoe-mayer",
+  "wahlkreisId": 271
+ },
+ {
+  "id": 175683,
+  "name": "Lena Gumnior",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lena-gumnior"
+ },
+ {
+  "id": 175826,
+  "name": "Alexander Engelhard",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/alexander-engelhard",
+  "wahlkreisId": 254
+ },
+ {
+  "id": 175830,
+  "name": "Anne Janssen",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/anne-janssen"
+ },
+ {
+  "id": 175831,
+  "name": "Anne König",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/anne-koenig",
+  "wahlkreisId": 125
+ },
+ {
+  "id": 175836,
+  "name": "Catarina dos Santos-Wintz",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/catarina-dos-santos-wintz",
+  "wahlkreisId": 87
+ },
+ {
+  "id": 175848,
+  "name": "Florian Oest",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/florian-oest"
+ },
+ {
+  "id": 175849,
+  "name": "Florian Bilic",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/florian-bilic",
+  "wahlkreisId": 209
+ },
+ {
+  "id": 175851,
+  "name": "Franziska Hoppermann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/franziska-hoppermann"
+ },
+ {
+  "id": 175852,
+  "name": "Georg Günther",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/georg-guenther"
+ },
+ {
+  "id": 175859,
+  "name": "Joachim Ebmeyer",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/joachim-ebmeyer",
+  "wahlkreisId": 132
+ },
+ {
+  "id": 175862,
+  "name": "Klaus Wiener",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/klaus-wiener",
+  "wahlkreisId": 103
+ },
+ {
+  "id": 175863,
+  "name": "Klaus Mack",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/klaus-mack",
+  "wahlkreisId": 280
+ },
+ {
+  "id": 175864,
+  "name": "Lars Ehm",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lars-ehm",
+  "wahlkreisId": 121
+ },
+ {
+  "id": 175867,
+  "name": "Maria-Lena Weiss",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/maria-lena-weiss",
+  "wahlkreisId": 285
+ },
+ {
+  "id": 175869,
+  "name": "Markus Reichel",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/markus-reichel"
+ },
+ {
+  "id": 175870,
+  "name": "Marlon Bröhr",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/marlon-broehr",
+  "wahlkreisId": 199
+ },
+ {
+  "id": 175871,
+  "name": "Martin Plum",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/martin-plum",
+  "wahlkreisId": 110
+ },
+ {
+  "id": 175872,
+  "name": "Martina Englhardt-Kopf",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/martina-englhardt-kopf",
+  "wahlkreisId": 233
+ },
+ {
+  "id": 175876,
+  "name": "Nicolas Zippelius",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/nicolas-zippelius",
+  "wahlkreisId": 272
+ },
+ {
+  "id": 175877,
+  "name": "Ottilie Klein",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ottilie-klein"
+ },
+ {
+  "id": 175880,
+  "name": "Ralph Edelhäußer",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ralph-edelhaeusser",
+  "wahlkreisId": 245
+ },
+ {
+  "id": 175888,
+  "name": "Volker Mayer-Lay",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/volker-mayer-lay",
+  "wahlkreisId": 293
+ },
+ {
+  "id": 175891,
+  "name": "Wilhelm Gebhard",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/wilhelm-gebhard",
+  "wahlkreisId": 168
+ },
+ {
+  "id": 175892,
+  "name": "Yannick Bury",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/yannick-bury",
+  "wahlkreisId": 283
+ },
+ {
+  "id": 175894,
+  "name": "Florian Müller",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/florian-mueller-0",
+  "wahlkreisId": 148
+ },
+ {
+  "id": 175895,
+  "name": "Johannes Wiegelmann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/johannes-wiegelmann",
+  "wahlkreisId": 174
+ },
+ {
+  "id": 175896,
+  "name": "Alexis Giersch",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/alexis-giersch"
+ },
+ {
+  "id": 175904,
+  "name": "Bernd Schattner",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/bernd-schattner"
+ },
+ {
+  "id": 175905,
+  "name": "Bernd Schuhmann",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/bernd-schuhmann"
+ },
+ {
+  "id": 175907,
+  "name": "Carolin Bachmann",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/carolin-bachmann",
+  "wahlkreisId": 160
+ },
+ {
+  "id": 175914,
+  "name": "Diana Zimmer",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/diana-zimmer"
+ },
+ {
+  "id": 175915,
+  "name": "Dirk Brandes",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/dirk-brandes"
+ },
+ {
+  "id": 175916,
+  "name": "Edgar Naujok",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/edgar-naujok",
+  "wahlkreisId": 153
+ },
+ {
+  "id": 175922,
+  "name": "Gerrit Huy",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/gerrit-huy"
+ },
+ {
+  "id": 175923,
+  "name": "Hannes Gnauck",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/hannes-gnauck",
+  "wahlkreisId": 57
+ },
+ {
+  "id": 175925,
+  "name": "Hauke Finger",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/hauke-finger"
+ },
+ {
+  "id": 175933,
+  "name": "Joachim Bloch",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/joachim-bloch"
+ },
+ {
+  "id": 175940,
+  "name": "Lukas Rehm",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lukas-rehm"
+ },
+ {
+  "id": 175942,
+  "name": "Manfred Schiller",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/manfred-schiller"
+ },
+ {
+  "id": 175947,
+  "name": "Mathias Weiser",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/mathias-weiser",
+  "wahlkreisId": 165
+ },
+ {
+  "id": 175953,
+  "name": "Otto Strauß",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/otto-strauss"
+ },
+ {
+  "id": 175956,
+  "name": "Raimond Scheirich",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/raimond-scheirich"
+ },
+ {
+  "id": 175959,
+  "name": "Sascha Lensing",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sascha-lensing"
+ },
+ {
+  "id": 175967,
+  "name": "Steffen Janich",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/steffen-janich",
+  "wahlkreisId": 157
+ },
+ {
+  "id": 175968,
+  "name": "Sven Wendorf",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sven-wendorf"
+ },
+ {
+  "id": 175972,
+  "name": "Thomas Stephan",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thomas-stephan"
+ },
+ {
+  "id": 176316,
+  "name": "Stefan Seidler",
+  "party": "ssw",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stefan-seidler"
+ },
+ {
+  "id": 176576,
+  "name": "Julia Schneider",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/julia-schneider",
+  "wahlkreisId": 75
+ },
+ {
+  "id": 176762,
+  "name": "Matthias Moosdorf",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/matthias-moosdorf",
+  "wahlkreisId": 164
+ },
+ {
+  "id": 177535,
+  "name": "Maximilian Kneller",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/maximilian-kneller"
+ },
+ {
+  "id": 177546,
+  "name": "Thomas Fetsch",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thomas-fetsch"
+ },
+ {
+  "id": 177565,
+  "name": "Martina Kempf",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/martina-kempf"
+ },
+ {
+  "id": 177567,
+  "name": "Carsten Becker",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/carsten-becker"
+ },
+ {
+  "id": 177578,
+  "name": "Christina Stumpp",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christina-stumpp",
+  "wahlkreisId": 264
+ },
+ {
+  "id": 178149,
+  "name": "Jan-Wilhelm Pohlmann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jan-wilhelm-pohlmann",
+  "wahlkreisId": 166
+ },
+ {
+  "id": 178160,
+  "name": "Kurt Klaus Kleinschmidt",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/kurt-klaus-kleinschmidt"
+ },
+ {
+  "id": 178435,
+  "name": "Jens Behrens",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jens-behrens"
+ },
+ {
+  "id": 178558,
+  "name": "Daniel Zerbin",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/daniel-zerbin"
+ },
+ {
+  "id": 178590,
+  "name": "Ulrich von Zons",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ulrich-von-zons"
+ },
+ {
+  "id": 178606,
+  "name": "Sascha van Beek",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sascha-van-beek",
+  "wahlkreisId": 112
+ },
+ {
+  "id": 178644,
+  "name": "Christian Zaum",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christian-zaum"
+ },
+ {
+  "id": 178656,
+  "name": "Jan Krampe",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jan-krampe"
+ },
+ {
+  "id": 178690,
+  "name": "Ulrich Thoden",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ulrich-thoden"
+ },
+ {
+  "id": 179277,
+  "name": "Rocco Kever",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/rocco-kever"
+ },
+ {
+  "id": 179282,
+  "name": "Marcel Queckemeyer",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/marcel-queckemeyer"
+ },
+ {
+  "id": 179348,
+  "name": "Maik Brückner",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/maik-brueckner"
+ },
+ {
+  "id": 179823,
+  "name": "Frederik Bouffier",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/frederik-bouffier",
+  "wahlkreisId": 172
+ },
+ {
+  "id": 179922,
+  "name": "Christian Douglas",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christian-douglas"
+ },
+ {
+  "id": 179923,
+  "name": "Nicole Hess",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/nicole-hess"
+ },
+ {
+  "id": 180058,
+  "name": "Desiree Becker",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/desiree-becker"
+ },
+ {
+  "id": 180235,
+  "name": "Carina Schießl",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/carina-schiessl"
+ },
+ {
+  "id": 180245,
+  "name": "Bastian Treuheit",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/bastian-treuheit"
+ },
+ {
+  "id": 180259,
+  "name": "Andreas Mayer",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/andreas-mayer-0"
+ },
+ {
+  "id": 180854,
+  "name": "Ines Schwerdtner",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ines-schwerdtner",
+  "wahlkreisId": 85
+ },
+ {
+  "id": 180856,
+  "name": "Lea Reisner",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lea-reisner"
+ },
+ {
+  "id": 181741,
+  "name": "Matthias Rentzsch",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/matthias-rentzsch",
+  "wahlkreisId": 159
+ },
+ {
+  "id": 181945,
+  "name": "Christopher Drößler",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christopher-droessler",
+  "wahlkreisId": 188
+ },
+ {
+  "id": 181949,
+  "name": "Robert Teske",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/robert-teske",
+  "wahlkreisId": 195
+ },
+ {
+  "id": 182015,
+  "name": "Mandy Eißing",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/mandy-eissing"
+ },
+ {
+  "id": 182110,
+  "name": "Rainer Galla",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/rainer-galla",
+  "wahlkreisId": 63
+ },
+ {
+  "id": 182187,
+  "name": "Andrea Lübcke",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/andrea-luebcke"
+ },
+ {
+  "id": 182209,
+  "name": "Christin Willnat",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christin-willnat"
+ },
+ {
+  "id": 182324,
+  "name": "Arne Onni Raue",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/arne-onni-raue",
+  "wahlkreisId": 60
+ },
+ {
+  "id": 182817,
+  "name": "Leif Bodin",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/leif-bodin",
+  "wahlkreisId": 2
+ },
+ {
+  "id": 182819,
+  "name": "Sandra Carstensen",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sandra-carstensen",
+  "wahlkreisId": 6
+ },
+ {
+  "id": 182820,
+  "name": "Daniel Kölbl",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/daniel-koelbl",
+  "wahlkreisId": 7
+ },
+ {
+  "id": 182821,
+  "name": "Sebastian Schmidt",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sebastian-schmidt-0",
+  "wahlkreisId": 9
+ },
+ {
+  "id": 182825,
+  "name": "Bastian Alfons Ernst",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/bastian-alfons-ernst",
+  "wahlkreisId": 28
+ },
+ {
+  "id": 182826,
+  "name": "Christoph Frauenpreiß",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christoph-frauenpreiss",
+  "wahlkreisId": 29
+ },
+ {
+  "id": 182827,
+  "name": "Vanessa-Kim Zobel",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/vanessa-kim-zobel",
+  "wahlkreisId": 30
+ },
+ {
+  "id": 182828,
+  "name": "Vivian Tauschwitz",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/vivian-tauschwitz"
+ },
+ {
+  "id": 182830,
+  "name": "Lutz Brinkmann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lutz-brinkmann",
+  "wahlkreisId": 38
+ },
+ {
+  "id": 182836,
+  "name": "Reza Asghari",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/reza-asghari"
+ },
+ {
+  "id": 182837,
+  "name": "Alexander Jordan",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/alexander-jordan",
+  "wahlkreisId": 51
+ },
+ {
+  "id": 182839,
+  "name": "Sebastian Steineke",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sebastian-steineke"
+ },
+ {
+  "id": 182845,
+  "name": "Anna Aeikens",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/anna-aeikens"
+ },
+ {
+  "id": 182848,
+  "name": "Marvin Schulz",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/marvin-schulz",
+  "wahlkreisId": 76
+ },
+ {
+  "id": 182851,
+  "name": "Hendrik Streeck",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/hendrik-streeck",
+  "wahlkreisId": 95
+ },
+ {
+  "id": 182852,
+  "name": "Caroline Bosbach",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/caroline-bosbach",
+  "wahlkreisId": 99
+ },
+ {
+  "id": 182855,
+  "name": "Johannes Winkel",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/johannes-winkel",
+  "wahlkreisId": 106
+ },
+ {
+  "id": 182856,
+  "name": "Carl-Philipp Sassenrath",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/carl-philipp-sassenrath",
+  "wahlkreisId": 107
+ },
+ {
+  "id": 182859,
+  "name": "Nicklas Kappe",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/nicklas-kappe",
+  "wahlkreisId": 124
+ },
+ {
+  "id": 182861,
+  "name": "Tijen Ataoğlu",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/tijen-ataoglu",
+  "wahlkreisId": 137
+ },
+ {
+  "id": 182862,
+  "name": "Katja Strauss-Köster",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/katja-strauss-koester",
+  "wahlkreisId": 138
+ },
+ {
+  "id": 182865,
+  "name": "Oliver Pöpsel",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/oliver-poepsel",
+  "wahlkreisId": 145
+ },
+ {
+  "id": 182866,
+  "name": "Benedikt Büdenbender",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/benedikt-buedenbender",
+  "wahlkreisId": 147
+ },
+ {
+  "id": 182873,
+  "name": "Nora Seitz",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/nora-seitz"
+ },
+ {
+  "id": 182876,
+  "name": "Johannes Volkmann",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/johannes-volkmann-0",
+  "wahlkreisId": 171
+ },
+ {
+  "id": 182877,
+  "name": "Thomas Pauls",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/thomas-pauls",
+  "wahlkreisId": 176
+ },
+ {
+  "id": 182878,
+  "name": "Stefan Korbach",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stefan-korbach",
+  "wahlkreisId": 178
+ },
+ {
+  "id": 182879,
+  "name": "Pascal Reddig",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/pascal-reddig",
+  "wahlkreisId": 179
+ },
+ {
+  "id": 182883,
+  "name": "David Gregosz",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/david-gregosz"
+ },
+ {
+  "id": 182885,
+  "name": "Diana Herbstreuth",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/diana-herbstreuth"
+ },
+ {
+  "id": 182887,
+  "name": "Harald Orthey",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/harald-orthey",
+  "wahlkreisId": 203
+ },
+ {
+  "id": 182888,
+  "name": "Christian Moser",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christian-moser",
+  "wahlkreisId": 213
+ },
+ {
+  "id": 182890,
+  "name": "Siegfried Walch",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/siegfried-walch",
+  "wahlkreisId": 224
+ },
+ {
+  "id": 182891,
+  "name": "Günter Baumgartner",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/guenter-baumgartner",
+  "wahlkreisId": 229
+ },
+ {
+  "id": 182892,
+  "name": "Heiko Hain",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/heiko-hain",
+  "wahlkreisId": 238
+ },
+ {
+  "id": 182893,
+  "name": "Hülya Düber",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/huelya-dueber",
+  "wahlkreisId": 250
+ },
+ {
+  "id": 182894,
+  "name": "Florian Dorn",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/florian-dorn",
+  "wahlkreisId": 255
+ },
+ {
+  "id": 182896,
+  "name": "David Preisendanz",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/david-preisendanz",
+  "wahlkreisId": 261
+ },
+ {
+  "id": 182897,
+  "name": "Matthias Hiller",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/matthias-hiller",
+  "wahlkreisId": 262
+ },
+ {
+  "id": 182899,
+  "name": "Stefan Glaser",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stefan-glaser"
+ },
+ {
+  "id": 182900,
+  "name": "Johannes Rothenberger",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/johannes-rothenberger",
+  "wahlkreisId": 284
+ },
+ {
+  "id": 182901,
+  "name": "Christoph Naser",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christoph-naser"
+ },
+ {
+  "id": 182902,
+  "name": "Wolfgang Dahler",
+  "party": "union",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/wolfgang-dahler",
+  "wahlkreisId": 292
+ },
+ {
+  "id": 182905,
+  "name": "Truels Reichardt",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/truels-reichardt"
+ },
+ {
+  "id": 182913,
+  "name": "Daniela Rump",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/daniela-rump",
+  "wahlkreisId": 48
+ },
+ {
+  "id": 182935,
+  "name": "Ingo Vogel",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ingo-vogel",
+  "wahlkreisId": 118
+ },
+ {
+  "id": 182942,
+  "name": "Hendrik Bollmann",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/hendrik-bollmann",
+  "wahlkreisId": 140
+ },
+ {
+  "id": 182947,
+  "name": "Daniel Bettermann",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/daniel-bettermann",
+  "wahlkreisId": 167
+ },
+ {
+  "id": 182949,
+  "name": "Philipp Rottwilm",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/philipp-rottwilm"
+ },
+ {
+  "id": 182972,
+  "name": "David Mandrella",
+  "party": "spd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/david-mandrella"
+ },
+ {
+  "id": 183002,
+  "name": "Felix Winter",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/felix-winter"
+ },
+ {
+  "id": 183004,
+  "name": "Alaa Alhamwi",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/alaa-alhamwi"
+ },
+ {
+  "id": 183012,
+  "name": "Timon Dzienus",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/timon-dzienus"
+ },
+ {
+  "id": 183031,
+  "name": "Moritz Heuberger",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/moritz-heuberger",
+  "wahlkreisId": 80
+ },
+ {
+  "id": 183055,
+  "name": "Sylvia Rietenberg",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sylvia-rietenberg",
+  "wahlkreisId": 128
+ },
+ {
+  "id": 183064,
+  "name": "Sandra Stein",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sandra-stein"
+ },
+ {
+  "id": 183082,
+  "name": "Ayse Asar",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/ayse-asar"
+ },
+ {
+  "id": 183114,
+  "name": "Rebecca Lenhard",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/rebecca-lenhard"
+ },
+ {
+  "id": 183125,
+  "name": "Simone Fischer",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/simone-fischer",
+  "wahlkreisId": 258
+ },
+ {
+  "id": 183145,
+  "name": "Jeanne Dillschneider",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jeanne-dillschneider"
+ },
+ {
+  "id": 183154,
+  "name": "Tamara Mazzi",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/tamara-mazzi"
+ },
+ {
+  "id": 183172,
+  "name": "Anne-Mieke Bremer",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/anne-mieke-bremer"
+ },
+ {
+  "id": 183177,
+  "name": "Cem Ince",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/cem-ince"
+ },
+ {
+  "id": 183186,
+  "name": "Stella Merendino",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/stella-merendino"
+ },
+ {
+  "id": 183211,
+  "name": "Julia-Christina Stange",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/julia-christina-stange"
+ },
+ {
+  "id": 183219,
+  "name": "Sarah Vollath",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sarah-vollath"
+ },
+ {
+  "id": 183224,
+  "name": "Luke Hoß",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/luke-hoss"
+ },
+ {
+  "id": 183230,
+  "name": "Agnes Maria Conrad",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/agnes-maria-conrad"
+ },
+ {
+  "id": 183231,
+  "name": "Aaron Valent",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/aaron-valent"
+ },
+ {
+  "id": 183247,
+  "name": "Marcel Bauer",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/marcel-bauer"
+ },
+ {
+  "id": 183252,
+  "name": "Vinzenz Glaser",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/vinzenz-glaser"
+ },
+ {
+  "id": 183257,
+  "name": "Anne Zerr",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/anne-zerr"
+ },
+ {
+  "id": 183266,
+  "name": "Michael „Moses“ Arndt",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-moses-arndt"
+ },
+ {
+  "id": 183267,
+  "name": "Fabian Fahl",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/fabian-fahl"
+ },
+ {
+  "id": 183275,
+  "name": "Lisa Schubert",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/lisa-schubert"
+ },
+ {
+  "id": 183279,
+  "name": "Mareike Hermeier",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/mareike-hermeier"
+ },
+ {
+  "id": 183283,
+  "name": "Kathrin Gebel",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/kathrin-gebel"
+ },
+ {
+  "id": 183481,
+  "name": "Kerstin Przygodda",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/kerstin-przygodda"
+ },
+ {
+  "id": 183482,
+  "name": "Dario Seifert",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/dario-seifert",
+  "wahlkreisId": 15
+ },
+ {
+  "id": 183483,
+  "name": "Martina Uhr",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/martina-uhr"
+ },
+ {
+  "id": 183487,
+  "name": "Micha Fehre",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/micha-fehre"
+ },
+ {
+  "id": 183489,
+  "name": "Angela Rudzka",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/angela-rudzka"
+ },
+ {
+  "id": 183496,
+  "name": "Robin Jünger",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/robin-juenger"
+ },
+ {
+  "id": 183497,
+  "name": "Jan Feser",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jan-feser"
+ },
+ {
+  "id": 183503,
+  "name": "Jörg Zirwes",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/joerg-zirwes"
+ },
+ {
+  "id": 183508,
+  "name": "Boris Gamanov",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/boris-gamanov"
+ },
+ {
+  "id": 183515,
+  "name": "Tobias Ebenberger",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/tobias-ebenberger"
+ },
+ {
+  "id": 183520,
+  "name": "Adam Balten",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/adam-balten"
+ },
+ {
+  "id": 183522,
+  "name": "Anna Leonore Labitzke Rathert",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/anna-leonore-labitzke-rathert"
+ },
+ {
+  "id": 183528,
+  "name": "Knuth Meyer-Soltau",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/knuth-meyer-soltau"
+ },
+ {
+  "id": 183529,
+  "name": "Georg Schroeter",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/georg-schroeter"
+ },
+ {
+  "id": 183533,
+  "name": "Christian Reck",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/christian-reck",
+  "wahlkreisId": 154
+ },
+ {
+  "id": 184031,
+  "name": "Charlotte Neuhäuser",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/charlotte-neuhaeuser"
+ },
+ {
+  "id": 184033,
+  "name": "Cansın Köktürk",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/cansin-koektuerk"
+ },
+ {
+  "id": 184038,
+  "name": "Katrin Fey",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/katrin-fey"
+ },
+ {
+  "id": 184131,
+  "name": "Erhard Brucker",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/erhard-brucker"
+ },
+ {
+  "id": 184315,
+  "name": "Jorrit Bosch",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/jorrit-bosch"
+ },
+ {
+  "id": 184316,
+  "name": "Olaf Hilmer",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/olaf-hilmer"
+ },
+ {
+  "id": 184317,
+  "name": "Sieghard Knodel",
+  "party": "sonstige",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/sieghard-knodel"
+ },
+ {
+  "id": 184318,
+  "name": "Manuel Johannes Krauthausen",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/manuel-johannes-krauthausen"
+ },
+ {
+  "id": 184319,
+  "name": "Denis Pauli",
+  "party": "afd",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/denis-pauli"
+ },
+ {
+  "id": 184320,
+  "name": "Zada Salihović",
+  "party": "linke",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/zada-salihovic"
+ },
+ {
+  "id": 184332,
+  "name": "Mayra Vriesema",
+  "party": "gruene",
+  "role": "Abgeordnete/r",
+  "profileUrl": "https://www.abgeordnetenwatch.de/profile/mayra-vriesema"
+ }
+]

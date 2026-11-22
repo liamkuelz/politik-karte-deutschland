@@ -1,0 +1,1526 @@
+[
+ {
+  "id": "BB",
+  "name": "Brandenburg",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 81.57,
+   "second": [
+    {
+     "party": "afd",
+     "share": 32.49
+    },
+    {
+     "party": "union",
+     "share": 18.09
+    },
+    {
+     "party": "spd",
+     "share": 14.81
+    },
+    {
+     "party": "bsw",
+     "share": 10.71
+    },
+    {
+     "party": "linke",
+     "share": 10.7
+    },
+    {
+     "party": "gruene",
+     "share": 6.59
+    },
+    {
+     "party": "fdp",
+     "share": 3.25
+    },
+    {
+     "party": "sonstige",
+     "share": 1.9
+    },
+    {
+     "party": "fw",
+     "share": 1.46
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2024,
+   "turnout": 72.9,
+   "second": [
+    {
+     "party": "spd",
+     "share": 30.9
+    },
+    {
+     "party": "afd",
+     "share": 29.2
+    },
+    {
+     "party": "bsw",
+     "share": 13.5
+    },
+    {
+     "party": "union",
+     "share": 12.1
+    },
+    {
+     "party": "sonstige",
+     "share": 4.6
+    },
+    {
+     "party": "gruene",
+     "share": 4.1
+    },
+    {
+     "party": "linke",
+     "share": 3
+    },
+    {
+     "party": "fw",
+     "share": 2.6
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 132887,
+    "name": "Dietmar Woidke",
+    "party": "spd",
+    "role": "Ministerpräsident",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/dietmar-woidke"
+   }
+  ]
+ },
+ {
+  "id": "BE",
+  "name": "Berlin",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 80.31,
+   "second": [
+    {
+     "party": "linke",
+     "share": 19.86
+    },
+    {
+     "party": "union",
+     "share": 18.27
+    },
+    {
+     "party": "gruene",
+     "share": 16.83
+    },
+    {
+     "party": "afd",
+     "share": 15.23
+    },
+    {
+     "party": "spd",
+     "share": 15.14
+    },
+    {
+     "party": "bsw",
+     "share": 6.65
+    },
+    {
+     "party": "sonstige",
+     "share": 3.89
+    },
+    {
+     "party": "fdp",
+     "share": 3.8
+    },
+    {
+     "party": "fw",
+     "share": 0.33
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2026,
+   "turnout": 74.2,
+   "second": [
+    {
+     "party": "linke",
+     "share": 25.7
+    },
+    {
+     "party": "union",
+     "share": 18.8
+    },
+    {
+     "party": "afd",
+     "share": 16.3
+    },
+    {
+     "party": "gruene",
+     "share": 14.3
+    },
+    {
+     "party": "spd",
+     "share": 12.1
+    },
+    {
+     "party": "sonstige",
+     "share": 5.7
+    },
+    {
+     "party": "bsw",
+     "share": 4.7
+    },
+    {
+     "party": "fdp",
+     "share": 2.5
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 78928,
+    "name": "Kai Wegner",
+    "party": "union",
+    "role": "Regierender Bürgermeister (geschäftsführend)",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/kai-wegner"
+   }
+  ]
+ },
+ {
+  "id": "BW",
+  "name": "Baden-Württemberg",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 83.39,
+   "second": [
+    {
+     "party": "union",
+     "share": 31.6
+    },
+    {
+     "party": "afd",
+     "share": 19.79
+    },
+    {
+     "party": "spd",
+     "share": 14.15
+    },
+    {
+     "party": "gruene",
+     "share": 13.63
+    },
+    {
+     "party": "linke",
+     "share": 6.76
+    },
+    {
+     "party": "fdp",
+     "share": 5.63
+    },
+    {
+     "party": "bsw",
+     "share": 4.1
+    },
+    {
+     "party": "sonstige",
+     "share": 2.97
+    },
+    {
+     "party": "fw",
+     "share": 1.36
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2026,
+   "turnout": 69.6,
+   "second": [
+    {
+     "party": "gruene",
+     "share": 30.2
+    },
+    {
+     "party": "union",
+     "share": 29.7
+    },
+    {
+     "party": "afd",
+     "share": 18.8
+    },
+    {
+     "party": "spd",
+     "share": 5.5
+    },
+    {
+     "party": "linke",
+     "share": 4.4
+    },
+    {
+     "party": "fdp",
+     "share": 4.4
+    },
+    {
+     "party": "sonstige",
+     "share": 3.6
+    },
+    {
+     "party": "fw",
+     "share": 1.9
+    },
+    {
+     "party": "bsw",
+     "share": 1.4
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 79102,
+    "name": "Cem Özdemir",
+    "party": "gruene",
+    "role": "Ministerpräsident",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/cem-oezdemir"
+   }
+  ]
+ },
+ {
+  "id": "BY",
+  "name": "Bayern",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 84.34,
+   "second": [
+    {
+     "party": "union",
+     "share": 37.18
+    },
+    {
+     "party": "afd",
+     "share": 19.01
+    },
+    {
+     "party": "gruene",
+     "share": 12.01
+    },
+    {
+     "party": "spd",
+     "share": 11.55
+    },
+    {
+     "party": "linke",
+     "share": 5.73
+    },
+    {
+     "party": "fw",
+     "share": 4.34
+    },
+    {
+     "party": "fdp",
+     "share": 4.18
+    },
+    {
+     "party": "bsw",
+     "share": 3.09
+    },
+    {
+     "party": "sonstige",
+     "share": 2.91
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2023,
+   "turnout": 73.1,
+   "second": [
+    {
+     "party": "union",
+     "share": 37
+    },
+    {
+     "party": "fw",
+     "share": 15.8
+    },
+    {
+     "party": "afd",
+     "share": 14.6
+    },
+    {
+     "party": "gruene",
+     "share": 14.4
+    },
+    {
+     "party": "spd",
+     "share": 8.4
+    },
+    {
+     "party": "sonstige",
+     "share": 5.3
+    },
+    {
+     "party": "fdp",
+     "share": 3
+    },
+    {
+     "party": "linke",
+     "share": 1.5
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 132545,
+    "name": "Markus Söder",
+    "party": "union",
+    "role": "Ministerpräsident",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/markus-soeder"
+   }
+  ]
+ },
+ {
+  "id": "HB",
+  "name": "Bremen",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 77.76,
+   "second": [
+    {
+     "party": "spd",
+     "share": 23.15
+    },
+    {
+     "party": "union",
+     "share": 20.55
+    },
+    {
+     "party": "gruene",
+     "share": 15.59
+    },
+    {
+     "party": "afd",
+     "share": 15.07
+    },
+    {
+     "party": "linke",
+     "share": 14.78
+    },
+    {
+     "party": "bsw",
+     "share": 4.34
+    },
+    {
+     "party": "fdp",
+     "share": 3.53
+    },
+    {
+     "party": "sonstige",
+     "share": 2.53
+    },
+    {
+     "party": "fw",
+     "share": 0.46
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2023,
+   "turnout": 56.9,
+   "second": [
+    {
+     "party": "spd",
+     "share": 29.8
+    },
+    {
+     "party": "union",
+     "share": 26.2
+    },
+    {
+     "party": "sonstige",
+     "share": 16.2
+    },
+    {
+     "party": "gruene",
+     "share": 11.9
+    },
+    {
+     "party": "linke",
+     "share": 10.9
+    },
+    {
+     "party": "fdp",
+     "share": 5.1
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 165939,
+    "name": "Andreas Bovenschulte",
+    "party": "spd",
+    "role": "Präsident des Senats und Bürgermeister",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/andreas-bovenschulte"
+   }
+  ]
+ },
+ {
+  "id": "HE",
+  "name": "Hessen",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 83.11,
+   "second": [
+    {
+     "party": "union",
+     "share": 28.87
+    },
+    {
+     "party": "spd",
+     "share": 18.36
+    },
+    {
+     "party": "afd",
+     "share": 17.78
+    },
+    {
+     "party": "gruene",
+     "share": 12.61
+    },
+    {
+     "party": "linke",
+     "share": 8.69
+    },
+    {
+     "party": "fdp",
+     "share": 5.05
+    },
+    {
+     "party": "bsw",
+     "share": 4.43
+    },
+    {
+     "party": "sonstige",
+     "share": 2.91
+    },
+    {
+     "party": "fw",
+     "share": 1.3
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2023,
+   "turnout": 66,
+   "second": [
+    {
+     "party": "union",
+     "share": 34.6
+    },
+    {
+     "party": "afd",
+     "share": 18.4
+    },
+    {
+     "party": "spd",
+     "share": 15.1
+    },
+    {
+     "party": "gruene",
+     "share": 14.8
+    },
+    {
+     "party": "sonstige",
+     "share": 5.4
+    },
+    {
+     "party": "fdp",
+     "share": 5
+    },
+    {
+     "party": "fw",
+     "share": 3.5
+    },
+    {
+     "party": "linke",
+     "share": 3.1
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 135173,
+    "name": "Boris Rhein",
+    "party": "union",
+    "role": "Ministerpräsident",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/boris-rhein"
+   }
+  ]
+ },
+ {
+  "id": "HH",
+  "name": "Hamburg",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 80.88,
+   "second": [
+    {
+     "party": "spd",
+     "share": 22.74
+    },
+    {
+     "party": "union",
+     "share": 20.75
+    },
+    {
+     "party": "gruene",
+     "share": 19.29
+    },
+    {
+     "party": "linke",
+     "share": 14.45
+    },
+    {
+     "party": "afd",
+     "share": 10.87
+    },
+    {
+     "party": "fdp",
+     "share": 4.51
+    },
+    {
+     "party": "bsw",
+     "share": 4.01
+    },
+    {
+     "party": "sonstige",
+     "share": 3.02
+    },
+    {
+     "party": "fw",
+     "share": 0.37
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2025,
+   "turnout": 67.6,
+   "second": [
+    {
+     "party": "spd",
+     "share": 33.5
+    },
+    {
+     "party": "union",
+     "share": 19.8
+    },
+    {
+     "party": "gruene",
+     "share": 18.5
+    },
+    {
+     "party": "linke",
+     "share": 11.2
+    },
+    {
+     "party": "afd",
+     "share": 7.5
+    },
+    {
+     "party": "sonstige",
+     "share": 5.4
+    },
+    {
+     "party": "fdp",
+     "share": 2.3
+    },
+    {
+     "party": "bsw",
+     "share": 1.8
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 66929,
+    "name": "Peter Tschentscher",
+    "party": "spd",
+    "role": "Erster Bürgermeister",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/peter-tschentscher"
+   }
+  ]
+ },
+ {
+  "id": "MV",
+  "name": "Mecklenburg-Vorpommern",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 79.48,
+   "second": [
+    {
+     "party": "afd",
+     "share": 34.99
+    },
+    {
+     "party": "union",
+     "share": 17.82
+    },
+    {
+     "party": "spd",
+     "share": 12.41
+    },
+    {
+     "party": "linke",
+     "share": 12.05
+    },
+    {
+     "party": "bsw",
+     "share": 10.56
+    },
+    {
+     "party": "gruene",
+     "share": 5.36
+    },
+    {
+     "party": "fdp",
+     "share": 3.2
+    },
+    {
+     "party": "sonstige",
+     "share": 2.56
+    },
+    {
+     "party": "fw",
+     "share": 1.06
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2026,
+   "turnout": 78,
+   "second": [
+    {
+     "party": "afd",
+     "share": 38.2
+    },
+    {
+     "party": "spd",
+     "share": 35.5
+    },
+    {
+     "party": "linke",
+     "share": 6.5
+    },
+    {
+     "party": "gruene",
+     "share": 5.7
+    },
+    {
+     "party": "union",
+     "share": 4.9
+    },
+    {
+     "party": "bsw",
+     "share": 4.8
+    },
+    {
+     "party": "sonstige",
+     "share": 3.3
+    },
+    {
+     "party": "fdp",
+     "share": 1
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 122576,
+    "name": "Manuela Schwesig",
+    "party": "spd",
+    "role": "Ministerpräsidentin",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/manuela-schwesig"
+   }
+  ]
+ },
+ {
+  "id": "NI",
+  "name": "Niedersachsen",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 83.42,
+   "second": [
+    {
+     "party": "union",
+     "share": 28.12
+    },
+    {
+     "party": "spd",
+     "share": 23
+    },
+    {
+     "party": "afd",
+     "share": 17.84
+    },
+    {
+     "party": "gruene",
+     "share": 11.5
+    },
+    {
+     "party": "linke",
+     "share": 8.09
+    },
+    {
+     "party": "fdp",
+     "share": 4.09
+    },
+    {
+     "party": "bsw",
+     "share": 3.78
+    },
+    {
+     "party": "sonstige",
+     "share": 2.84
+    },
+    {
+     "party": "fw",
+     "share": 0.75
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2022,
+   "turnout": 60.3,
+   "second": [
+    {
+     "party": "spd",
+     "share": 33.4
+    },
+    {
+     "party": "union",
+     "share": 28.1
+    },
+    {
+     "party": "gruene",
+     "share": 14.5
+    },
+    {
+     "party": "afd",
+     "share": 11
+    },
+    {
+     "party": "sonstige",
+     "share": 5.6
+    },
+    {
+     "party": "fdp",
+     "share": 4.7
+    },
+    {
+     "party": "linke",
+     "share": 2.7
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 136231,
+    "name": "Olaf Lies",
+    "party": "spd",
+    "role": "Ministerpräsident",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/olaf-lies"
+   }
+  ]
+ },
+ {
+  "id": "NW",
+  "name": "Nordrhein-Westfalen",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 82.18,
+   "second": [
+    {
+     "party": "union",
+     "share": 30.12
+    },
+    {
+     "party": "spd",
+     "share": 20.03
+    },
+    {
+     "party": "afd",
+     "share": 16.82
+    },
+    {
+     "party": "gruene",
+     "share": 12.36
+    },
+    {
+     "party": "linke",
+     "share": 8.33
+    },
+    {
+     "party": "fdp",
+     "share": 4.39
+    },
+    {
+     "party": "bsw",
+     "share": 4.11
+    },
+    {
+     "party": "sonstige",
+     "share": 3.33
+    },
+    {
+     "party": "fw",
+     "share": 0.5
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2022,
+   "turnout": 55.5,
+   "second": [
+    {
+     "party": "union",
+     "share": 35.7
+    },
+    {
+     "party": "spd",
+     "share": 26.7
+    },
+    {
+     "party": "gruene",
+     "share": 18.2
+    },
+    {
+     "party": "sonstige",
+     "share": 6.1
+    },
+    {
+     "party": "fdp",
+     "share": 5.9
+    },
+    {
+     "party": "afd",
+     "share": 5.4
+    },
+    {
+     "party": "linke",
+     "share": 2.1
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 130298,
+    "name": "Hendrik Wüst",
+    "party": "union",
+    "role": "Ministerpräsident",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/hendrik-wuest"
+   }
+  ]
+ },
+ {
+  "id": "RP",
+  "name": "Rheinland-Pfalz",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 82.95,
+   "second": [
+    {
+     "party": "union",
+     "share": 30.64
+    },
+    {
+     "party": "afd",
+     "share": 20.09
+    },
+    {
+     "party": "spd",
+     "share": 18.64
+    },
+    {
+     "party": "gruene",
+     "share": 10.35
+    },
+    {
+     "party": "linke",
+     "share": 6.52
+    },
+    {
+     "party": "fdp",
+     "share": 4.59
+    },
+    {
+     "party": "bsw",
+     "share": 4.23
+    },
+    {
+     "party": "sonstige",
+     "share": 2.84
+    },
+    {
+     "party": "fw",
+     "share": 2.1
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2026,
+   "turnout": 68.4,
+   "second": [
+    {
+     "party": "union",
+     "share": 31
+    },
+    {
+     "party": "spd",
+     "share": 25.9
+    },
+    {
+     "party": "afd",
+     "share": 19.5
+    },
+    {
+     "party": "gruene",
+     "share": 7.9
+    },
+    {
+     "party": "linke",
+     "share": 4.4
+    },
+    {
+     "party": "fw",
+     "share": 4.2
+    },
+    {
+     "party": "sonstige",
+     "share": 3.2
+    },
+    {
+     "party": "fdp",
+     "share": 2.1
+    },
+    {
+     "party": "bsw",
+     "share": 1.9
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 110008,
+    "name": "Gordon Schnieder",
+    "party": "union",
+    "role": "Ministerpräsident",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/gordon-schnieder"
+   }
+  ]
+ },
+ {
+  "id": "SH",
+  "name": "Schleswig-Holstein",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 83.52,
+   "second": [
+    {
+     "party": "union",
+     "share": 27.58
+    },
+    {
+     "party": "spd",
+     "share": 18.75
+    },
+    {
+     "party": "afd",
+     "share": 16.29
+    },
+    {
+     "party": "gruene",
+     "share": 14.89
+    },
+    {
+     "party": "linke",
+     "share": 7.79
+    },
+    {
+     "party": "fdp",
+     "share": 4.69
+    },
+    {
+     "party": "ssw",
+     "share": 4.05
+    },
+    {
+     "party": "bsw",
+     "share": 3.45
+    },
+    {
+     "party": "sonstige",
+     "share": 1.8
+    },
+    {
+     "party": "fw",
+     "share": 0.73
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2022,
+   "turnout": 60.3,
+   "second": [
+    {
+     "party": "union",
+     "share": 43.4
+    },
+    {
+     "party": "gruene",
+     "share": 18.3
+    },
+    {
+     "party": "spd",
+     "share": 16
+    },
+    {
+     "party": "fdp",
+     "share": 6.4
+    },
+    {
+     "party": "ssw",
+     "share": 5.7
+    },
+    {
+     "party": "afd",
+     "share": 4.4
+    },
+    {
+     "party": "sonstige",
+     "share": 4.1
+    },
+    {
+     "party": "linke",
+     "share": 1.7
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 130775,
+    "name": "Daniel Günther",
+    "party": "union",
+    "role": "Ministerpräsident",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/daniel-guenther"
+   }
+  ]
+ },
+ {
+  "id": "SL",
+  "name": "Saarland",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 82.44,
+   "second": [
+    {
+     "party": "union",
+     "share": 26.86
+    },
+    {
+     "party": "spd",
+     "share": 21.87
+    },
+    {
+     "party": "afd",
+     "share": 21.56
+    },
+    {
+     "party": "linke",
+     "share": 7.35
+    },
+    {
+     "party": "gruene",
+     "share": 7.23
+    },
+    {
+     "party": "bsw",
+     "share": 6.17
+    },
+    {
+     "party": "fdp",
+     "share": 4.29
+    },
+    {
+     "party": "sonstige",
+     "share": 3.26
+    },
+    {
+     "party": "fw",
+     "share": 1.41
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2022,
+   "turnout": 61.4,
+   "second": [
+    {
+     "party": "spd",
+     "share": 43.5
+    },
+    {
+     "party": "union",
+     "share": 28.5
+    },
+    {
+     "party": "sonstige",
+     "share": 8.2
+    },
+    {
+     "party": "afd",
+     "share": 5.7
+    },
+    {
+     "party": "gruene",
+     "share": 5
+    },
+    {
+     "party": "fdp",
+     "share": 4.8
+    },
+    {
+     "party": "linke",
+     "share": 2.6
+    },
+    {
+     "party": "fw",
+     "share": 1.7
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 138121,
+    "name": "Anke Rehlinger",
+    "party": "spd",
+    "role": "Ministerpräsidentin",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/anke-rehlinger"
+   }
+  ]
+ },
+ {
+  "id": "SN",
+  "name": "Sachsen",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 81.11,
+   "second": [
+    {
+     "party": "afd",
+     "share": 37.3
+    },
+    {
+     "party": "union",
+     "share": 19.74
+    },
+    {
+     "party": "linke",
+     "share": 11.3
+    },
+    {
+     "party": "bsw",
+     "share": 9.04
+    },
+    {
+     "party": "spd",
+     "share": 8.45
+    },
+    {
+     "party": "gruene",
+     "share": 6.51
+    },
+    {
+     "party": "fdp",
+     "share": 3.25
+    },
+    {
+     "party": "sonstige",
+     "share": 2.85
+    },
+    {
+     "party": "fw",
+     "share": 1.56
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2024,
+   "turnout": 74.4,
+   "second": [
+    {
+     "party": "union",
+     "share": 31.9
+    },
+    {
+     "party": "afd",
+     "share": 30.6
+    },
+    {
+     "party": "bsw",
+     "share": 11.8
+    },
+    {
+     "party": "spd",
+     "share": 7.3
+    },
+    {
+     "party": "sonstige",
+     "share": 6.5
+    },
+    {
+     "party": "gruene",
+     "share": 5.1
+    },
+    {
+     "party": "linke",
+     "share": 4.5
+    },
+    {
+     "party": "fw",
+     "share": 2.3
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 79225,
+    "name": "Michael Kretschmer",
+    "party": "union",
+    "role": "Ministerpräsident",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/michael-kretschmer"
+   }
+  ]
+ },
+ {
+  "id": "ST",
+  "name": "Sachsen-Anhalt",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 77.7,
+   "second": [
+    {
+     "party": "afd",
+     "share": 37.1
+    },
+    {
+     "party": "union",
+     "share": 19.18
+    },
+    {
+     "party": "bsw",
+     "share": 11.25
+    },
+    {
+     "party": "spd",
+     "share": 10.96
+    },
+    {
+     "party": "linke",
+     "share": 10.75
+    },
+    {
+     "party": "gruene",
+     "share": 4.42
+    },
+    {
+     "party": "fdp",
+     "share": 3.08
+    },
+    {
+     "party": "sonstige",
+     "share": 1.88
+    },
+    {
+     "party": "fw",
+     "share": 1.38
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2026,
+   "turnout": 77.8,
+   "second": [
+    {
+     "party": "afd",
+     "share": 43.8
+    },
+    {
+     "party": "union",
+     "share": 17.2
+    },
+    {
+     "party": "spd",
+     "share": 9.3
+    },
+    {
+     "party": "gruene",
+     "share": 8.9
+    },
+    {
+     "party": "linke",
+     "share": 8.6
+    },
+    {
+     "party": "bsw",
+     "share": 5.3
+    },
+    {
+     "party": "sonstige",
+     "share": 3.2
+    },
+    {
+     "party": "fdp",
+     "share": 2.6
+    },
+    {
+     "party": "fw",
+     "share": 1.2
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 29484,
+    "name": "Sven Schulze",
+    "party": "union",
+    "role": "Ministerpräsident",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/sven-schulze"
+   }
+  ]
+ },
+ {
+  "id": "TH",
+  "name": "Thüringen",
+  "bundestag": {
+   "electionType": "bundestag",
+   "year": 2025,
+   "turnout": 80.7,
+   "second": [
+    {
+     "party": "afd",
+     "share": 38.55
+    },
+    {
+     "party": "union",
+     "share": 18.58
+    },
+    {
+     "party": "linke",
+     "share": 15.16
+    },
+    {
+     "party": "bsw",
+     "share": 9.42
+    },
+    {
+     "party": "spd",
+     "share": 8.75
+    },
+    {
+     "party": "gruene",
+     "share": 4.24
+    },
+    {
+     "party": "fdp",
+     "share": 2.82
+    },
+    {
+     "party": "fw",
+     "share": 1.56
+    },
+    {
+     "party": "sonstige",
+     "share": 0.92
+    }
+   ]
+  },
+  "landtag": {
+   "electionType": "landtag",
+   "year": 2024,
+   "turnout": 73.6,
+   "second": [
+    {
+     "party": "afd",
+     "share": 32.8
+    },
+    {
+     "party": "union",
+     "share": 23.6
+    },
+    {
+     "party": "bsw",
+     "share": 15.8
+    },
+    {
+     "party": "linke",
+     "share": 13.1
+    },
+    {
+     "party": "spd",
+     "share": 6.1
+    },
+    {
+     "party": "gruene",
+     "share": 3.2
+    },
+    {
+     "party": "sonstige",
+     "share": 3.1
+    },
+    {
+     "party": "fw",
+     "share": 1.3
+    },
+    {
+     "party": "fdp",
+     "share": 1.1
+    }
+   ]
+  },
+  "officials": [
+   {
+    "id": 31400,
+    "name": "Mario Voigt",
+    "party": "union",
+    "role": "Ministerpräsident",
+    "profileUrl": "https://www.abgeordnetenwatch.de/profile/mario-voigt"
+   }
+  ]
+ }
+]
