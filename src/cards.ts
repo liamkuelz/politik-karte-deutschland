@@ -3,7 +3,7 @@ import type { PartyProfile } from './content-types.ts';
 import type { AppData } from './data.ts';
 import { loadVotes } from './data.ts';
 import type { NavState } from './nav.ts';
-import { applyPartyEdge, partyColor, partyLabel } from './parties.ts';
+import { applyPartyEdge, partyColor, partyInk, partyLabel } from './parties.ts';
 import { resolve } from './resolve.ts';
 import type { AreaResult, PartyId, Vote } from './types.ts';
 import { partyButton } from './ui/clickables.ts';
@@ -204,7 +204,8 @@ function buildDialog(parts: CardParts, close: () => void, animate: boolean) {
   dialog.setAttribute('aria-modal', 'true');
   dialog.setAttribute('aria-labelledby', TITLE_ID);
   dialog.tabIndex = -1; // Klicks auf Text halten den Fokus in der Karte (Escape, Tab)
-  dialog.style.setProperty('--card-accent', partyColor(parts.party));
+  // Linien-Akzente (Kernpunkte, Ergebnis) in der auf Dunkel sichtbaren Farbe (Union: hellgrau)
+  dialog.style.setProperty('--card-accent', partyInk(parts.party));
 
   const accent = h('div', 'card-accent');
   accent.setAttribute('aria-hidden', 'true');
