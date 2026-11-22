@@ -16,14 +16,14 @@ export function renderChip(answer: Vote['answer']): HTMLElement {
 /** Neueste zuerst. */
 export const sortVotes = (votes: Vote[]) => [...votes].sort((a, b) => b.date.localeCompare(a.date));
 
-/** Listeneintrag: Titel (Link nur bei https), Datum, Chip. */
-export function renderVoteRow(v: Vote): HTMLElement {
+/** Listeneintrag: Titel (Link nur bei https; mit `link: false` immer nur Text), Datum, Chip. */
+export function renderVoteRow(v: Vote, opts: { link?: boolean } = {}): HTMLElement {
   const li = h('li', 'vote');
   li.dataset.answer = v.answer;
   const meta = h('div', 'vote-meta');
   const time = h('time', undefined, fmtDate(v.date));
   time.dateTime = v.date;
   meta.append(time, renderChip(v.answer));
-  li.append(extLink(v.url, v.title, 'vote-title'), meta);
+  li.append(opts.link === false ? h('span', 'vote-title', v.title) : extLink(v.url, v.title, 'vote-title'), meta);
   return li;
 }

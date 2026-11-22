@@ -77,7 +77,7 @@ export function renderStackedComparison(first: PartyResult[], second: PartyResul
 type Filter = 'all' | Vote['answer'];
 
 /** Vollstaendige Abstimmungsliste mit Filterknoepfen (clientseitig) in einem intern scrollenden Kasten. */
-export function fillVoteList(box: HTMLElement, votes: Vote[]): void {
+export function fillVoteList(box: HTMLElement, votes: Vote[], opts: { links?: boolean } = {}): void {
   if (!votes.length) {
     box.replaceChildren(h('p', 'empty', 'Keine Abstimmungen verfügbar'));
     return;
@@ -92,7 +92,7 @@ export function fillVoteList(box: HTMLElement, votes: Vote[]): void {
   const list = h('ul', 'vote-list vote-scroll');
   list.tabIndex = 0; // scrollbarer Bereich auch per Tastatur
   list.setAttribute('aria-label', 'Abstimmungen');
-  const rows = sorted.map((v) => renderVoteRow(v));
+  const rows = sorted.map((v) => renderVoteRow(v, { link: opts.links }));
   list.append(...rows);
 
   const buttons: HTMLButtonElement[] = [];
